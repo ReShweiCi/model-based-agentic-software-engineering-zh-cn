@@ -39,7 +39,7 @@
       none
     } else {
       pagebreak(weak: true)
-      block(above: 0pt, below: 1.15em)[
+      block(above: 0pt, below: 1.6em)[
         #set par(first-line-indent: 0em)
         #context if not hb-backmatter-mode.get() {
           hb-chapter.step()
@@ -54,11 +54,15 @@
   }
   show heading.where(level: 2): it => {
     set text(size: 14pt, weight: 700, fill: palette.ink)
-    block(above: 1.45em, below: 0.55em, sticky: true)[#set par(first-line-indent: 0em); #it.body]
+    block(above: 2.2em, below: 0.95em, sticky: true)[#set par(first-line-indent: 0em); #it.body]
   }
   show heading.where(level: 3): it => {
     set text(size: 11.5pt, weight: 700, fill: palette.muted)
-    block(above: 1.1em, below: 0.45em, sticky: true)[#set par(first-line-indent: 0em); #it.body]
+    block(above: 1.75em, below: 0.8em, sticky: true)[#set par(first-line-indent: 0em); #it.body]
+  }
+  show heading.where(level: 4): it => {
+    set text(size: 10.5pt, weight: 700, fill: palette.ink)
+    block(above: 1.45em, below: 0.65em, sticky: true)[#set par(first-line-indent: 0em); #it.body]
   }
 
   set list(indent: 1.2em, body-indent: 0.5em, spacing: 0.55em)
