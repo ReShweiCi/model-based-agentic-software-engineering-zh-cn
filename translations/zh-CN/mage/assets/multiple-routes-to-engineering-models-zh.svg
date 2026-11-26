@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 690" width="1000" height="690"
+     role="img" aria-labelledby="mrTitle mrDesc"
+     font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="mrTitle">构建工程模型的多条路径</title>
+  <desc id="mrDesc">三条输入路径汇入建模环节，三条使用途径从建模环节分出。输入路径包括：需求与意图、智能体探索与发现、现有系统与经验。建模产出承载知识与选定约束义务的工程模型，支持三类用途：推理与设计、指导智能体工作、评估与检查。工程工作并未止步于模型，后续工程实践中的新发现可能促使新建或修订模型。</desc>
+
+  <defs>
+    <marker id="mr-k" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57534e"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="690" fill="#fdfcf9"/>
+
+  <rect x="0" y="0" width="1000" height="54" fill="#f6f4ef"/>
+  <text x="500" y="35" text-anchor="middle" font-size="21" font-weight="700" letter-spacing="2" fill="#1c1917">构建工程模型的多条路径</text>
+
+  <text x="30" y="82" font-size="19" font-weight="700" letter-spacing="1.2" fill="#2f5169">输入来源（ROUTES IN）</text>
+
+  <rect id="r-req" x="30" y="94" width="290" height="66" rx="9" fill="#e7edf3" stroke="#2f5169" stroke-width="2.6"/>
+  <text x="175" y="134" text-anchor="middle" font-size="21" font-weight="700" fill="#1c1917">需求与设计意图</text>
+
+  <rect id="r-explore" x="355" y="94" width="290" height="66" rx="9" fill="#e7edf3" stroke="#2f5169" stroke-width="2.6"/>
+  <text x="500" y="134" text-anchor="middle" font-size="21" font-weight="700" fill="#1c1917">智能体探索与发现</text>
+
+  <rect id="r-existing" x="680" y="94" width="290" height="66" rx="9" fill="#e7edf3" stroke="#2f5169" stroke-width="2.6"/>
+  <text x="825" y="134" text-anchor="middle" font-size="21" font-weight="700" fill="#1c1917">现有系统与工程经验</text>
+
+  <g fill="none" stroke="#57534e" stroke-width="2.4">
+    <path d="M175,160 L175,196"/>
+    <path d="M500,160 L500,196"/>
+    <path d="M825,160 L825,196"/>
+    <path d="M175,196 L825,196"/>
+    <path d="M500,196 L500,236" marker-end="url(#mr-k)"/>
+  </g>
+
+  <rect x="60" y="238" width="880" height="124" rx="12" fill="#e3f0e7" stroke="#155c38" stroke-width="3.4"/>
+  <text x="500" y="272" text-anchor="middle" font-size="21" font-weight="700" letter-spacing="3" fill="#155c38">建模（MODELING）</text>
+  <text x="500" y="306" text-anchor="middle" font-size="20" font-weight="700" fill="#1c1917">工程模型</text>
+  <text x="500" y="338" text-anchor="middle" font-size="19" fill="#57534e">承载工程知识 · 选定的约束义务</text>
+
+  <g fill="none" stroke="#57534e" stroke-width="2.4">
+    <path d="M500,362 L500,398"/>
+    <path d="M175,398 L825,398"/>
+    <path d="M175,398 L175,434" marker-end="url(#mr-k)"/>
+    <path d="M500,398 L500,434" marker-end="url(#mr-k)"/>
+    <path d="M825,398 L825,434" marker-end="url(#mr-k)"/>
+  </g>
+
+  <rect id="u-reason" x="30" y="436" width="290" height="58" rx="9" fill="#eef7f0" stroke="#1f7a4d" stroke-width="2.6"/>
+  <text x="175" y="472" text-anchor="middle" font-size="20" font-weight="700" fill="#1c1917">推理与设计</text>
+
+  <rect id="u-direct" x="355" y="436" width="290" height="58" rx="9" fill="#eef7f0" stroke="#1f7a4d" stroke-width="2.6"/>
+  <text x="500" y="472" text-anchor="middle" font-size="20" font-weight="700" fill="#1c1917">指导智能体工作</text>
+
+  <rect id="u-evaluate" x="680" y="436" width="290" height="58" rx="9" fill="#eef7f0" stroke="#1f7a4d" stroke-width="2.6"/>
+  <text x="825" y="472" text-anchor="middle" font-size="20" font-weight="700" fill="#1c1917">评估与检查</text>
+
+  <text x="970" y="422" text-anchor="end" font-size="19" font-weight="700" letter-spacing="1.2" fill="#1f7a4d">输出用途（USES OUT）</text>
+
+  <g fill="none" stroke="#57534e" stroke-width="2.4">
+    <path d="M175,494 L175,530"/>
+    <path d="M500,494 L500,530"/>
+    <path d="M825,494 L825,530"/>
+    <path d="M175,530 L825,530"/>
+    <path d="M500,530 L500,570" marker-end="url(#mr-k)"/>
+  </g>
+
+  <rect x="245" y="572" width="510" height="56" rx="9" fill="#f3efe7" stroke="#9a3f12" stroke-width="3.2"/>
+  <text x="500" y="608" text-anchor="middle" font-size="20" font-weight="700" fill="#9a3f12">后续工程工作持续演进</text>
+
+  <text x="500" y="664" text-anchor="middle" font-size="19" font-style="italic" fill="#57534e">三条输入路径、三类输出用途——彼此是并行选项，而非顺序阶段。</text>
+</svg>

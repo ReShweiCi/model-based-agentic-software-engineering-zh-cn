@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="996" viewBox="0 0 440 332" role="img" aria-labelledby="title desc"><title id="title">受控变更将提案与实际效应相分离</title><desc id="desc">灵活的生产者发出类型化提案。解析器依据当前工件状态的文档结构模型解析目标。变更前值比对默认仅上报不匹配，而非硬性准入门禁。在受控应用边界内，受支持的操作词汇表与选定守卫共同决定执行器是否可以修改已解析的目标。逐条操作结果包含拒绝与失败。成功的会话编辑与修复步骤变更产生不同的归因记录。尚未迁移的直接写入仍位于该路径之外。</desc><defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="4.7" refY="2.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs><rect width="440" height="332" fill="white"/>
+<rect x="0" y="125" width="440" height="143" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="5" y="121" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="bold" fill="black">受控应用边界</text>
+<path d="M130,20 L165,20" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M225,40 L225,70" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M380,40 L380,90 L290,90" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M180,40 L180,55 L70,55 L70,70" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<path d="M180,100 L130,100" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<text x="155" y="77" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">诊断</text>
+<text x="155" y="89" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">证据</text>
+<path d="M220,110 L220,135" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M130,165 L170,165" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M270,165 L325,165" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="297" y="158" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">通过</text>
+<path d="M220,195 L220,218" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="242" y="211" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">拒绝</text>
+<path d="M377.5,185 L377.5,204 L285,204 L285,218" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M227.5,258 L227.5,278 L100,278 L100,292" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M405,185 L405,275 L340,275 L340,292" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="397" y="244" text-anchor="end" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">发生变更时</text>
+<rect x="0" y="0" width="130" height="40" rx="8" fill="#eaeaea" stroke="black" stroke-width="0.8"/>
+<text x="65.0" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">灵活的生产者</text>
+<text x="65.0" y="29.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">提出编辑建议</text>
+<rect x="165" y="0" width="125" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="227.5" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">类型化提案</text>
+<text x="227.5" y="29.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">操作 + 目标</text>
+<rect x="325" y="0" width="115" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="382.5" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">文档结构模型</text>
+<text x="382.5" y="29.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">当前状态</text>
+<rect x="180" y="70" width="110" height="40" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="235.0" y="93.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">解析当前目标</text>
+<rect x="5" y="70" width="125" height="40" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="67.5" y="87.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">变更前值比对</text>
+<text x="67.5" y="99.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">默认仅作审计</text>
+<rect x="5" y="145" width="125" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="67.5" y="162.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">受支持的操作</text>
+<text x="67.5" y="174.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">词汇表</text>
+<polygon points="220,135.0 270.0,165 220,195.0 170.0,165" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="220" y="162.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">选定</text>
+<text x="220" y="174.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">守卫</text>
+<rect x="325" y="145" width="105" height="40" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="377.5" y="168.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">执行变更</text>
+<rect x="160" y="218" width="135" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="227.5" y="235.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">逐条操作结果</text>
+<text x="227.5" y="247.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">已应用 / 已拒绝 / 失败</text>
+<rect x="0" y="292" width="200" height="36" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="100.0" y="307.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">会话日志</text>
+<text x="100.0" y="319.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">仅记录成功的会话操作</text>
+<rect x="240" y="292" width="200" height="36" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="340.0" y="307.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">步骤归因</text>
+<text x="340.0" y="319.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">修复流水线变更</text></svg>

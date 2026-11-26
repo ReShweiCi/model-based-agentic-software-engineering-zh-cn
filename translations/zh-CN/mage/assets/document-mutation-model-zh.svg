@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.5 235" width="247.5" height="235" role="img" aria-labelledby="dmTitle dmDesc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="dmTitle">DocAble 的文档变更模型：变更经由受许可的接缝触达各格式</title>
+  <desc id="dmDesc">修复逻辑通过结构化文档模型（受许可的接缝）执行操作。该模型由各格式专属实现承接，进而操作 DOCX、PPTX、XLSX 和 PDF 等具体格式。</desc>
+  <defs>
+    <marker id="a2f5169" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#2f5169"/></marker>
+    <marker id="a57534e" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#57534e"/></marker>
+    <marker id="a086438" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#086438"/></marker>
+    <marker id="a1c1917" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#1c1917"/></marker>
+  </defs>
+  <text x="123.75" y="13.0" text-anchor="middle" font-size="9.5" fill="#1c1917" font-weight="700">文档变更模型</text>
+  <rect x="53.75" y="24" width="140" height="27" rx="4" fill="#e7edf3" stroke="#2f5169" stroke-width="0.8"/>
+  <text x="123.75" y="41.0" text-anchor="middle" font-size="10" fill="#1c1917" font-weight="700">修复逻辑</text>
+  <path d="M123.75,51 L123.75,76" fill="none" stroke="#2f5169" stroke-width=".8" marker-end="url(#a2f5169)"/>
+  <text x="129" y="66.0" text-anchor="start" font-size="9" fill="#1c1917" font-style="italic">经由其操作</text>
+  <rect x="30" y="77" width="187.5" height="38" rx="4" fill="#e7edf3" stroke="#2f5169" stroke-width="1.25"/>
+  <text x="123.75" y="93.0" text-anchor="middle" font-size="10" fill="#1c1917" font-weight="700">结构化文档模型</text>
+  <text x="123.75" y="107.0" text-anchor="middle" font-size="9" fill="#1c1917" font-style="italic">受许可的接缝（sanctioned seam）</text>
+  <path d="M123.75,115 L123.75,141" fill="none" stroke="#2f5169" stroke-width=".8" marker-end="url(#a2f5169)"/>
+  <text x="129" y="131.0" text-anchor="start" font-size="9" fill="#1c1917" font-style="italic">由其实现</text>
+  <rect x="36" y="142" width="175.5" height="29" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+  <text x="123.75" y="160.0" text-anchor="middle" font-size="10" fill="#1c1917">格式专属实现</text>
+  <path d="M123.75,171 L123.75,182 L33.75,182 L33.75,194" fill="none" stroke="#57534e" stroke-width=".8" marker-end="url(#a57534e)"/>
+  <rect x="7" y="194" width="53.5" height="24" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+  <text x="33.75" y="210.0" text-anchor="middle" font-size="10" fill="#1c1917">DOCX</text>
+  <path d="M123.75,171 L123.75,182 L93.75,182 L93.75,194" fill="none" stroke="#57534e" stroke-width=".8" marker-end="url(#a57534e)"/>
+  <rect x="67" y="194" width="53.5" height="24" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+  <text x="93.75" y="210.0" text-anchor="middle" font-size="10" fill="#1c1917">PPTX</text>
+  <path d="M123.75,171 L123.75,182 L153.75,182 L153.75,194" fill="none" stroke="#57534e" stroke-width=".8" marker-end="url(#a57534e)"/>
+  <rect x="127" y="194" width="53.5" height="24" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+  <text x="153.75" y="210.0" text-anchor="middle" font-size="10" fill="#1c1917">XLSX</text>
+  <path d="M123.75,171 L123.75,182 L213.75,182 L213.75,194" fill="none" stroke="#57534e" stroke-width=".8" marker-end="url(#a57534e)"/>
+  <rect x="187" y="194" width="53.5" height="24" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+  <text x="213.75" y="210.0" text-anchor="middle" font-size="10" fill="#1c1917">PDF</text>
+  <text x="123.75" y="232.0" text-anchor="middle" font-size="8.8" fill="#1c1917" font-style="italic">该模型标明了文档变更应当发生的位置。</text>
+</svg>

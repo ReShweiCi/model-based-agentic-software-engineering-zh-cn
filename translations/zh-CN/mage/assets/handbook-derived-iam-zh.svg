@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1044" viewBox="0 0 440 348" role="img" aria-labelledby="title desc"><title id="title">具有明确权威边界的模型驱动部署</title><desc id="desc">灵活的工程判断选定预期调用。类型化调用契约通过一致性检查与当前权威依赖映射核对。该映射与特定环境的部署身份共同输入确定性授权推导，生成具体授权计划、执行应用并输出逐条结果。已安装的 IAM 绑定在独立的运行时边界强制管控调用。服务名一致性并非 IAM 检查。移交模型权威需要另行开展消费者迁移。</desc><defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="4.7" refY="2.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs><rect width="440" height="348" fill="white"/>
+<rect x="315" y="218" width="123" height="124" rx="0" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="376.5" y="232" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="bold" fill="black">云端 IAM 边界</text>
+<path d="M70,40 L70,65" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M140,88 L180,88" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2"/>
+<text x="160" y="81" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">一致性</text>
+<path d="M240,110 L240,142" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M382.5,110 L382.5,126 L270,126 L270,142" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M240,182 L240,202" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M240,238 L240,261" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M180,280 L145,280" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M300,280 L307,280 L307,261 L325,261" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M380,278 L380,294" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<rect x="0" y="0" width="140" height="40" rx="8" fill="#eaeaea" stroke="black" stroke-width="0.8"/>
+<text x="70.0" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">工程师 / 智能体</text>
+<text x="70.0" y="29.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">选定预期调用</text>
+<rect x="0" y="65" width="140" height="45" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="70.0" y="84.9" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">类型化调用契约</text>
+<text x="70.0" y="96.9" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">经校验的镜像</text>
+<rect x="180" y="65" width="120" height="45" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="240.0" y="84.9" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">依赖映射</text>
+<text x="240.0" y="96.9" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">当前权威来源</text>
+<rect x="325" y="65" width="115" height="45" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="382.5" y="84.9" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">部署身份</text>
+<text x="382.5" y="96.9" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">与服务名称</text>
+<rect x="180" y="142" width="120" height="40" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="240.0" y="165.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">推导具体授权</text>
+<rect x="180" y="202" width="120" height="36" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="240.0" y="223.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">授权计划</text>
+<rect x="180" y="261" width="120" height="38" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="240.0" y="283.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">应用授权</text>
+<rect x="0" y="259" width="145" height="43" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="72.5" y="277.9" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">逐条授权结果</text>
+<text x="72.5" y="289.9" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">已授权 / 失败 / 演练</text>
+<rect x="325" y="244" width="110" height="34" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="380.0" y="264.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">已安装绑定</text>
+<polygon points="380,294.0 432.0,312 380,330.0 328.0,312" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="380" y="315.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">允许调用？</text>
+<text x="380" y="338" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">允许 / 拒绝</text>
+<text x="70" y="196" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">服务名一致性</text>
+<text x="70" y="208" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">不代表已验证 IAM。</text>
+<text x="72.5" y="321" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">应用失败：</text>
+<text x="72.5" y="333" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">上报并向前修复。</text></svg>

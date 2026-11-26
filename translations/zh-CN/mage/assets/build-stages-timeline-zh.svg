@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 568" width="900" height="568" role="img" aria-labelledby="bsTitle bsDesc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<title id="bsTitle">DocAble 开发的七个阶段：驱动压力与工程后果时间线</title>
+<desc id="bsDesc">按时间顺序回顾七个构建阶段，每行标明阶段名称、时间、驱动压力以及随之而来的主要工程后果。</desc>
+<defs><marker id="ink-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1c1917"/></marker><marker id="muted-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#57534e"/></marker><marker id="rust-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#9a3f12"/></marker><marker id="blue-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2f5169"/></marker><marker id="green-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1f7a4d"/></marker><marker id="red-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#b23b3b"/></marker></defs>
+<text x="58" y="29" text-anchor="start" font-size="19" fill="#57534e" font-weight="700">阶段</text>
+<text x="307" y="29" text-anchor="start" font-size="19" fill="#57534e" font-weight="700">驱动压力</text>
+<text x="609" y="29" text-anchor="start" font-size="19" fill="#57534e" font-weight="700">工程后果</text>
+<path d="M14 41 L887 41" fill="none" stroke="#1c1917" stroke-width="2.2"/>
+<path d="M24 86 L24 519" fill="none" stroke="#57534e" stroke-width="2.2"/>
+<circle cx="24" cy="87" r="14" fill="#9a3f12"/>
+<text x="24" y="94" text-anchor="middle" font-size="19" fill="#ffffff" font-weight="700">1</text>
+<text x="58" y="66" text-anchor="start" font-size="19" fill="#9a3f12" font-weight="700">可行性验证</text>
+<text x="58" y="88" text-anchor="start" font-size="18" fill="#9a3f12" font-weight="700">3 月</text>
+<text x="58" y="110" text-anchor="start" font-size="17" fill="#57534e">会议中的一次探针实验</text>
+<text x="307" y="88" text-anchor="start" font-size="19" fill="#1c1917">视觉语言能力达到可用水平</text>
+<text x="581" y="94" text-anchor="middle" font-size="20" fill="#9a3f12">→</text>
+<text x="609" y="88" text-anchor="start" font-size="19" fill="#1c1917">正式启动系统构建</text>
+<circle cx="24" cy="157" r="14" fill="#9a3f12"/>
+<text x="24" y="164" text-anchor="middle" font-size="19" fill="#ffffff" font-weight="700">2</text>
+<text x="58" y="136" text-anchor="start" font-size="19" fill="#9a3f12" font-weight="700">PowerPoint</text>
+<text x="58" y="158" text-anchor="start" font-size="18" fill="#9a3f12" font-weight="700">3 月—4 月</text>
+<text x="58" y="180" text-anchor="start" font-size="17" fill="#57534e">首个支持格式</text>
+<text x="307" y="158" text-anchor="start" font-size="19" fill="#1c1917">同事提供真实课程幻灯片</text>
+<text x="581" y="164" text-anchor="middle" font-size="20" fill="#9a3f12">→</text>
+<text x="609" y="158" text-anchor="start" font-size="19" fill="#1c1917">建成首条真实修复流水线</text>
+<circle cx="24" cy="227" r="14" fill="#9a3f12"/>
+<text x="24" y="234" text-anchor="middle" font-size="19" fill="#ffffff" font-weight="700">3</text>
+<text x="58" y="206" text-anchor="start" font-size="19" fill="#9a3f12" font-weight="700">格式扩展</text>
+<text x="58" y="228" text-anchor="start" font-size="18" fill="#9a3f12" font-weight="700">4 月</text>
+<text x="58" y="250" text-anchor="start" font-size="17" fill="#57534e">Word · Excel · PDF</text>
+<text x="307" y="218" text-anchor="start" font-size="19" fill="#1c1917">新格式打破了</text>
+<text x="307" y="241" text-anchor="start" font-size="19" fill="#1c1917">“一刀切”的通用假设</text>
+<text x="581" y="234" text-anchor="middle" font-size="20" fill="#9a3f12">→</text>
+<text x="609" y="234" text-anchor="start" font-size="19" fill="#1c1917">架构按格式分化演进</text>
+<circle cx="24" cy="297" r="14" fill="#9a3f12"/>
+<text x="24" y="304" text-anchor="middle" font-size="19" fill="#ffffff" font-weight="700">4</text>
+<text x="58" y="276" text-anchor="start" font-size="19" fill="#9a3f12" font-weight="700">SaaS 化部署</text>
+<text x="58" y="298" text-anchor="start" font-size="18" fill="#9a3f12" font-weight="700">4 月</text>
+<text x="58" y="320" text-anchor="start" font-size="17" fill="#57534e">线上服务形态</text>
+<text x="307" y="298" text-anchor="start" font-size="19" fill="#1c1917">真实用户提交真实文档</text>
+<text x="581" y="304" text-anchor="middle" font-size="20" fill="#9a3f12">→</text>
+<text x="609" y="288" text-anchor="start" font-size="19" fill="#1c1917">引入鉴权、配额、成本与安全控制，</text>
+<text x="609" y="311" text-anchor="start" font-size="19" fill="#1c1917">并暴露首批保真度边界</text>
+<circle cx="24" cy="367" r="14" fill="#9a3f12"/>
+<text x="24" y="374" text-anchor="middle" font-size="19" fill="#ffffff" font-weight="700">5</text>
+<text x="58" y="346" text-anchor="start" font-size="19" fill="#9a3f12" font-weight="700">标准对齐</text>
+<text x="58" y="368" text-anchor="start" font-size="18" fill="#9a3f12" font-weight="700">4 月—5 月</text>
+<text x="58" y="390" text-anchor="start" font-size="17" fill="#57534e">站得住脚的合规声明</text>
+<text x="307" y="358" text-anchor="start" font-size="19" fill="#1c1917">需要给出经得起检验的</text>
+<text x="307" y="381" text-anchor="start" font-size="19" fill="#1c1917">无障碍合规主张</text>
+<text x="581" y="374" text-anchor="middle" font-size="20" fill="#9a3f12">→</text>
+<text x="609" y="374" text-anchor="start" font-size="19" fill="#1c1917">建立以标准为依据的验证体系</text>
+<circle cx="24" cy="437" r="14" fill="#9a3f12"/>
+<text x="24" y="444" text-anchor="middle" font-size="19" fill="#ffffff" font-weight="700">6</text>
+<text x="58" y="416" text-anchor="start" font-size="19" fill="#9a3f12" font-weight="700">生产加固</text>
+<text x="58" y="438" text-anchor="start" font-size="18" fill="#9a3f12" font-weight="700">5 月—6 月</text>
+<text x="58" y="460" text-anchor="start" font-size="17" fill="#57534e">结构性工程投入</text>
+<text x="307" y="438" text-anchor="start" font-size="19" fill="#1c1917">腾出窗口推进结构性治理</text>
+<text x="581" y="444" text-anchor="middle" font-size="20" fill="#9a3f12">→</text>
+<text x="609" y="438" text-anchor="start" font-size="19" fill="#1c1917">沉淀模型、测试、门禁与溯源机制</text>
+<circle cx="24" cy="518" r="14" fill="#9a3f12"/>
+<text x="24" y="525" text-anchor="middle" font-size="19" fill="#ffffff" font-weight="700">7</text>
+<text x="58" y="492" text-anchor="start" font-size="19" fill="#9a3f12" font-weight="700">部署、迭代与优化</text>
+<text x="58" y="516" text-anchor="start" font-size="18" fill="#9a3f12" font-weight="700">7 月—10 月</text>
+<text x="58" y="540" text-anchor="start" font-size="17" fill="#57534e">运维已上线系统</text>
+<text x="307" y="502" text-anchor="start" font-size="19" fill="#1c1917">生产运行暴露出性能、成本、</text>
+<text x="307" y="526" text-anchor="start" font-size="19" fill="#1c1917">可靠性与架构层面的瓶颈</text>
+<text x="581" y="525" text-anchor="middle" font-size="20" fill="#9a3f12">→</text>
+<text x="609" y="502" text-anchor="start" font-size="19" fill="#1c1917">持续开展测量、重构设计、</text>
+<text x="609" y="526" text-anchor="start" font-size="19" fill="#1c1917">性能优化与平台迁移</text>
+</svg>

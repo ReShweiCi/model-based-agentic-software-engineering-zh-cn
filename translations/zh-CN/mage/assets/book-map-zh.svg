@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Localized Chinese SVG (label: book-map). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 1038" width="920" height="1038"
+     role="group" aria-labelledby="bmTitle bmDesc"
+     font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="bmTitle">全书论证的三重推进——工程问题、嵌套其中的软件工程案例，以及由此确立的理论与启示</title>
+  <desc id="bmDesc">全书论证从前言提出的核心问题出发，经第 1 章界定新的工程问题，进入第 2 至 5 章的软件工程案例，再抽象出第 6 章的理论与第 7 章的职业启示，最终在结语回到责任本身。底部虚线分支指向附录 A（工程蓝图）与附录 B（践行 MAGE）。</desc>
+
+  <defs>
+    <marker id="bm-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1c1917"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="920" height="1038" fill="#fdfcf9"/>
+
+  <g transform="translate(192 0)">
+  <!-- 软件工程案例阴影区域（嵌套第 2–5 章） -->
+  <rect x="12" y="238" width="512" height="412" rx="10" fill="#eef2f6"/>
+
+  <!-- 顶部主线提示 -->
+  <text x="268" y="30" text-anchor="middle" font-size="17" fill="#57534e"
+        letter-spacing="0.04em">问题&#8201;&#8594;&#8201;实践案例&#8201;&#8594;&#8201;理论&#8201;&#8594;&#8201;启示&#8201;&#8594;&#8201;回答</text>
+
+  <!-- 前言 -->
+  <rect id="preface" x="24" y="48" width="488" height="84" rx="8" fill="#f4efe6" stroke="#1c1917" stroke-width="2.2"/>
+  <text x="268" y="80" text-anchor="middle" font-size="20" font-weight="700" fill="#1c1917">前言</text>
+  <text x="268" y="108" text-anchor="middle" font-size="17.5" fill="#1c1917">“如何安全地向商品化智能授予自主权？”</text>
+  <line x1="268" y1="132" x2="268" y2="162" stroke="#1c1917" stroke-width="2.2" marker-end="url(#bm-ah)"/>
+
+  <!-- 第 1 章 -->
+  <rect id="part-1" x="24" y="162" width="488" height="56" rx="8" fill="#f6f4ef" stroke="#1c1917" stroke-width="2.2"/>
+  <text x="268" y="187" text-anchor="middle" font-size="18.5" font-weight="700" fill="#1c1917">第 1 章 · 新的工程问题</text>
+  <text x="268" y="208" text-anchor="middle" font-size="16" fill="#57534e">经济学格局的改变</text>
+  <line x1="268" y1="218" x2="268" y2="304" stroke="#1c1917" stroke-width="2.2" marker-end="url(#bm-ah)"/>
+  <rect x="30" y="246" width="428" height="44" rx="4" fill="#eef2f6"/>
+  <text x="36" y="264" text-anchor="start" font-size="17" font-weight="700" letter-spacing="0.06em" fill="#2f5169">软件工程案例研究</text>
+  <text x="36" y="285" text-anchor="start" font-size="15.5" fill="#57534e">机制 · 实践 · 证据</text>
+
+  <!-- 第 2 章 — 建模 -->
+  <rect id="part-2" x="24" y="304" width="488" height="56" rx="8" fill="#e3f0e7" stroke="#1f7a4d" stroke-width="2.4"/>
+  <text x="268" y="329" text-anchor="middle" font-size="19.5" font-weight="700" fill="#1c1917">第 2 章 · 建模</text>
+  <text x="268" y="350" text-anchor="middle" font-size="16" fill="#1f7a4d">使知识与意图显式化</text>
+  <line x1="268" y1="360" x2="268" y2="376" stroke="#1c1917" stroke-width="2.2" marker-end="url(#bm-ah)"/>
+
+  <!-- 第 3 章 — 对齐 -->
+  <rect id="part-3" x="24" y="376" width="488" height="56" rx="8" fill="#faf1e6" stroke="#9a3f12" stroke-width="2.4"/>
+  <text x="268" y="401" text-anchor="middle" font-size="19.5" font-weight="700" fill="#1c1917">第 3 章 · 对齐</text>
+  <text x="268" y="422" text-anchor="middle" font-size="16" fill="#9a3f12">强制执行选定的工程义务</text>
+  <line x1="268" y1="432" x2="268" y2="464" stroke="#1c1917" stroke-width="2.2" marker-end="url(#bm-ah)"/>
+  <line x1="100" y1="448" x2="236" y2="448" stroke="#cec8bd" stroke-width="1"/>
+  <line x1="300" y1="448" x2="436" y2="448" stroke="#cec8bd" stroke-width="1"/>
+
+  <!-- 第 4 章 — 动态运转中的 MAGE -->
+  <rect id="part-4" x="24" y="464" width="488" height="84" rx="8" fill="#f4efe6" stroke="#1c1917" stroke-width="2.4"/>
+  <text x="268" y="499" text-anchor="middle" font-size="19.5" font-weight="700" fill="#1c1917">第 4 章 · 运转中的 MAGE</text>
+  <text x="268" y="526" text-anchor="middle" font-size="16.5" font-weight="600" fill="#1c1917">建模 · 对齐 · 执行 · 转化</text>
+  <line x1="268" y1="548" x2="268" y2="564" stroke="#1c1917" stroke-width="2.2" marker-end="url(#bm-ah)"/>
+
+  <!-- 第 5 章 — 智能体软件工厂 -->
+  <rect id="part-5" x="24" y="564" width="488" height="56" rx="8" fill="#e7edf3" stroke="#2f5169" stroke-width="2.4"/>
+  <text x="268" y="589" text-anchor="middle" font-size="18.5" font-weight="700" fill="#1c1917">第 5 章 · 智能体软件工厂</text>
+  <text x="268" y="610" text-anchor="middle" font-size="15.5" font-weight="600" fill="#2f5169">深度案例 · 工业界变体 · 生产系统</text>
+
+  <!-- 离开案例区 -->
+  <line x1="268" y1="620" x2="268" y2="682" stroke="#1c1917" stroke-width="2.2" marker-end="url(#bm-ah)"/>
+  <text x="284" y="672" text-anchor="start" font-size="16" fill="#57534e">从工厂实践中提炼抽象</text>
+
+  <!-- 第 6 章 — 理论 -->
+  <rect id="part-6" x="24" y="682" width="488" height="56" rx="8" fill="#efeaf4" stroke="#5b4a72" stroke-width="2.4"/>
+  <text x="268" y="707" text-anchor="middle" font-size="19.5" font-weight="700" fill="#1c1917">第 6 章 · 理论</text>
+  <text x="268" y="728" text-anchor="middle" font-size="16" fill="#5b4a72">动力学 · 经济学 · 预测 · 适用条件</text>
+  <line x1="268" y1="738" x2="268" y2="754" stroke="#1c1917" stroke-width="2.2" marker-end="url(#bm-ah)"/>
+
+  <!-- 第 7 章 — 职业 -->
+  <rect id="part-7" x="24" y="754" width="488" height="56" rx="8" fill="#e8e0f2" stroke="#4a3d5e" stroke-width="2.4"/>
+  <text x="268" y="779" text-anchor="middle" font-size="19.5" font-weight="700" fill="#1c1917">第 7 章 · 职业与演进</text>
+  <text x="268" y="800" text-anchor="middle" font-size="16" fill="#4a3d5e">软件工作 · 广义工程 · 责任</text>
+  <line x1="268" y1="810" x2="268" y2="826" stroke="#1c1917" stroke-width="2.2" marker-end="url(#bm-ah)"/>
+
+  <!-- 结语 -->
+  <rect id="conclusion" x="24" y="826" width="488" height="86" rx="8" fill="#f4efe6" stroke="#1c1917" stroke-width="2.4"/>
+  <text x="268" y="856" text-anchor="middle" font-size="20" font-weight="700" fill="#1c1917">结语</text>
+  <text x="268" y="880" text-anchor="middle" font-size="15.5" fill="#9a3f12">回到最初的问题，并追问其反面：</text>
+  <text x="268" y="902" text-anchor="middle" font-size="16.5" fill="#1c1917">“什么是不可委派的？”—— <tspan font-weight="700" fill="#9a3f12">责任</tspan></text>
+
+  <!-- 参考附录 -->
+  <path d="M268,912 V934 H140 V952 M268,934 H396 V952" fill="none" stroke="#57534e" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect id="appendix-a" x="24" y="952" width="232" height="64" rx="6" fill="white" stroke="#57534e" stroke-width="1.5"/>
+  <text x="140" y="977" text-anchor="middle" font-size="17.5" font-weight="600" fill="#1c1917">附录 A</text>
+  <text x="140" y="1001" text-anchor="middle" font-size="17.5" fill="#1c1917">工程蓝图</text>
+  <rect id="appendix-b" x="280" y="952" width="232" height="64" rx="6" fill="white" stroke="#57534e" stroke-width="1.5"/>
+  <text x="396" y="977" text-anchor="middle" font-size="17.5" font-weight="600" fill="#1c1917">附录 B</text>
+  <text x="396" y="1001" text-anchor="middle" font-size="17.5" fill="#1c1917">践行 MAGE</text>
+  </g>
+</svg>

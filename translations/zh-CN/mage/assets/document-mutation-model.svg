@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.5 235" width="247.5" height="235" role="img" aria-labelledby="dmTitle dmDesc" font-family="&quot;Source Sans 3&quot;, sans-serif"><ns0:title xmlns:ns0="http://www.w3.org/2000/svg" id="dmTitle">DocAble's document-mutation model: mutation reaches formats through a sanctioned seam</ns0:title>
+  <ns0:desc xmlns:ns0="http://www.w3.org/2000/svg" id="dmDesc">Remediation logic operates through a structured document model, the sanctioned seam.
+    That model is implemented by a format-specific implementation, which reaches the concrete formats
+    DOCX, PPTX, XLSX, and PDF. The structured document model marks where mutation is supposed to occur; it
+    does not by itself prevent code from bypassing the seam.</ns0:desc>
+
+  <defs><marker id="a2f5169" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#2f5169"/></marker><marker id="a57534e" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#57534e"/></marker><marker id="a086438" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#086438"/></marker><marker id="a1c1917" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#1c1917"/></marker></defs>
+<text x="123.75" y="12.0" text-anchor="middle" font-size="9" fill="#1c1917" font-weight="700">DOCUMENT-MUTATION MODEL</text>
+<rect x="53.75" y="24" width="140" height="27" rx="4" fill="#e7edf3" stroke="#2f5169" stroke-width="0.8"/>
+<text x="123.75" y="41.0" text-anchor="middle" font-size="10" fill="#1c1917" font-weight="700">remediation logic</text>
+<path d="M123.75,51 L123.75,76" fill="none" stroke="#2f5169" stroke-width=".8" marker-end="url(#a2f5169)"/>
+<text x="129" y="66.0" text-anchor="start" font-size="9" fill="#1c1917" font-style="italic">operates through</text>
+<rect x="30" y="77" width="187.5" height="38" rx="4" fill="#e7edf3" stroke="#2f5169" stroke-width="1.25"/>
+<text x="123.75" y="92.0" text-anchor="middle" font-size="10" fill="#1c1917" font-weight="700">structured document model</text>
+<text x="123.75" y="106.0" text-anchor="middle" font-size="9" fill="#1c1917" font-style="italic">the sanctioned seam</text>
+<path d="M123.75,115 L123.75,141" fill="none" stroke="#2f5169" stroke-width=".8" marker-end="url(#a2f5169)"/>
+<text x="129" y="131.0" text-anchor="start" font-size="9" fill="#1c1917" font-style="italic">implemented by</text>
+<rect x="36" y="142" width="175.5" height="29" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+<text x="123.75" y="160.0" text-anchor="middle" font-size="10" fill="#1c1917">format-specific implementation</text>
+<path d="M123.75,171 L123.75,182 L33.75,182 L33.75,194" fill="none" stroke="#57534e" stroke-width=".8" marker-end="url(#a57534e)"/>
+<rect x="7" y="194" width="53.5" height="24" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+<text x="33.75" y="210.0" text-anchor="middle" font-size="10" fill="#1c1917">DOCX</text>
+<path d="M123.75,171 L123.75,182 L93.75,182 L93.75,194" fill="none" stroke="#57534e" stroke-width=".8" marker-end="url(#a57534e)"/>
+<rect x="67" y="194" width="53.5" height="24" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+<text x="93.75" y="210.0" text-anchor="middle" font-size="10" fill="#1c1917">PPTX</text>
+<path d="M123.75,171 L123.75,182 L153.75,182 L153.75,194" fill="none" stroke="#57534e" stroke-width=".8" marker-end="url(#a57534e)"/>
+<rect x="127" y="194" width="53.5" height="24" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+<text x="153.75" y="210.0" text-anchor="middle" font-size="10" fill="#1c1917">XLSX</text>
+<path d="M123.75,171 L123.75,182 L213.75,182 L213.75,194" fill="none" stroke="#57534e" stroke-width=".8" marker-end="url(#a57534e)"/>
+<rect x="187" y="194" width="53.5" height="24" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+<text x="213.75" y="210.0" text-anchor="middle" font-size="10" fill="#1c1917">PDF</text>
+<text x="123.75" y="232.0" text-anchor="middle" font-size="9" fill="#1c1917" font-style="italic">The model marks where mutation is supposed to occur.</text>
+</svg>

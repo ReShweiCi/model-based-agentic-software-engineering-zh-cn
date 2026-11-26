@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446 298.4" width="446" height="298.4" role="img" aria-labelledby="title desc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<title id="title">模型感知的变更影响分析</title>
+<desc id="desc">拟议提高工作进程并发度，经由执行模型、内存模型与延迟模型映射到合法顺序、峰值内存与延迟预算三项约束义务，进而由正确性测试、内存分析或测量以及性能测试提供准入决策所需的证据。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<rect x="156" y="1" width="202" height="35" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="257" y="15" text-anchor="middle" font-size="9.5" font-weight="700">拟议变更</text>
+<text x="257" y="28" text-anchor="middle" font-size="8.5">提高工作进程并发度</text>
+<path d="M257 36 L257 49.6" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<rect x="70" y="49.6" width="374" height="66" rx="6" fill="#f2f2f2" stroke="#111" stroke-width=".7"/>
+<rect x="76" y="58.6" width="112" height="32" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="132" y="72.6" text-anchor="middle" font-size="9" font-weight="700">执行模型</text>
+<text x="132" y="84.6" text-anchor="middle" font-size="8">（工作与依赖）</text>
+<rect x="201" y="58.6" width="112" height="32" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="257" y="72.6" text-anchor="middle" font-size="9" font-weight="700">内存模型</text>
+<text x="257" y="84.6" text-anchor="middle" font-size="8">（资源上界）</text>
+<rect x="326" y="58.6" width="112" height="32" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="382" y="72.6" text-anchor="middle" font-size="9" font-weight="700">延迟模型</text>
+<text x="382" y="84.6" text-anchor="middle" font-size="8">（响应时间）</text>
+<text x="257" y="106.6" text-anchor="middle" font-size="8.5" font-style="italic">关联模型：并发度受限于内存；延迟取决于工作量与内存。</text>
+<text x="4" y="76.6" text-anchor="start" font-size="8.5" font-weight="700">受影响的</text>
+<text x="4" y="88.6" text-anchor="start" font-size="8.5" font-weight="700">模型</text>
+<text x="4" y="149.2" text-anchor="start" font-size="8.5" font-weight="700">可能受影响</text>
+<text x="4" y="161.2" text-anchor="start" font-size="8.5" font-weight="700">的约束义务</text>
+<text x="4" y="211.8" text-anchor="start" font-size="8.5" font-weight="700">所需证据</text>
+<text x="4" y="224.8" text-anchor="start" font-size="8.5">（评估）</text>
+<path d="M257 115.6 L257 129.2" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<rect x="70" y="129.2" width="374" height="48" rx="6" fill="#f2f2f2" stroke="#111" stroke-width=".7"/>
+<rect x="76" y="136.2" width="112" height="33" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="132" y="150.2" text-anchor="middle" font-size="9" font-weight="700">合法执行顺序</text>
+<text x="132" y="163.2" text-anchor="middle" font-size="8">（不违反依赖）</text>
+<rect x="201" y="136.2" width="112" height="33" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="257" y="150.2" text-anchor="middle" font-size="9" font-weight="700">峰值内存</text>
+<text x="257" y="163.2" text-anchor="middle" font-size="8">（在预算内）</text>
+<rect x="326" y="136.2" width="112" height="33" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="382" y="150.2" text-anchor="middle" font-size="9" font-weight="700">延迟预算</text>
+<text x="382" y="163.2" text-anchor="middle" font-size="8">（在目标内）</text>
+<path d="M257 177.2 L257 190.8" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<rect x="70" y="190.8" width="374" height="54" rx="6" fill="#f2f2f2" stroke="#111" stroke-width=".7"/>
+<rect x="76" y="198.8" width="112" height="38" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="201" y="198.8" width="112" height="38" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="326" y="198.8" width="112" height="38" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="132" y="213.8" text-anchor="middle" font-size="9" font-weight="700">正确性测试</text>
+<text x="132" y="227.8" text-anchor="middle" font-size="8">（顺序与结果）</text>
+<text x="257" y="213.8" text-anchor="middle" font-size="9" font-weight="700">内存分析或测量</text>
+<text x="257" y="227.8" text-anchor="middle" font-size="8">（峰值 RSS）</text>
+<text x="382" y="213.8" text-anchor="middle" font-size="9" font-weight="700">性能测试</text>
+<text x="382" y="227.8" text-anchor="middle" font-size="8">（端到端延迟）</text>
+<path d="M257 244.8 L257 258.4" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<rect x="78" y="258.4" width="358" height="37" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="257" y="273.4" text-anchor="middle" font-size="9.5" font-weight="700">准入决策</text>
+<text x="257" y="287.4" text-anchor="middle" font-size="8.5" font-style="italic">依据所需证据评估受影响的约束义务</text>
+</svg>

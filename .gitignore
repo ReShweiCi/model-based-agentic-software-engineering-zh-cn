@@ -177,3 +177,7 @@ book/_contract/
 
 # Local rendered evidence for the Chapters 2–4 figure-fill audit
 /scratchpad/figure-fill-audit-20261118/
+
+# Unofficial Chinese translation generated PDFs (published via GitHub Releases)
+translations/zh-CN/**/*.pdf
+dist/

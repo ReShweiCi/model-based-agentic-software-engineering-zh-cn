@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="782" height="786" viewBox="0 70 782 786" role="img" aria-labelledby="title desc">
+<title id="title">DocAble 修复计算的类型化结构模型</title>
+<desc id="desc">示例性的修复计算节点，区分只读、类型化补丁与直接编辑行为；实线表示数据流，虚线表示控制依赖；单独标出了应用接缝。</desc>
+<defs>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#282828" /></marker>
+  <marker id="brown-arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#83472b" /></marker>
+</defs>
+<style>text {font-family:'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif;fill:#111;font-size:18px} .edge {fill:none;stroke:#222;stroke-width:1.2;marker-end:url(#arrow)} .leader {fill:none;stroke:#555;stroke-width:.8}</style>
+<rect x="0" y="70" width="782" height="786" fill="white" />
+<text x="34" y="95" style="font-size:21px;font-style:italic;">DocAble 修复计算的类型化结构模型。</text>
+<ellipse cx="384.5" cy="155.0" rx="95.5" ry="29.0" fill="white" stroke="#333" stroke-width="1.2" />
+<text x="384.5" y="150" style="font-size:19px;font-weight:bold;" text-anchor="middle">分类</text>
+<text x="384.5" y="172" style="font-size:17px;" text-anchor="middle">（格式、修复需求）</text>
+<path d="M386,184 V211 Q386,223 374,223 H286 Q274,223 274,236 V252" class="edge" stroke-dasharray="9 6" style="marker-end:url(#arrow)" />
+<path d="M386,184 V211 Q386,223 398,223 H490 Q502,223 502,236 V252" class="edge" stroke-dasharray="9 6" style="marker-end:url(#arrow)" />
+<path d="M266,256.0 Q274,252.0 282,256.0 L361.0,298 Q371.0,306 361.0,314 L282,356.0 Q274,360.0 266,356.0 L187.0,314 Q177.0,306 187.0,298 Z" fill="#ece0ef" stroke="#333" stroke-width="1.2" />
+<path d="M494,256.0 Q502,252.0 510,256.0 L589.0,298 Q599.0,306 589.0,314 L510,356.0 Q502,360.0 494,356.0 L415.0,314 Q405.0,306 415.0,298 Z" fill="#ece0ef" stroke="#333" stroke-width="1.2" />
+<text x="274" y="298" style="font-size:19px;font-weight:bold;" text-anchor="middle">修复结构</text>
+<text x="274" y="322" style="font-size:16.5px;" text-anchor="middle">（类型化补丁）</text>
+<text x="502" y="298" style="font-size:19px;font-weight:bold;" text-anchor="middle">修复元数据</text>
+<text x="502" y="322" style="font-size:16.5px;" text-anchor="middle">（类型化补丁）</text>
+<path d="M274,358 V372 Q274,384 286,384 H331 Q343,384 343,396 V412" class="edge" style="marker-end:url(#arrow)" />
+<path d="M502,358 V372 Q502,384 490,384 H446 Q434,384 434,396 V412" class="edge" style="marker-end:url(#arrow)" />
+<rect x="281" y="414" width="211" height="56" rx="4" fill="#d5e5f4" stroke="#333" stroke-width="1.2" />
+<text x="386.5" y="438" style="font-size:19px;font-weight:bold;" text-anchor="middle">应用补丁</text>
+<text x="386.5" y="460" style="font-size:17px;" text-anchor="middle">（直接编辑）</text>
+<path d="M386.5,470 V507" class="edge" style="marker-end:url(#arrow)" />
+<ellipse cx="386.5" cy="539.5" rx="105.5" ry="30.5" fill="white" stroke="#333" stroke-width="1.2" />
+<text x="386.5" y="535" style="font-size:19px;font-weight:bold;" text-anchor="middle">检查替代文本</text>
+<text x="386.5" y="557" style="font-size:17px;" text-anchor="middle">（只读）</text>
+<text x="42" y="149" style="font-size:18px;font-weight:bold;">计算节点：</text>
+<text x="42" y="171" style="font-size:17px;">已注册的修复步骤</text>
+<text x="42" y="193" style="font-size:17px;">（如分类、修复、</text>
+<text x="42" y="215" style="font-size:17px;">检查）。</text>
+<path d="M204,173 L282,156" class="leader" />
+<text x="578" y="168" style="font-size:18px;font-weight:bold;">控制门控：</text>
+<text x="578" y="190" style="font-size:17px;">分类结果决定</text>
+<text x="578" y="212" style="font-size:17px;">执行哪些修复。</text>
+<path d="M566,182 Q542,206 518,250" class="leader" />
+<text x="42" y="368" style="font-size:18px;font-weight:bold;">数据流：</text>
+<text x="42" y="390" style="font-size:17px;">产出供另一计算</text>
+<text x="42" y="412" style="font-size:17px;">使用的信息。</text>
+<path d="M184,398 L274,425" class="leader" />
+<text x="590" y="480" style="font-size:18px;font-weight:bold;">应用接缝：</text>
+<text x="590" y="502" style="font-size:17px;">将补丁实际应用</text>
+<text x="590" y="524" style="font-size:17px;">到文档的边界。</text>
+<path d="M579,499 L498,460" class="leader" />
+<text x="600" y="327" style="font-size:17.5px;font-weight:bold;">变更行为：</text>
+<text x="600" y="351" style="font-size:16.5px;">• 类型化补丁 ——</text>
+<text x="616" y="371" style="font-size:16.5px;">产出补丁描述</text>
+<text x="600" y="395" style="font-size:16.5px;">• 直接编辑 ——</text>
+<text x="616" y="415" style="font-size:16.5px;">直接修改文档</text>
+<text x="600" y="439" style="font-size:16.5px;">• 只读 ——</text>
+<text x="616" y="459" style="font-size:16.5px;">不修改文档</text>
+<rect x="25" y="584" width="734" height="168" rx="4" fill="#f6f7fb" stroke="#333" stroke-width="1.2" />
+<text x="46" y="608" style="font-size:18px;font-weight:bold;">节点（计算）类型</text>
+<text x="400" y="608" style="font-size:18px;font-weight:bold;">依赖（边）类型</text>
+<path d="M376,608 V735" stroke="#b9bbc4" stroke-width="1.2" />
+<rect x="47" y="623" width="42" height="23" rx="4" fill="#d5e5f4" stroke="#333" stroke-width="1.2" />
+<text x="101" y="640" style="font-size:17px;">= 直接编辑（修改文档）</text>
+<path d="M64.775,655.1125 Q68,653.5 71.225,655.1125 L86.275,665.775 Q91.5,669 86.275,672.225 L71.225,682.8875 Q68,684.5 64.775,682.8875 L49.725,672.225 Q44.5,669 49.725,665.775 Z" fill="#ece0ef" stroke="#333" stroke-width="1.2" />
+<text x="101" y="675" style="font-size:17px;">= 类型化补丁（产出补丁）</text>
+<ellipse cx="68" cy="710" rx="21" ry="11.5" fill="white" stroke="#333" stroke-width="1.2" />
+<text x="101" y="715" style="font-size:17px;">= 只读（不修改文档）</text>
+<path d="M401,633 H445" class="edge" style="marker-end:url(#arrow)" />
+<text x="452" y="640" style="font-size:17px;">= 数据流（传递载荷）</text>
+<path d="M401,668 H445" class="edge" stroke-dasharray="9 6" style="marker-end:url(#arrow)" />
+<text x="452" y="675" style="font-size:17px;">= 控制门控</text>
+<text x="452" y="695" style="font-size:16px;">（条件成立时才执行）</text>
+<rect x="12" y="762.0" width="758" height="85" rx="4" fill="#fffbed" stroke="#333" stroke-width="1.2" />
+<text xml:space="preserve" x="390" y="789.0" style="font-size:20px;" text-anchor="middle"><tspan font-weight="bold">147</tspan><tspan> 个已注册计算；</tspan><tspan font-weight="bold">63</tspan><tspan> 条类型化组合关系（2026 年 11 月）。</tspan></text>
+<text text-anchor="middle" x="390" y="816.0" style="font-size:18px;font-style:italic;">该模型保留了计算标识、变更行为、应用接缝与声明的依赖关系——</text>
+<text text-anchor="middle" x="390" y="838.0" style="font-size:18px;font-style:italic;">而不包含实现每项计算的具体代码。</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 540" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" role="img">
+  <title>左侧的模型与性质在走向 V 形底部的实现体时逐步精确；右侧的证据在相应作用域上印证这些性质</title>
+  <!-- Umber Monograph palette: ink #1c1917, paper #fdfcf9, accent #9a3f12, rule #e4e0d8, panel #f6f4ef, subordinate #57534e -->
+  <rect x="0" y="0" width="820" height="540" fill="#fdfcf9"/>
+
+  <!-- column headers -->
+  <text x="140" y="50" text-anchor="middle" font-size="14" letter-spacing="1.5" fill="#57534e">模型与性质</text>
+  <text x="690" y="50" text-anchor="middle" font-size="14" letter-spacing="1.5" fill="#57534e">证据</text>
+
+  <!-- the two legs of the V: no arrowheads, no lifecycle ornament -->
+  <line x1="255" y1="95" x2="410" y2="452" stroke="#9a3f12" stroke-width="2.2"/>
+  <line x1="565" y1="95" x2="410" y2="452" stroke="#9a3f12" stroke-width="2.2"/>
+
+  <!-- LEFT: models (primary) with subordinate example properties -->
+  <text x="238" y="100" text-anchor="end" font-size="17" font-weight="600" fill="#1c1917">需求</text>
+  <text x="238" y="122" text-anchor="end" font-size="14" fill="#57534e">现实世界结果</text>
+
+  <text x="238" y="176" text-anchor="end" font-size="17" font-weight="600" fill="#1c1917">规约</text>
+  <text x="238" y="198" text-anchor="end" font-size="14" fill="#57534e">机器义务</text>
+  <text x="238" y="218" text-anchor="end" font-size="14" fill="#57534e">环境假设</text>
+
+  <text x="238" y="266" text-anchor="end" font-size="17" font-weight="600" fill="#1c1917">架构 + 设计</text>
+  <text x="238" y="288" text-anchor="end" font-size="14" fill="#57534e">逐步精确的</text>
+  <text x="238" y="307" text-anchor="end" font-size="14" fill="#57534e">工程模型</text>
+
+  <!-- the recursive middle: one wedge shown as illustrative nested models, no fixed number of levels -->
+  <rect x="58" y="318" width="180" height="28" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.1"/>
+  <text x="148" y="337" text-anchor="middle" font-size="14" fill="#1c1917">系统组织</text>
+  <rect x="82" y="354" width="156" height="26" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.1"/>
+  <text x="160" y="372" text-anchor="middle" font-size="14" fill="#1c1917">子系统</text>
+  <rect x="106" y="388" width="132" height="24" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.1"/>
+  <text x="172" y="405" text-anchor="middle" font-size="14" fill="#1c1917">机制</text>
+  <text x="172" y="428" text-anchor="middle" font-size="16" fill="#9a3f12">&#8942;</text>
+  <text x="238" y="446" text-anchor="end" font-size="14" fill="#57534e">层级数量不固定</text>
+
+  <!-- RIGHT: evidence (primary scope semantics) with subordinate conventional terms -->
+  <text x="582" y="100" text-anchor="start" font-size="17" font-weight="600" fill="#1c1917">世界层面证据</text>
+  <text x="582" y="122" text-anchor="start" font-size="14" fill="#57534e">“验收测试”</text>
+
+  <text x="582" y="176" text-anchor="start" font-size="17" font-weight="600" fill="#1c1917">边界层面证据</text>
+  <text x="582" y="198" text-anchor="start" font-size="14" fill="#57534e">“系统测试”</text>
+
+  <text x="582" y="268" text-anchor="start" font-size="17" font-weight="600" fill="#1c1917">组合层面证据</text>
+  <text x="582" y="290" text-anchor="start" font-size="14" fill="#57534e">“集成测试”</text>
+
+  <text x="582" y="372" text-anchor="start" font-size="17" font-weight="600" fill="#1c1917">局部证据</text>
+  <text x="582" y="394" text-anchor="start" font-size="14" fill="#57534e">“单元测试”</text>
+
+  <!-- the point of the V: the realized system -->
+  <text x="410" y="482" text-anchor="middle" font-size="16" font-weight="600" fill="#1c1917">实现体</text>
+  <text x="410" y="503" text-anchor="middle" font-size="14" fill="#57534e">代码实现</text>
+</svg>

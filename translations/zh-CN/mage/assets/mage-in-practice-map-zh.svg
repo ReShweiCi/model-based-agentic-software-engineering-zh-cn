@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="230" viewBox="0 0 440 230" role="img" aria-labelledby="title desc">
+<title id="title">实践中的 MAGE：第 4 章</title>
+<desc id="desc">四个分节面板环绕着由建模、实现与评估双向相连组成的紧凑三角形，未预设起点或固定顺序。</desc>
+<defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs>
+<rect x="1" y="1" width="212" height="116" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="11" y="20.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700" font-style="normal">§4.1 MAGE 的动态过程</text>
+<text x="11" y="43.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">主动对齐与被动对齐</text>
+<text x="11" y="63.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">建立对齐内核</text>
+<text x="11" y="83.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">在实现前、实现中与实现后建模</text>
+<rect x="227" y="1" width="212" height="116" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="237" y="20.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700" font-style="normal">§4.2 一个问题，多个模型</text>
+<text x="237" y="43.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">发现新的工程问题</text>
+<text x="237" y="63.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">构建相互关联的模型</text>
+<text x="237" y="83.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">从预测与测量中学习</text>
+<rect x="1" y="133" width="212" height="96" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="11" y="158.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700" font-style="normal">§4.3 存量系统工程</text>
+<text x="11" y="175.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">恢复潜隐模型</text>
+<text x="11" y="195.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">协调模型与代码实现</text>
+<text x="11" y="215.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">渐进引入强制执行</text>
+<rect x="227" y="133" width="212" height="96" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="237" y="158.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700" font-style="normal">§4.4 工程化改造工程环境</text>
+<text x="237" y="175.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">对工程工作建模</text>
+<text x="237" y="195.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">改进其执行方式</text>
+<text x="237" y="215.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="400" font-style="normal">评估并修订控制机制</text>
+<rect x="139" y="94" width="162" height="51" rx="10" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<path d="M200,111 L180,124" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M240,111 L260,124" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M199,133 L241,133" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="220" y="106.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="11.5" font-weight="700" font-style="normal">建模</text>
+<text x="169" y="136.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="11.5" font-weight="700" font-style="normal">评估</text>
+<text x="271" y="136.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="11.5" font-weight="700" font-style="normal">实现</text>
+</svg>

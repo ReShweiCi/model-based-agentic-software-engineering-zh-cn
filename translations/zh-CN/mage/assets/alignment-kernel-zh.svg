@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 592" width="940" height="592"
+     role="group" aria-labelledby="akTitle akDesc"
+     font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="akTitle">渐进扩展对齐内核</title>
+  <desc id="akDesc">左侧为四步流程：1 建立内核；2 主动对齐；3 逐步扩展；4 重新评估并迭代。右侧为平面同心圆图：内核 M1 位于中心，M2、M3、M4 逐层向外扩展，受治理面随时间增长，每个新模型都在内层模型的约束下准入。</desc>
+
+  <defs>
+    <marker id="ak-mut" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57534e"/>
+    </marker>
+    <marker id="ak-step" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#a8a29e"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="940" height="592" fill="#fdfcf9"/>
+
+  <g>
+    <circle cx="60" cy="84" r="16" fill="#e3f0e7" stroke="#1f7a4d" stroke-width="2"/>
+    <text x="60" y="91" text-anchor="middle" font-size="20" font-weight="700" fill="#155c38">1</text>
+    <text x="92" y="78" font-size="20" font-weight="700" fill="#1c1917">建立对齐内核</text>
+    <text x="92" y="102" font-size="18" fill="#1c1917">对系统变更期间必须持续受保护的</text>
+    <text x="92" y="124" font-size="18" fill="#1c1917">关键性质建模并设立控制机制</text>
+    <line x1="60" y1="106" x2="60" y2="182" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ak-step)"/>
+
+    <circle cx="60" cy="204" r="16" fill="#e3f0e7" stroke="#1f7a4d" stroke-width="2"/>
+    <text x="60" y="211" text-anchor="middle" font-size="20" font-weight="700" fill="#155c38">2</text>
+    <text x="92" y="198" font-size="20" font-weight="700" fill="#1c1917">主动对齐</text>
+    <text x="92" y="222" font-size="18" fill="#1c1917">借助模型推动系统变更，直至满足</text>
+    <text x="92" y="244" font-size="18" fill="#1c1917">对齐内核与所有既有模型的要求</text>
+    <line x1="60" y1="226" x2="60" y2="302" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ak-step)"/>
+
+    <circle cx="60" cy="324" r="16" fill="#e3f0e7" stroke="#1f7a4d" stroke-width="2"/>
+    <text x="60" y="331" text-anchor="middle" font-size="20" font-weight="700" fill="#155c38">3</text>
+    <text x="92" y="318" font-size="20" font-weight="700" fill="#1c1917">逐步扩展</text>
+    <text x="92" y="342" font-size="18" fill="#1c1917">在已确立约束的框架下引入后续</text>
+    <text x="92" y="364" font-size="18" fill="#1c1917">模型与控制机制</text>
+    <line x1="60" y1="346" x2="60" y2="422" stroke="#a8a29e" stroke-width="1.6" marker-end="url(#ak-step)"/>
+
+    <circle cx="60" cy="444" r="16" fill="#e3f0e7" stroke="#1f7a4d" stroke-width="2"/>
+    <text x="60" y="451" text-anchor="middle" font-size="20" font-weight="700" fill="#155c38">4</text>
+    <text x="92" y="438" font-size="20" font-weight="700" fill="#1c1917">重新评估并迭代</text>
+    <text x="92" y="462" font-size="18" fill="#1c1917">随着工程义务的变化，扩展或修订</text>
+    <text x="92" y="484" font-size="18" fill="#1c1917">对齐内核本身</text>
+  </g>
+
+  <circle cx="710" cy="268" r="185" fill="#f7faf8" stroke="#1f7a4d" stroke-width="1.6"/>
+  <circle cx="710" cy="268" r="142" fill="#eef5f0" stroke="#1f7a4d" stroke-width="1.6"/>
+  <circle cx="710" cy="268" r="99" fill="#e3f0e7" stroke="#1f7a4d" stroke-width="1.8"/>
+  <circle cx="710" cy="268" r="56" fill="#d5e9dd" stroke="#155c38" stroke-width="2.4"/>
+
+  <text x="710" y="262" text-anchor="middle" font-size="19" font-weight="700" fill="#155c38">内核</text>
+  <text x="710" y="288" text-anchor="middle" font-size="20" font-style="italic" fill="#1c1917">M<tspan font-size="15" dy="5">1</tspan></text>
+  <text x="756" y="216" text-anchor="middle" font-size="20" font-style="italic" fill="#155c38">M<tspan font-size="15" dy="5">2</tspan></text>
+  <text x="790" y="170" text-anchor="middle" font-size="20" font-style="italic" fill="#155c38">M<tspan font-size="15" dy="5">3</tspan></text>
+  <text x="818" y="134" text-anchor="middle" font-size="20" font-style="italic" fill="#155c38">M<tspan font-size="15" dy="5">4</tspan></text>
+
+  <text x="544" y="46" font-size="18" font-style="italic" fill="#57534e">受治理面随时间不断扩展</text>
+  <polyline points="840,52 878,52 878,187" fill="none" stroke="#57534e" stroke-width="1.4" stroke-dasharray="2 3" marker-end="url(#ak-mut)"/>
+  <text x="638" y="112" text-anchor="middle" font-size="20" fill="#1c1917">&#8230;</text>
+  <text x="710" y="504" text-anchor="middle" font-size="18" font-style="italic" fill="#57534e">每个新模型都在内层模型的</text>
+  <text x="710" y="528" text-anchor="middle" font-size="18" font-style="italic" fill="#57534e">约束条件之下准入</text>
+  <text x="700" y="570" text-anchor="middle" font-size="18" font-style="italic" fill="#57534e">主动对齐始终在受保护的区域内运行</text>
+</svg>

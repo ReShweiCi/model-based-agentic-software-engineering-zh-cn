@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1062" viewBox="0 0 440 354" role="img" aria-labelledby="title desc"><title id="title">具有并行派发与完工决策的受治理委派</title><desc id="desc">工单与组件及约束模型输入有界上下文选择。生命周期策略与已对账阶段状态输入派发决策：该指派是否获得授权？被拒绝的指派在修复或取得有效覆写前不得执行。获授权的智能体保存持久化成果，这些成果在完工时既接受检查，也接受独立校验。校验产出评审证据；完工决策判断约束义务是否已满足。中断或未解决的工作在重新派发前须先检查与对账。状态缺失并非已完成（DONE）的证据。</desc><defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="4.7" refY="2.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs><rect width="440" height="354" fill="white"/>
+<path d="M65,40 L65,55" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M160,20 L145,20 L145,72 L130,72" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M65,89 L65,105" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M130,123 L162,123" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M377.5,40 L377.5,48 L222,48 L222,95" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M282,123 L315,123" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="298.5" y="116" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">放行</text>
+<path d="M222,151 L222,175" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="245" y="166" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">拒绝</text>
+<path d="M377.5,141 L377.5,175" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="385" y="155" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">完成或</text>
+<text x="385" y="167" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">部分完成</text>
+<path d="M345,215 L345,226 L145,226 L145,195 L130,195" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M400,215 L400,238 L250,238 L250,253.07" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M65,215 L65,250" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="73" y="238" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">产出</text>
+<path d="M130,268 L162,268" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M282,268 L315,268" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="298.5" y="261" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">验收</text>
+<path d="M222,296 L222,315" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="228" y="309" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">未解决</text>
+<path d="M435,195 L440,195 L440,332 L285,332" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="367" y="325" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">已中断</text>
+<rect x="0" y="0" width="130" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="65.0" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">工单</text>
+<text x="65.0" y="29.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">范围 + 声明阶段</text>
+<rect x="160" y="0" width="125" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="222.5" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">组件与</text>
+<text x="222.5" y="29.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">约束模型</text>
+<rect x="315" y="0" width="125" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="377.5" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">生命周期策略与</text>
+<text x="377.5" y="29.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">已对账阶段状态</text>
+<rect x="0" y="55" width="130" height="34" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="65.0" y="69.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">有界上下文</text>
+<text x="65.0" y="81.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">选择</text>
+<text x="327" y="69" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">缺失不等于已完成。</text>
+<rect x="0" y="105" width="130" height="36" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="65.0" y="120.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">任务简报 +</text>
+<text x="65.0" y="132.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">选定上下文</text>
+<polygon points="222,95.0 282.0,123 222,151.0 162.0,123" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="222" y="120.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">是否派发？</text>
+<text x="222" y="132.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">是否获授权？</text>
+<rect x="315" y="105" width="120" height="36" rx="8" fill="#eaeaea" stroke="black" stroke-width="0.8"/>
+<text x="375.0" y="120.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">实现智能体</text>
+<text x="375.0" y="132.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">灵活推理</text>
+<rect x="160" y="175" width="125" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="222.5" y="186.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">拒绝指派</text>
+<text x="222.5" y="198.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">简报无效；或已完成</text>
+<text x="222.5" y="210.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">且无有效覆写</text>
+<rect x="315" y="175" width="120" height="40" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="375.0" y="192.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">持久化成果</text>
+<text x="375.0" y="204.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">提交 + 工件</text>
+<rect x="0" y="175" width="130" height="40" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="65.0" y="198.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">独立检查</text>
+<rect x="0" y="250" width="130" height="36" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="65.0" y="265.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">评审证据</text>
+<text x="65.0" y="277.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">检查与其他发现</text>
+<polygon points="222,240.0 282.0,268 222,296.0 162.0,268" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="222" y="265.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">是否完工？</text>
+<text x="222" y="277.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">义务是否满足？</text>
+<rect x="315" y="250" width="120" height="36" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="375.0" y="265.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">验收完工</text>
+<text x="375.0" y="277.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">更新阶段状态</text>
+<rect x="160" y="315" width="125" height="34" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="222.5" y="329.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">重新派发前</text>
+<text x="222.5" y="341.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">先检查与对账</text></svg>

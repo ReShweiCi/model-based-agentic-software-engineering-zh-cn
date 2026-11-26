@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="350" viewBox="0 0 560 350"
+     role="img" aria-labelledby="sensor-title sensor-description"
+     font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="12" fill="#171717">
+  <title id="sensor-title">组合三种模型以暴露测量数据丢失问题</title>
+  <desc id="sensor-description">两个传感器向设备本地存储中的共享缓冲区写入数据，再由无线电模块发送。每个传感器每秒采样一次，缓冲区容量为 3 条测量值，无线电每 5 秒发送一次。到达的测量值在有空位时存入，否则丢弃。发送与采样重合时先发送后采样。推导轨迹显示第 2 秒即发生 1 条测量值丢失。</desc>
+  <defs>
+    <marker id="sensor-arrow" markerWidth="6" markerHeight="6" refX="5.5" refY="3"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L6 3L0 6Z" fill="#333333"/>
+    </marker>
+  </defs>
+  <text x="10" y="18" font-size="13.5" font-weight="700">(a) 结构模型</text>
+  <text x="10" y="34" font-size="11.5">—— 共享设备本地存储</text>
+  <text x="308" y="18" font-size="13.5" font-weight="700">(b) 定量模型</text>
+  <text x="308" y="34" font-size="11.5">—— 速率与容量参数</text>
+  <g fill="#ffffff" stroke="#444444" stroke-width="1">
+    <rect x="10" y="48" width="72" height="26" rx="3"/>
+    <rect x="10" y="87" width="72" height="26" rx="3"/>
+    <rect x="113" y="54" width="90" height="58" rx="3"/>
+    <rect x="226" y="70" width="54" height="27" rx="3"/>
+  </g>
+  <g text-anchor="middle" font-size="11.5">
+    <text x="46" y="65">传感器 A</text>
+    <text x="46" y="104">传感器 B</text>
+    <text x="158" y="76">缓冲区</text>
+    <text x="158" y="96" font-size="10.5">（设备存储）</text>
+    <text x="253" y="88">无线电</text>
+  </g>
+  <g fill="none" stroke="#333333" stroke-width="1.1">
+    <path d="M82 61H96V100H82"/>
+    <path d="M96 83H111" marker-end="url(#sensor-arrow)"/>
+    <path d="M203 83H224" marker-end="url(#sensor-arrow)"/>
+  </g>
+  <text x="308" y="59">采样间隔</text>
+  <text x="308" y="82">缓冲区容量</text>
+  <text x="308" y="105">无线电发送间隔</text>
+  <g text-anchor="end">
+    <text x="550" y="59">每传感器 1 秒</text>
+    <text x="550" y="82">3 条测量值</text>
+    <text x="550" y="105">5 秒</text>
+  </g>
+  <path d="M10 127H550" fill="none" stroke="#777777" stroke-width="0.8"/>
+  <text x="10" y="148" font-size="13.5" font-weight="700">(c) 行为模型 —— 到达、溢出与发送</text>
+  <text x="10" y="168">测量值到达时：若有空余空间则存入，否则丢弃。</text>
+  <text x="10" y="185">触发发送时：发送并清空所有已存储的测量值。</text>
+  <text x="10" y="202">若发送与采样同时发生，先执行发送。</text>
+  <text x="10" y="224" font-style="italic">推导出的执行轨迹 —— 每秒事件发生后的缓冲区占用情况</text>
+  <path d="M10 234H550M10 257H550" fill="none" stroke="#777777" stroke-width="0.8"/>
+  <text x="10" y="250">时间（秒）</text>
+  <text x="10" y="275">到达测量值数量</text>
+  <text x="10" y="293">已存储测量值数量</text>
+  <text x="10" y="311">时刻 t 丢失的测量值</text>
+  <text x="10" y="331">事件</text>
+  <g text-anchor="middle">
+    <text x="200" y="250">0</text>
+    <text x="200" y="275">0</text>
+    <text x="200" y="293">0</text>
+    <text x="200" y="311">0</text>
+    <text x="200" y="331">—</text>
+    <text x="250" y="250">1</text>
+    <text x="250" y="275">2</text>
+    <text x="250" y="293">2</text>
+    <text x="250" y="311">0</text>
+    <text x="250" y="331">采样</text>
+    <text x="300" y="250" font-weight="700">2</text>
+    <text x="300" y="275" font-weight="700">2</text>
+    <text x="300" y="293" font-weight="700">3</text>
+    <text x="300" y="311" font-weight="700">1</text>
+    <text x="300" y="331" font-weight="700">溢出</text>
+    <text x="350" y="250">3</text>
+    <text x="350" y="275">2</text>
+    <text x="350" y="293">3</text>
+    <text x="350" y="311">2</text>
+    <text x="350" y="331">溢出</text>
+    <text x="400" y="250">4</text>
+    <text x="400" y="275">2</text>
+    <text x="400" y="293">3</text>
+    <text x="400" y="311">2</text>
+    <text x="400" y="331">溢出</text>
+    <text x="499" y="250">5</text>
+    <text x="499" y="275">2</text>
+    <text x="499" y="293">2</text>
+    <text x="499" y="311">0</text>
+    <text x="499" y="331">先发送，</text>
+    <text x="499" y="346">后采样</text>
+  </g>
+  <path d="M279 262H321V316H279Z" fill="none" stroke="#444444" stroke-width="0.9" stroke-dasharray="3 2"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="888" height="408" viewBox="0 0 444 204" role="img" aria-labelledby="title desc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<title id="title">选择在何处投资于显式工程</title>
+<desc id="desc">列从低到高表示可机械化程度，行从低到高表示将义务显式化的价值。低价值对应保持非正式判断或选择性机械化；高价值对应投资于显式判断或投资于强制执行。</desc>
+<defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0 0 L5 2.5 L0 5 Z" fill="#1c1917"/></marker></defs>
+<g fill="#1c1917" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<rect x="97" y="1" width="345" height="58" rx="2" fill="#f6f4ef" stroke="#1c1917" stroke-width="0.7"/>
+<rect x="2" y="59" width="440" height="143" rx="2" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<rect x="2" y="59" width="95" height="143" rx="2" fill="#f6f4ef" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M65,59 L65,202" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M97,59 L97,202" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M97,41 L442,41" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M269,41 L269,202" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M65,131 L442,131" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<text x="255" y="15.0" font-size="13" text-anchor="middle" font-weight="700">可机械化程度</text>
+<path d="M300,10 L317,10" fill="none" stroke="#1c1917" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="269" y="27.0" font-size="9.5" text-anchor="middle">从高度依赖判断到可可靠机械化</text>
+<text x="269" y="38.5" font-size="9.5" text-anchor="middle">（例如约束、验证器或自动化检查）</text>
+<text x="183" y="54.0" font-size="12" text-anchor="middle" font-weight="700">低</text>
+<text x="356" y="54.0" font-size="12" text-anchor="middle" font-weight="700">高</text>
+<text x="33" y="84.0" font-size="11" text-anchor="middle" font-weight="700">显式化的</text>
+<text x="33" y="99.0" font-size="11" text-anchor="middle" font-weight="700">价值</text>
+<path d="M33,110 L33,128" fill="none" stroke="#1c1917" stroke-width="1.2" marker-end="url(#arrow)"/>
+<text x="33" y="149.0" font-size="9.5" text-anchor="middle">更高价值</text>
+<text x="33" y="161.5" font-size="9.5" text-anchor="middle">支撑更多</text>
+<text x="33" y="174.0" font-size="9.5" text-anchor="middle">工程机制</text>
+<text x="33" y="186.5" font-size="9.5" text-anchor="middle">投入。</text>
+<text x="81" y="99.0" font-size="12" text-anchor="middle" font-weight="700">低</text>
+<text x="81" y="167.0" font-size="12" text-anchor="middle" font-weight="700">高</text>
+<text x="103" y="76.0" font-size="11.5" text-anchor="start" font-weight="700">保持非正式判断</text>
+<text x="103" y="93.0" font-size="10" text-anchor="start">示例：一次性的内部</text>
+<text x="103" y="106.5" font-size="10" text-anchor="start">命名选择。</text>
+<text x="275" y="76.0" font-size="11.5" text-anchor="start" font-weight="700">选择性机械化</text>
+<text x="275" y="93.0" font-size="10" text-anchor="start">示例：原型代码格式——</text>
+<text x="275" y="106.5" font-size="10" text-anchor="start">当维护成本足够低时</text>
+<text x="275" y="120.0" font-size="10" text-anchor="start">予以自动化。</text>
+<text x="103" y="148.0" font-size="11.5" text-anchor="start" font-weight="700">投资于显式判断</text>
+<text x="103" y="165.0" font-size="10" text-anchor="start">示例：历史建筑设计——</text>
+<text x="103" y="178.5" font-size="10" text-anchor="start">记录其与标准及先例</text>
+<text x="103" y="192.0" font-size="10" text-anchor="start">的契合度。</text>
+<text x="275" y="148.0" font-size="11.5" text-anchor="start" font-weight="700">投资于强制执行</text>
+<text x="275" y="165.0" font-size="10" text-anchor="start">示例：服务依赖关系——</text>
+<text x="275" y="178.5" font-size="10" text-anchor="start">拦截违反已建模依赖</text>
+<text x="275" y="192.0" font-size="10" text-anchor="start">规则的变更。</text>
+</g>
+</svg>

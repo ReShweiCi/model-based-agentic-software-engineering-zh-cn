@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="888" height="256" viewBox="0 0 444 128" role="img" aria-labelledby="title desc"><title id="title">竞争条件下的所有权</title><desc id="desc">工作节点 A 的第 7 代认领过期后，工作节点 B 取得第 8 代认领，A 延迟发出的释放被拒绝。</desc><defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5.4" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" fill="#222222"/></marker><marker id="forbidden-arrow" markerWidth="6" markerHeight="6" refX="5.4" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L6,3 L0,6 Z" fill="#a92020"/></marker></defs><rect width="444" height="128" fill="white"/><style>text{font-family:'Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;fill:#171717;}path,rect,circle{stroke-linejoin:round;}</style><g transform="translate(0,-20)">
+<rect x="15" y="40" width="69" height="38" rx="4" fill="#d9eaf7" stroke="#315f83" stroke-width="0.75"/>
+<rect x="121" y="40" width="72" height="38" rx="4" fill="#d9eaf7" stroke="#315f83" stroke-width="0.75"/>
+<rect x="235" y="40" width="78" height="38" rx="4" fill="#fff4cf" stroke="#b4871c" stroke-width="0.75"/>
+<rect x="361" y="40" width="72" height="38" rx="4" fill="#d9eaf7" stroke="#315f83" stroke-width="0.75"/>
+<text x="49.5" y="63" text-anchor="middle" style="font-size:10.5px;fill:#222222">无归属</text>
+<text x="157" y="55" text-anchor="middle" style="font-size:10.5px;font-weight:bold;fill:#222222">已归属</text>
+<text x="157" y="69" text-anchor="middle" style="font-size:10.5px;fill:#222222">(A, 7)</text>
+<text x="397" y="55" text-anchor="middle" style="font-size:10.5px;font-weight:bold;fill:#222222">已归属</text>
+<text x="397" y="69" text-anchor="middle" style="font-size:10.5px;fill:#222222">(B, 8)</text>
+<text x="274" y="63" text-anchor="middle" style="font-size:10.5px;fill:#222222">可回收</text>
+<path d="M84,59 H120" fill="none" stroke="#222222" stroke-width="1.15" marker-end="url(#arrow)"/>
+<path d="M193,59 H234" fill="none" stroke="#222222" stroke-width="1.15" marker-end="url(#arrow)"/>
+<path d="M313,59 H360" fill="none" stroke="#222222" stroke-width="1.15" marker-end="url(#arrow)"/>
+<text x="103" y="30" text-anchor="middle" style="font-size:10.5px;fill:#222222">claim(A, 7)</text>
+<path d="M103,34 V55" fill="none" stroke="#222222" stroke-width="0.65"/>
+<text x="214" y="30" text-anchor="middle" style="font-size:10.5px;fill:#222222">过期</text>
+<path d="M214,34 V55" fill="none" stroke="#222222" stroke-width="0.65"/>
+<text x="337" y="30" text-anchor="middle" style="font-size:10.5px;fill:#222222">claim(B, 8)</text>
+<path d="M337,34 V55" fill="none" stroke="#222222" stroke-width="0.65"/>
+<path d="M382,78 L370,87" fill="none" stroke="#222222" stroke-width="0.65"/>
+<text x="325" y="98" text-anchor="middle" style="font-size:10px;fill:#a92020">release(A, 7)：被拒绝</text>
+<text x="325" y="111" text-anchor="middle" style="font-size:10px;fill:#222222">当前认领仍为 (B, 8)</text>
+<path d="M415,78 V123 H49.5 V79" fill="none" stroke="#222222" stroke-width="1.15" marker-end="url(#arrow)"/>
+<text x="222" y="141" text-anchor="middle" style="font-size:10.5px;fill:#222222">release(B, 8)</text></g></svg>

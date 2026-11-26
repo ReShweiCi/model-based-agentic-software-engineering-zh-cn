@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 496" width="1000" height="496"
+     role="img" aria-labelledby="srTitle srDesc"
+     font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="srTitle">义务、脚手架与自由度</title>
+  <desc id="srDesc">堆叠区域图。规约区域包含两层：工程义务（必须保留的关键区分）与脚手架（当前智能体可靠理解并满足该义务所需的额外结构）。两者之间的义务边界由工程问题决定，不随能力移动。脚手架下方的规约边界由义务和当前智能体的能力共同决定。其下方是自由度：留给智能体的实现选择。向上的箭头表明，更强的智能体能力可以减少所需的脚手架。</desc>
+
+  <defs>
+    <marker id="sr-a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8"
+            orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5169"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="496" fill="#fdfcf9"/>
+
+  <rect x="232" y="28" width="516" height="314" rx="14" fill="#f6f4ef" stroke="#57534e"
+        stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="490" y="58" text-anchor="middle" font-size="21" font-weight="700" letter-spacing="1.2"
+        fill="#57534e">规约区域（SPECIFIED REGION）</text>
+
+  <rect x="250" y="72" width="480" height="104" rx="10" fill="#faf1e6" stroke="#9a3f12" stroke-width="2"/>
+  <text x="490" y="106" text-anchor="middle" font-size="22" font-weight="700" fill="#9a3f12">工程义务</text>
+  <text x="490" y="136" text-anchor="middle" font-size="19" fill="#57534e">必须保留的关键区分与约束</text>
+  <text x="490" y="160" text-anchor="middle" font-size="17" fill="#57534e">（由工程问题本身决定）</text>
+
+  <line x1="250" y1="196" x2="730" y2="196" stroke="#9a3f12" stroke-width="1.5"/>
+  <text x="755" y="192" font-size="20" font-weight="700" fill="#9a3f12">义务边界</text>
+  <text x="755" y="218" font-size="18" fill="#57534e">由工程问题决定，</text>
+  <text x="755" y="242" font-size="18" fill="#57534e">不随实现者能力</text>
+  <text x="755" y="266" font-size="18" fill="#57534e">而移动</text>
+
+  <rect x="250" y="216" width="480" height="104" rx="10" fill="#e7edf3" stroke="#2f5169" stroke-width="2"/>
+  <text x="490" y="250" text-anchor="middle" font-size="22" font-weight="700" fill="#2f5169">脚手架（SCAFFOLDING）</text>
+  <text x="490" y="280" text-anchor="middle" font-size="19" fill="#57534e">当前智能体可靠理解并满足义务</text>
+  <text x="490" y="304" text-anchor="middle" font-size="19" fill="#57534e">所需的额外引导结构</text>
+
+  <line x1="232" y1="342" x2="748" y2="342" stroke="#1c1917" stroke-width="2.5"/>
+  <text x="755" y="338" font-size="20" font-weight="700" fill="#1c1917">规约边界</text>
+  <text x="755" y="364" font-size="18" fill="#57534e">由工程义务与当前</text>
+  <text x="755" y="388" font-size="18" fill="#57534e">智能体的能力共同</text>
+  <text x="755" y="412" font-size="18" fill="#57534e">决定</text>
+
+  <rect x="250" y="366" width="480" height="96" rx="10" fill="#fdfcf9" stroke="#57534e" stroke-width="1.5"/>
+  <text x="490" y="402" text-anchor="middle" font-size="22" font-weight="700" fill="#57534e">自由度（DEGREES OF FREEDOM）</text>
+  <text x="490" y="432" text-anchor="middle" font-size="19" fill="#57534e">留给智能体自主决定的实现选择</text>
+
+  <line x1="215" y1="430" x2="215" y2="212" stroke="#2f5169" stroke-width="2" marker-end="url(#sr-a)"/>
+  <text x="200" y="318" text-anchor="end" font-size="18" fill="#57534e">更强的智能体能力</text>
+  <text x="200" y="344" text-anchor="end" font-size="18" fill="#57534e">可以减少所需的</text>
+  <text x="200" y="370" text-anchor="end" font-size="18" fill="#57534e">脚手架</text>
+</svg>

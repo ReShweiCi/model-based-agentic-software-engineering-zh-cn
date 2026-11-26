@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="444" height="237" viewBox="0 0 444 237" role="img" aria-labelledby="title desc">
+<title id="title">Learning through prediction and measurement</title>
+<desc id="desc">Compare predictions with implementation measurements, then investigate and revise. An illustrative residual may reflect a wrong value, incorrect relation, missing mechanism, or implementation error; prediction agreement alone does not establish design acceptability.</desc>
+<defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs>
+<text x="100" y="15.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10" font-weight="700" font-style="normal">(a) Prediction and measurement</text>
+<text x="329" y="15.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10" font-weight="700" font-style="normal">(b) Investigating a prediction error</text>
+<path d="M211,0 L211,237" fill="none" stroke="black" stroke-width=".7"/>
+<rect x="6" y="35" width="140" height="24" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="76.0" y="50.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10" font-weight="400" font-style="normal">Model and analyze</text>
+<rect x="6" y="73" width="140" height="24" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="76.0" y="88.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10" font-weight="400" font-style="normal">Predict</text>
+<rect x="6" y="111" width="140" height="24" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="76.0" y="126.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10" font-weight="400" font-style="normal">Implement</text>
+<rect x="6" y="149" width="140" height="24" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="76.0" y="164.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10" font-weight="400" font-style="normal">Measure</text>
+<rect x="6" y="187" width="140" height="24" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="76.0" y="202.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10" font-weight="400" font-style="normal">Compare with prediction</text>
+<path d="M76,59 L76,73" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M76,97 L76,111" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M76,135 L76,149" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M76,173 L76,187" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M146,199 L197,199 L197,47 L146,47" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<text x="176" y="127.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10" font-weight="400" font-style="italic" transform="rotate(-90 176 124.0)">Investigate and revise</text>
+<rect x="243" y="35" width="186" height="38" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="336.0" y="51.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">Predicted: 11.5 s</text>
+<text x="336.0" y="63.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">Observed: 17.8 s</text>
+<path d="M336,73 L336,87" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="261" y="87" width="150" height="26" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="336.0" y="103.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="700" font-style="normal">Residual: +6.3 s</text>
+<path d="M336,113 L336,127" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<text x="336" y="141.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="700" font-style="normal">Possible explanations</text>
+<path d="M336,150 L336,217" fill="none" stroke="black" stroke-width=".7"/>
+<rect x="220" y="158" width="96" height="30" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="268.0" y="170.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">Wrong</text>
+<text x="268.0" y="182.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">value</text>
+<path d="M336,173 L316,173" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="348" y="158" width="96" height="30" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="396.0" y="170.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">Incorrect</text>
+<text x="396.0" y="182.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">relation</text>
+<path d="M336,173 L348,173" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="220" y="202" width="96" height="30" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="268.0" y="214.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">Missing</text>
+<text x="268.0" y="226.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">mechanism</text>
+<path d="M336,217 L316,217" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="348" y="202" width="96" height="30" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="396.0" y="214.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">Implementation</text>
+<text x="396.0" y="226.3" text-anchor="middle" font-family="&quot;Source Sans 3&quot;, sans-serif" font-size="10.5" font-weight="400" font-style="normal">error</text>
+<path d="M336,217 L348,217" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+</svg>

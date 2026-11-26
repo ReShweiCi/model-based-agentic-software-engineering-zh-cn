@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-45 0 1070 430" width="1070" height="430"
+     role="group" aria-labelledby="dgTitle dgDesc"
+     font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="dgTitle">DocAble 概览——输入一个对象，返回一个对象</title>
+  <desc id="dgDesc">不含内部结构的单一输入输出视图。左侧是一份不可访问的文档，含未标注图片、无阅读顺序且无结构标签；经上传箭头进入封闭黑盒 DocAble（scholaccess.com 生产系统）；右侧输出修复后的无障碍文档及证据记录，含图片描述、阅读顺序、结构标签及每项修改的说明。</desc>
+
+  <defs>
+    <marker id="dg-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1c1917"/>
+    </marker>
+  </defs>
+
+  <rect x="-45" y="0" width="1070" height="430" fill="#fdfcf9"/>
+
+  <path d="M288,243 L378,243" fill="none" stroke="#1c1917" stroke-width="2.4" marker-end="url(#dg-ah)"/>
+  <path d="M580,243 L718,243" fill="none" stroke="#1c1917" stroke-width="2.4" marker-end="url(#dg-ah)"/>
+
+  <text x="490" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#1c1917">DocAble 概览</text>
+  <text x="490" y="72" text-anchor="middle" font-size="18.5" fill="#57534e">输入一份文档，返回修复结果与变更证据。</text>
+
+  <!-- INPUT -->
+  <rect id="input" x="82" y="140" width="206" height="170" rx="6" fill="#ffffff" stroke="#b23b3b" stroke-width="2.5"/>
+  <path d="M272,140 L288,156 L272,156 Z" fill="#fbeaea" stroke="#b23b3b" stroke-width="1.5"/>
+  <rect x="126" y="166" width="92" height="7" rx="2" fill="#cfc9c0"/>
+  <rect x="126" y="182" width="118" height="7" rx="2" fill="#cfc9c0"/>
+  <rect x="126" y="198" width="70" height="7" rx="2" fill="#cfc9c0"/>
+  <rect x="87.51" y="214" width="194.99" height="46" rx="3" fill="#f6f4ef" stroke="#b23b3b" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="185" y="243" text-anchor="middle" font-size="18" fill="#b23b3b">图片——无替代文本</text>
+  <rect x="120" y="276" width="130" height="24" rx="12" fill="#fbeaea" stroke="#b23b3b" stroke-width="1.4"/>
+  <text x="185" y="294" text-anchor="middle" font-size="17" font-weight="700" fill="#b23b3b">不可访问</text>
+  <circle cx="272" cy="153" r="13" fill="#b23b3b"/>
+  <text x="272" y="159" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">!</text>
+  <text x="185" y="338" text-anchor="middle" font-size="19" font-weight="700" fill="#b23b3b">不可访问文档</text>
+  <text x="185" y="362" text-anchor="middle" font-size="16.5" fill="#57534e">图片无描述 · 无标签 · 无阅读顺序</text>
+
+  <!-- DocAble -->
+  <rect id="docable" x="368.59" y="195" width="222.82" height="96" rx="12" fill="#e7edf3" stroke="#2f5169" stroke-width="3"/>
+  <text x="480" y="233" text-anchor="middle" font-size="25" font-weight="700" fill="#2f5169">DocAble</text>
+  <text x="480" y="258" text-anchor="middle" font-size="17.5" fill="#57534e">生产级系统</text>
+  <text x="480" y="280" text-anchor="middle" font-size="17" fill="#57534e">scholaccess.com</text>
+
+  <!-- arrow labels -->
+  <text x="328" y="232" text-anchor="middle" font-size="18" fill="#57534e">上传</text>
+  <text x="644" y="220" text-anchor="middle" font-size="17.5" fill="#57534e">修复后的</text>
+  <text x="644" y="241" text-anchor="middle" font-size="17.5" fill="#57534e">文档</text>
+
+  <!-- OUTPUT -->
+  <rect id="output" x="696.82" y="140" width="196.37" height="170" rx="6" fill="#ffffff" stroke="#1f7a4d" stroke-width="2.5"/>
+  <path d="M854,140 L870,156 L854,156 Z" fill="#e3f0e7" stroke="#1f7a4d" stroke-width="1.5"/>
+  <rect x="736" y="166" width="92" height="7" rx="2" fill="#57534e"/>
+  <rect x="736" y="182" width="118" height="7" rx="2" fill="#57534e"/>
+  <rect x="736" y="198" width="70" height="7" rx="2" fill="#57534e"/>
+  <rect x="698.96" y="214" width="192.08" height="46" rx="3" fill="#eef7ee" stroke="#1f7a4d" stroke-width="1.4"/>
+  <text x="795" y="243" text-anchor="middle" font-size="18" fill="#1f7a4d">图片——已添加描述</text>
+  <rect x="716" y="276" width="158" height="24" rx="12" fill="#e3f0e7" stroke="#1f7a4d" stroke-width="1.4"/>
+  <text x="795" y="294" text-anchor="middle" font-size="17" font-weight="700" fill="#1f7a4d">✓ 证据记录</text>
+  <circle cx="866" cy="153" r="13" fill="#1f7a4d"/>
+  <path d="M859,153 l4,4 l7,-8" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="795" y="338" text-anchor="middle" font-size="19" font-weight="700" fill="#1f7a4d">无障碍文档 + 证据</text>
+  <text x="795" y="362" text-anchor="middle" font-size="16.5" fill="#57534e">已加标签 · 有阅读顺序 · 逐项说明修改</text>
+</svg>

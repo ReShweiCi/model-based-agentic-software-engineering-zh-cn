@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="444" height="276" viewBox="0 0 444 276" role="img" aria-labelledby="title desc">
+<title id="title">分析依赖图以重新设计执行方式</title>
+<desc id="desc">三个并排面板区分了诊断、分解操作与重构依赖关系。原始关键路径耗时 12 秒，另一分支耗时 6 秒。将主导操作拆分为三个并发的 3 秒子操作后，未计开销的关键路径缩短至 7 秒。通过共享渲染上下文，两个图像描述操作变得彼此独立。</desc>
+<defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs>
+<text x="73" y="14.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700" font-style="normal">(a) 识别关键路径</text>
+<text x="73" y="34.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="italic">诊断瓶颈</text>
+<text x="219" y="14.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700" font-style="normal">(b) 分解操作</text>
+<text x="219" y="34.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="italic">保持外部依赖不变</text>
+<text x="369" y="14.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700" font-style="normal">(c) 移除不必要依赖</text>
+<text x="369" y="34.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="italic">改变信息依赖结构</text>
+<path d="M146,1 L146,221" fill="none" stroke="black" stroke-width=".7"/>
+<path d="M292,1 L292,274" fill="none" stroke="black" stroke-width=".7"/>
+<rect x="57" y="48" width="32" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="73.0" y="60.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="400" font-style="normal">A (1 s)</text>
+<rect x="23" y="84" width="32" height="18" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="39.0" y="96.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">B (8 s)</text>
+<rect x="91" y="84" width="32" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="107.0" y="96.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="400" font-style="normal">C (2 s)</text>
+<rect x="23" y="120" width="32" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="39.0" y="132.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="400" font-style="normal">D (2 s)</text>
+<rect x="91" y="120" width="32" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="107.0" y="132.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="400" font-style="normal">E (2 s)</text>
+<rect x="57" y="156" width="32" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="73.0" y="168.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="400" font-style="normal">F (1 s)</text>
+<path d="M66,66 L39,84" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M80,66 L107,84" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M39,102 L39,120" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M107,102 L107,120" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M39,138 L66,156" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M107,138 L80,156" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<text x="39" y="194.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">12 s</text>
+<text x="107" y="194.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">6 s</text>
+<text x="73" y="208.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">关键路径：</text>
+<text x="73" y="220.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">A → B → D → F</text>
+<rect x="202" y="48" width="34" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="219.0" y="60.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="400" font-style="normal">A (1 s)</text>
+<rect x="160" y="84" width="32" height="28" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="176.0" y="95.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">B<tspan baseline-shift="sub" font-size="7">1</tspan></text>
+<text x="176.0" y="107.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">(3 s)</text>
+<path d="M219,66 L176,84" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M176,112 L219,130" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="203" y="84" width="32" height="28" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="219.0" y="95.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">B<tspan baseline-shift="sub" font-size="7">2</tspan></text>
+<text x="219.0" y="107.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">(3 s)</text>
+<path d="M219,66 L219,84" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M219,112 L219,130" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="246" y="84" width="32" height="28" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="262.0" y="95.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">B<tspan baseline-shift="sub" font-size="7">3</tspan></text>
+<text x="262.0" y="107.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">(3 s)</text>
+<path d="M219,66 L262,84" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M262,112 L219,130" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="203" y="130" width="32" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="219.0" y="142.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="400" font-style="normal">D (2 s)</text>
+<rect x="203" y="166" width="32" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="219.0" y="178.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="400" font-style="normal">F (1 s)</text>
+<path d="M219,148 L219,166" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<text x="219" y="204.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">新关键路径：7 s</text>
+<text x="219" y="218.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="italic">示意值；未计协调开销</text>
+<rect x="303" y="50" width="44" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="325.0" y="62.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="normal">图像 1</text>
+<rect x="366" y="45" width="48" height="28" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="390.0" y="56.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="700" font-style="normal">生成</text>
+<text x="390.0" y="68.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="700" font-style="normal">alt 1</text>
+<path d="M347,59 L366,59" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="303" y="90" width="44" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="325.0" y="102.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="normal">图像 2</text>
+<rect x="366" y="85" width="48" height="28" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="390.0" y="96.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="700" font-style="normal">生成</text>
+<text x="390.0" y="108.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="700" font-style="normal">alt 2</text>
+<path d="M347,99 L366,99" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<path d="M390,73 L390,85" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<text x="369" y="128.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="italic">改进前：串行依赖</text>
+<rect x="301" y="145" width="136" height="24" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="369.0" y="160.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="700" font-style="normal">共享渲染上下文</text>
+<rect x="301" y="183" width="50" height="28" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="326.0" y="194.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="700" font-style="normal">生成</text>
+<text x="326.0" y="206.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="700" font-style="normal">alt 1</text>
+<path d="M326,169 L326,183" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="301" y="225" width="50" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="326.0" y="237.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="normal">图像 1</text>
+<path d="M326,225 L326,211" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="387" y="183" width="50" height="28" rx="3" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="412.0" y="194.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="700" font-style="normal">生成</text>
+<text x="412.0" y="206.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="700" font-style="normal">alt 2</text>
+<path d="M412,169 L412,183" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<rect x="387" y="225" width="50" height="18" rx="3" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="412.0" y="237.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="normal">图像 2</text>
+<path d="M412,225 L412,211" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<text x="369" y="258.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="italic">改进后：独立操作</text>
+<text x="369" y="270.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="italic">消费共享上下文</text>
+<rect x="6" y="238" width="13" height="10" rx="2" fill="rgb(235,235,235)" stroke="black" stroke-width=".65"/>
+<text x="25" y="246.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="normal">主导或已修改的操作</text>
+<rect x="6" y="259" width="13" height="10" rx="2" fill="rgb(255,255,255)" stroke="black" stroke-width=".65"/>
+<text x="25" y="267.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="normal">其他操作</text>
+<path d="M153,264 L174,264" fill="none" stroke="black" stroke-width=".7" marker-end="url(#arrow)"/>
+<text x="180" y="267.3" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="400" font-style="normal">依赖关系</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="939" viewBox="0 0 440 313" role="img" aria-labelledby="handbook-computation-architecture-title handbook-computation-architecture-desc"><title id="handbook-computation-architecture-title">计算声明及其消费者</title><desc id="handbook-computation-architecture-desc">Office 注册表声明同时驱动调度器与边发射器，仅由边发射器向 Office 分析图提供数据。PDF 类型化声明投影生成 PDF 分析图。虚线检查将可执行总体与声明及分析图比对。两类图均支持依赖查询、关键路径分析、变更分类与度量覆盖分析。</desc><defs><marker id="handbook-computation-architecture-arrow" markerWidth="5" markerHeight="5" refX="4.7" refY="2.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs><rect width="440" height="313" fill="white"/>
+<path d="M80,94 L80,105 L37.5,105 L37.5,117" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#handbook-computation-architecture-arrow)"/>
+<path d="M80,105 L132,105 L132,117" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#handbook-computation-architecture-arrow)"/>
+<path d="M132,168 L132,181 L94,181 L94,193" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#handbook-computation-architecture-arrow)"/>
+<path d="M290,64 L320,64" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#handbook-computation-architecture-arrow)" marker-start="url(#handbook-computation-architecture-arrow)"/>
+<path d="M237.5,94 L237.5,180 L223,180 L223,193" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#handbook-computation-architecture-arrow)" marker-start="url(#handbook-computation-architecture-arrow)"/>
+<path d="M384,94 L384,106 L282,106 L282,193" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#handbook-computation-architecture-arrow)"/>
+<path d="M94,244 L94,256 L189.5,256 L189.5,269" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#handbook-computation-architecture-arrow)"/>
+<path d="M271,244 L271,256 L189.5,256" fill="none" stroke="black" stroke-width="0.8"/>
+<text x="80" y="14" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="11.5" font-weight="bold" fill="black">OFFICE</text>
+<text x="317" y="14" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="11.5" font-weight="bold" fill="black">PDF</text>
+<rect x="5" y="23" width="151" height="71" fill="white" stroke="black" stroke-width=".8"/>
+<text x="80.5" y="36" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">计算注册表</text>
+<text x="15" y="49" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="22" y="49" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">标识（稳定名称）</text>
+<text x="15" y="60" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="22" y="60" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">读 / 写（工件）</text>
+<text x="15" y="71" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="22" y="71" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">前置 / 后置（顺序）</text>
+<text x="15" y="82" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="22" y="82" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">ShouldRun（适用条件）</text>
+<rect x="185" y="23" width="105" height="71" fill="white" stroke="black" stroke-width=".8"/>
+<text x="237.5" y="36" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">可执行流水线</text>
+<text x="193" y="49" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="200" y="49" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">已注册处理遍</text>
+<text x="193" y="60" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="200" y="60" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">执行顺序</text>
+<text x="193" y="71" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="200" y="71" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">实现绑定</text>
+<rect x="320" y="23" width="118" height="71" fill="white" stroke="black" stroke-width=".8"/>
+<text x="379" y="36" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">类型化声明</text>
+<text x="328" y="49" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">•</text>
+<text x="335" y="49" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">Produces（产出工件）</text>
+<text x="328" y="60" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">•</text>
+<text x="335" y="60" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">Consumes（数据输入）</text>
+<text x="328" y="71" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">•</text>
+<text x="335" y="71" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">ConsumesForControl</text>
+<text x="335" y="82" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">（控制输入）</text>
+<rect x="0.5" y="117" width="75" height="51" fill="white" stroke="black" stroke-width=".8"/>
+<text x="38" y="129" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">调度器</text>
+<text x="7" y="143" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">•</text>
+<text x="14" y="143" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">排定顺序</text>
+<text x="7" y="155" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">•</text>
+<text x="14" y="155" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">检查适用性</text>
+<rect x="87" y="117" width="90" height="51" fill="white" stroke="black" stroke-width=".8"/>
+<text x="132" y="129" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">边发射器</text>
+<text x="95" y="143" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">•</text>
+<text x="102" y="143" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">投影依赖关系</text>
+<text x="102" y="155" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">（供分析使用）</text>
+<rect x="28" y="193" width="132" height="51" fill="white" stroke="black" stroke-width=".8"/>
+<text x="94" y="205" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">分析图（Office）</text>
+<text x="36" y="222" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="43" y="222" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">计算节点与依赖边</text>
+<text x="36" y="235" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="43" y="235" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">稳定的计算标识</text>
+<rect x="205" y="193" width="132" height="51" fill="white" stroke="black" stroke-width=".8"/>
+<text x="271" y="205" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">分析图（PDF）</text>
+<text x="213" y="222" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="220" y="222" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">计算节点与依赖边</text>
+<text x="213" y="235" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="220" y="235" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">稳定的计算标识</text>
+<rect x="49" y="269" width="281" height="43" fill="white" stroke="black" stroke-width=".8"/>
+<text x="189.5" y="282" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">共享分析用途</text>
+<text x="61" y="295" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="68" y="295" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">依赖查询</text>
+<text x="61" y="307" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="68" y="307" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">关键路径分析</text>
+<text x="192" y="295" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="199" y="295" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">修改行为分类</text>
+<text x="192" y="307" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">•</text>
+<text x="199" y="307" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">度量与覆盖分析</text>
+<rect x="346" y="193" width="93.5" height="89" fill="white" stroke="black" stroke-width=".8"/>
+<text x="354" y="207" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">图例</text>
+<path d="M351,224 L369,224" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#handbook-computation-architecture-arrow)"/>
+<text x="374" y="220" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">投影 / 消费</text>
+<path d="M351,245 L369,245" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#handbook-computation-architecture-arrow)" marker-start="url(#handbook-computation-architecture-arrow)"/>
+<text x="374" y="242" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">对应性检查</text>
+<text x="354" y="261" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8" font-weight="normal" fill="black">（不实际执行</text>
+<text x="354" y="272" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8" font-weight="normal" fill="black">文档修复）</text></svg>

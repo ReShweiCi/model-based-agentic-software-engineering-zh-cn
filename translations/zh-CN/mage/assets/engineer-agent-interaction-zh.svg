@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 936 480" width="936" height="480"
+     role="group" aria-labelledby="eaiTitle eaiDesc"
+     font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="eaiTitle">通过建模与对齐实现的工程师–智能体交互</title>
+  <desc id="eaiDesc">两个面板共享底部的单一实现节点。左面板（建模 / 沟通）通过自然语言、规约与模型三条并行通道汇聚到智能体并产出实现；右面板（对齐 / 治理工作）由实现产出结果，通过评审、测试与分析三条并行通道向工程师返回证据，同时约束直接作用于实现。</desc>
+
+  <defs>
+    <marker id="eai-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1c1917"/>
+    </marker>
+  </defs>
+
+  <rect x="-8" y="0" width="936" height="480" fill="#fdfcf9"/>
+
+  <!-- ===== 面板：建模 / 沟通 ===== -->
+  <rect x="-4" y="16" width="456" height="356" rx="10" fill="#e3f0e7" opacity="0.35"/>
+  <text x="28" y="46" font-size="20" font-weight="700" fill="#1c1917">建模 / 沟通意图</text>
+  <text x="28" y="72" font-size="16.5" font-style="italic" fill="#57534e">我已知什么、意图为何，哪些内容需要显式化？</text>
+
+  <!-- ===== 面板：对齐 / 治理工作 ===== -->
+  <rect x="468" y="16" width="456" height="356" rx="10" fill="#faf1e6" opacity="0.45"/>
+  <text x="500" y="46" font-size="20" font-weight="700" fill="#1c1917">对齐 / 治理工作</text>
+  <text x="500" y="72" font-size="16.5" font-style="italic" fill="#57534e">允许发生什么，什么结果可以放行？</text>
+
+  <!-- 工程师节点 -->
+  <rect x="164" y="92" width="120" height="44" rx="8" fill="#fff" stroke="#1c1917" stroke-width="2"/>
+  <text x="224" y="120" text-anchor="middle" font-size="19" fill="#1c1917">工程师</text>
+  <rect x="636" y="92" width="120" height="44" rx="8" fill="#fff" stroke="#1c1917" stroke-width="2"/>
+  <text x="696" y="120" text-anchor="middle" font-size="19" fill="#1c1917">工程师</text>
+
+  <!-- 左侧三条并行通道 -->
+  <rect x="16" y="192" width="128" height="56" rx="8" fill="#fff" stroke="#1c1917" stroke-width="1.8"/>
+  <text x="80" y="227" text-anchor="middle" font-size="18.4" fill="#1c1917">自然语言</text>
+  <rect x="160" y="192" width="128" height="56" rx="8" fill="#fff" stroke="#1c1917" stroke-width="1.8"/>
+  <text x="224" y="227" text-anchor="middle" font-size="18.4" fill="#1c1917">规约</text>
+  <rect x="304" y="192" width="128" height="56" rx="8" fill="#fff" stroke="#1c1917" stroke-width="1.8"/>
+  <text x="368" y="227" text-anchor="middle" font-size="18.4" fill="#1c1917">模型</text>
+
+  <!-- 右侧三条并行通道 -->
+  <rect x="488" y="192" width="128" height="56" rx="8" fill="#fff" stroke="#1c1917" stroke-width="1.8"/>
+  <text x="552" y="227" text-anchor="middle" font-size="18.4" fill="#1c1917">评审</text>
+  <rect x="632" y="192" width="128" height="56" rx="8" fill="#fff" stroke="#1c1917" stroke-width="1.8"/>
+  <text x="696" y="227" text-anchor="middle" font-size="18.4" fill="#1c1917">测试</text>
+  <rect x="776" y="192" width="128" height="56" rx="8" fill="#fff" stroke="#1c1917" stroke-width="1.8"/>
+  <text x="840" y="227" text-anchor="middle" font-size="18.4" fill="#1c1917">分析</text>
+
+  <!-- 智能体与结果 -->
+  <rect x="164" y="304" width="120" height="44" rx="8" fill="#e7edf3" stroke="#2f5169" stroke-width="2"/>
+  <text x="224" y="332" text-anchor="middle" font-size="19" fill="#1c1917">智能体</text>
+  <rect x="636" y="304" width="120" height="44" rx="8" fill="#fff" stroke="#1c1917" stroke-width="2"/>
+  <text x="696" y="332" text-anchor="middle" font-size="19" fill="#1c1917">结果</text>
+
+  <rect x="484" y="318" width="104" height="36" rx="8" fill="#fff" stroke="#1c1917" stroke-width="1.8"/>
+  <text x="536" y="342" text-anchor="middle" font-size="18.4" fill="#1c1917">约束</text>
+  <line x1="536" y1="354" x2="536" y2="404" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+
+  <!-- 共享枢纽：实现 -->
+  <rect x="375" y="404" width="170" height="48" rx="8" fill="#fff" stroke="#1c1917" stroke-width="2"/>
+  <text x="460" y="434" text-anchor="middle" font-size="19" fill="#1c1917">实现</text>
+
+  <!-- 左侧连线 -->
+  <polyline points="224,136 224,164" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <polyline points="80,164 368,164" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <line x1="80" y1="164" x2="80" y2="192" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+  <line x1="224" y1="164" x2="224" y2="192" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+  <line x1="368" y1="164" x2="368" y2="192" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+  <polyline points="80,248 80,276" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <polyline points="368,248 368,276" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <polyline points="80,276 368,276" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <line x1="224" y1="248" x2="224" y2="304" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+
+  <!-- 右侧连线 -->
+  <polyline points="696,304 696,276" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <polyline points="552,276 840,276" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <line x1="552" y1="276" x2="552" y2="248" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+  <line x1="696" y1="276" x2="696" y2="248" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+  <line x1="840" y1="276" x2="840" y2="248" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+  <polyline points="552,192 552,164" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <polyline points="840,192 840,164" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <polyline points="552,164 840,164" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <line x1="696" y1="192" x2="696" y2="136" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+
+  <!-- 底部枢纽连线 -->
+  <polyline points="224,348 224,428" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <line x1="224" y1="428" x2="375" y2="428" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+  <polyline points="545,428 696,428" fill="none" stroke="#1c1917" stroke-width="2"/>
+  <line x1="696" y1="428" x2="696" y2="348" stroke="#1c1917" stroke-width="2" marker-end="url(#eai-ah)"/>
+</svg>

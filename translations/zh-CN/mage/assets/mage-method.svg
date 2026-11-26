@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author-reviewed black-and-white argument diagram; editable print peer: book/tikz/figures/mage-method.tex. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 518" width="900" height="1036" role="img" aria-labelledby="title desc" font-family="Source Serif 4, Georgia, serif">
+<title id="title">The six claims, connected</title>
+<desc id="desc">Claims one and two motivate two parallel principles: Modeling and Alignment. Both guide and govern engineering work. Recurring failures and judgment lead to governance conversion; feedback adapts models and controls for future work. Engineering capital depends on later benefit. Claim six is a separate prediction about the reorganization of engineering work.</desc>
+<defs><marker id="arrow" viewBox="0 0 7 6" refX="7" refY="3" markerWidth="7" markerHeight="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L7 3 L0 6 Z" fill="black"/></marker></defs>
+<polyline points="121,82 121,100 329,100 329,82" fill="none" stroke="black" stroke-width=".9"/>
+<polyline points="121,100 121,122" fill="none" stroke="black" stroke-width=".9" marker-end="url(#arrow)"/>
+<polyline points="329,100 329,122" fill="none" stroke="black" stroke-width=".9" marker-end="url(#arrow)"/>
+<polyline points="121,224 121,246 329,246 329,224" fill="none" stroke="black" stroke-width=".9"/>
+<polyline points="225,246 225,270" fill="none" stroke="black" stroke-width=".9" marker-end="url(#arrow)"/>
+<polyline points="225,319 225,361" fill="none" stroke="black" stroke-width=".9" marker-end="url(#arrow)"/>
+<polyline points="87,393 4,393 4,173 28,173" fill="none" stroke="black" stroke-width=".9" marker-end="url(#arrow)"/>
+<polyline points="363,393 446,393 446,173 422,173" fill="none" stroke="black" stroke-width=".9" marker-end="url(#arrow)"/>
+<rect x="28" y="4" width="186" height="78" rx="3" fill="white" stroke="black" stroke-width=".75"/>
+<text x="121.0" y="15.25" text-anchor="middle" font-size="10.5" font-weight="700">1 · Commodity intelligence</text>
+<text x="121.0" y="27.75" text-anchor="middle" font-size="10.5" font-weight="700">changes the economics</text>
+<text x="121.0" y="40.25" text-anchor="middle" font-size="10.5" font-weight="700">of software engineering</text>
+<text x="121.0" y="52.75" text-anchor="middle" font-size="10.5">Implementation capacity becomes</text>
+<text x="121.0" y="65.25" text-anchor="middle" font-size="10.5">abundant relative to</text>
+<text x="121.0" y="77.75" text-anchor="middle" font-size="10.5">engineering judgment.</text>
+<rect x="236" y="4" width="186" height="78" rx="3" fill="white" stroke="black" stroke-width=".75"/>
+<text x="329.0" y="21.5" text-anchor="middle" font-size="10.5" font-weight="700">2 · Scale creates</text>
+<text x="329.0" y="34.0" text-anchor="middle" font-size="10.5" font-weight="700">a reasoning problem</text>
+<text x="329.0" y="46.5" text-anchor="middle" font-size="10.5">Large software systems exceed</text>
+<text x="329.0" y="59.0" text-anchor="middle" font-size="10.5">the reasoning horizon of</text>
+<text x="329.0" y="71.5" text-anchor="middle" font-size="10.5">humans and agents.</text>
+<rect x="28" y="122" width="186" height="102" rx="3" fill="#ebebeb" stroke="black" stroke-width=".75"/>
+<text x="121.0" y="142.75" text-anchor="middle" font-size="10.5" font-weight="700">3 · Modeling</text>
+<text x="121.0" y="155.25" text-anchor="middle" font-size="10.5">Purposeful models can reduce</text>
+<text x="121.0" y="167.75" text-anchor="middle" font-size="10.5">the cost of engineering reasoning.</text>
+<text x="121.0" y="185.25" text-anchor="middle" font-size="10.5">Capture consequential knowledge</text>
+<text x="121.0" y="197.75" text-anchor="middle" font-size="10.5">and intent while leaving</text>
+<text x="121.0" y="210.25" text-anchor="middle" font-size="10.5">irrelevant choices open.</text>
+<rect x="236" y="122" width="186" height="102" rx="3" fill="#ebebeb" stroke="black" stroke-width=".75"/>
+<text x="329.0" y="142.75" text-anchor="middle" font-size="10.5" font-weight="700">4 · Alignment</text>
+<text x="329.0" y="155.25" text-anchor="middle" font-size="10.5">Explicit obligations can make</text>
+<text x="329.0" y="167.75" text-anchor="middle" font-size="10.5">autonomous implementation</text>
+<text x="329.0" y="180.25" text-anchor="middle" font-size="10.5">governable.</text>
+<text x="329.0" y="197.75" text-anchor="middle" font-size="10.5">Constraints restrict; sensors</text>
+<text x="329.0" y="210.25" text-anchor="middle" font-size="10.5">observe; gates control admission.</text>
+<rect x="87" y="270" width="276" height="49" rx="3" fill="white" stroke="black" stroke-width=".75"/>
+<text x="225.0" y="285.5" text-anchor="middle" font-size="10.5" font-weight="700">Governed engineering work</text>
+<text x="225.0" y="298.0" text-anchor="middle" font-size="10.5">Substantial implementation freedom;</text>
+<text x="225.0" y="310.5" text-anchor="middle" font-size="10.5">control over the properties that matter.</text>
+<rect x="87" y="361" width="276" height="65" rx="3" fill="white" stroke="black" stroke-width=".75"/>
+<text x="225.0" y="378.25" text-anchor="middle" font-size="10.5" font-weight="700">5 · Governance conversion</text>
+<text x="225.0" y="390.75" text-anchor="middle" font-size="10.5">Recurring judgment becomes durable structure.</text>
+<text x="225.0" y="403.25" text-anchor="middle" font-size="10.5">Future work inherits models and controls.</text>
+<text x="225.0" y="415.75" text-anchor="middle" font-size="10.5">Engineering capital when later work keeps benefiting.</text>
+<rect x="28" y="456" width="394" height="57" rx="3" fill="white" stroke="black" stroke-width=".75" stroke-dasharray="4 3"/>
+<text x="225.0" y="469.25" text-anchor="middle" font-size="10.5" font-weight="700">6 · Predicted reorganization of engineering work</text>
+<text x="225.0" y="481.75" text-anchor="middle" font-size="10.5">Engineering work will reorganize around what remains scarce.</text>
+<text x="225.0" y="494.25" text-anchor="middle" font-size="10.5">Representation · evidence · governance · coordination · judgment</text>
+<text x="225.0" y="506.75" text-anchor="middle" font-size="10.5">Responsibility for consequential decisions remains.</text>
+<rect x="146.8" y="105.0" width="156.4" height="12" fill="white"/><text x="225" y="114.2" text-anchor="middle" font-size="10">motivate the two principles</text>
+<rect x="175.4" y="252.0" width="99.2" height="12" fill="white"/><text x="225" y="261.2" text-anchor="middle" font-size="10">guide and govern</text>
+<rect x="136.39999999999998" y="334.0" width="177.20000000000002" height="12" fill="white"/><text x="225" y="343.2" text-anchor="middle" font-size="10">recurring failures and judgment</text>
+<rect x="23.0" y="288.0" width="42.0" height="12" fill="white"/><text x="44" y="297.2" text-anchor="middle" font-size="10">adapt</text>
+<rect x="20.4" y="300.0" width="47.2" height="12" fill="white"/><text x="44" y="309.2" text-anchor="middle" font-size="10">models</text>
+<rect x="385.0" y="288.0" width="42.0" height="12" fill="white"/><text x="406" y="297.2" text-anchor="middle" font-size="10">adapt</text>
+<rect x="377.2" y="300.0" width="57.6" height="12" fill="white"/><text x="406" y="309.2" text-anchor="middle" font-size="10">controls</text>
+</svg>

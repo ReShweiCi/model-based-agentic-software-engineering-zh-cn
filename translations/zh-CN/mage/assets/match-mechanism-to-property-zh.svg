@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 197" width="450" height="197" role="img" aria-labelledby="title desc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<title id="title">DocAble 作业恢复协议中的两类保护机制</title>
+<desc id="desc">DocAble 作业恢复协议中的两项义务及其对应的保护机制：左侧使用原子比较并交换防止重复认领，右侧使用显式状态检查器探索有界交错以防止过期释放清除新认领。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" /></marker></defs>
+<rect x="91" y="1.778" width="268" height="30.222" rx="3" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<text x="225" y="14.222" text-anchor="middle" font-size="10" font-weight="700">DocAble：作业恢复协议</text>
+<text x="225" y="25.778" text-anchor="middle" font-size="9.2" font-style="italic">两项约束义务及 DocAble 的应对方式</text>
+<path d="M225 32 L225 37.778 L110.5 37.778" fill="none" stroke="#111111" stroke-width="0.8" />
+<path d="M110.5 37.778 L110.5 44" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<path d="M225 37.778 L338.5 37.778 L338.5 44" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<rect x="3" y="44" width="215" height="32" rx="3" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<rect x="231" y="44" width="215" height="32" rx="3" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<text x="110.5" y="57.333" text-anchor="middle" font-size="10" font-weight="700">防止重复认领</text>
+<text x="110.5" y="69.778" text-anchor="middle" font-size="8.8" font-style="italic">同一受保护效应仅允许一个工作节点认领</text>
+<text x="338.5" y="57.333" text-anchor="middle" font-size="10" font-weight="700">确保正确恢复</text>
+<text x="338.5" y="69.778" text-anchor="middle" font-size="8.8" font-style="italic">过期释放不得清除较新的认领</text>
+<path d="M110.5 76 L110.5 84" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<path d="M338.5 76 L338.5 84" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<rect x="3" y="84" width="215" height="69" rx="3" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<rect x="231" y="84" width="215" height="69" rx="3" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<path d="M68 90 L68 147" fill="none" stroke="#111111" stroke-width="0.8" />
+<path d="M296 90 L296 147" fill="none" stroke="#111111" stroke-width="0.8" />
+<text x="75" y="102" text-anchor="start" font-size="9.5" font-weight="700">原子比较并交换（CAS）</text>
+<text x="75" y="117" text-anchor="start" font-size="8.8">仅当持久化存储状态与</text>
+<text x="75" y="129" text-anchor="start" font-size="8.8">预期前态一致时方允许认领。</text>
+<text x="303" y="100" text-anchor="start" font-size="9.5" font-weight="700">显式状态检查器</text>
+<text x="303" y="114" text-anchor="start" font-size="8.8">探索有界范围内的认领与</text>
+<text x="303" y="126" text-anchor="start" font-size="8.8">释放交错，验证过期释放</text>
+<text x="303" y="138" text-anchor="start" font-size="8.8">不会破坏当前所有权。</text>
+<rect x="18" y="101" width="30" height="11" rx="2" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<rect x="18" y="113" width="30" height="11" rx="2" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<circle cx="22" cy="106.5" r="0.65" fill="#111111" stroke="#111111" stroke-width=".9" />
+<circle cx="26.5" cy="106.5" r="0.65" fill="#111111" stroke="#111111" stroke-width=".9" />
+<circle cx="22" cy="118.5" r="0.65" fill="#111111" stroke="#111111" stroke-width=".9" />
+<circle cx="26.5" cy="118.5" r="0.65" fill="#111111" stroke="#111111" stroke-width=".9" />
+<rect x="39" y="122" width="16" height="15" rx="2" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<path d="M42 122 V117 C42 110 52 110 52 117 V122" fill="none" stroke="#111111" stroke-width="1" />
+<circle cx="47" cy="128" r="1.1" fill="#111111" stroke="#111111" stroke-width=".9" />
+<path d="M47 128 L47 132" fill="none" stroke="#111111" stroke-width="1" />
+<path d="M250 126 L261 111" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<path d="M271 111 L282 126" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<path d="M254 135 L278 135" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<circle cx="246" cy="135" r="7" fill="#ffffff" stroke="#111111" stroke-width=".9" />
+<circle cx="266" cy="104" r="7" fill="#ffffff" stroke="#111111" stroke-width=".9" />
+<circle cx="286" cy="135" r="7" fill="#ffffff" stroke="#111111" stroke-width=".9" />
+<path d="M110.5 153 L110.5 161" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<path d="M338.5 153 L338.5 161" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" />
+<rect x="8" y="161" width="207" height="30" rx="3" fill="#f0f0f0" stroke="#111111" stroke-width=".8" />
+<rect x="234" y="161" width="207" height="30" rx="3" fill="#f0f0f0" stroke="#111111" stroke-width=".8" />
+<text x="111.5" y="173.857" text-anchor="middle" font-size="10" font-weight="700">运行时约束</text>
+<text x="111.5" y="185.857" text-anchor="middle" font-size="9" font-style="italic">（直接排除无效状态迁移）</text>
+<text x="337.5" y="173.857" text-anchor="middle" font-size="10" font-weight="700">模型分析</text>
+<text x="337.5" y="185.857" text-anchor="middle" font-size="9" font-style="italic">（检验所建模协议的行为）</text>
+</svg>

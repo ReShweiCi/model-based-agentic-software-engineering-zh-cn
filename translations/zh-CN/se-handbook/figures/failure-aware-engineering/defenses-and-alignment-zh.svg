@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" role="img">
+  <title>三道各有薄弱点的防线。常态下，隐患在第一道防线就被拦截；当三道防线的薄弱点对齐时，隐患穿透所有防线并导致后果重大的失败</title>
+  <!-- Umber Monograph palette: ink #1c1917, paper #fdfcf9, accent #9a3f12, rule #e4e0d8, panel #f6f4ef, subordinate #57534e -->
+  <rect x="0" y="0" width="720" height="300" fill="#fdfcf9"/>
+
+  <defs>
+    <marker id="df-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9a3f12"/>
+    </marker>
+    <marker id="df-stop" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M5,0 L5,10" stroke="#57534e" stroke-width="2.5" fill="none"/>
+    </marker>
+  </defs>
+
+  <!-- ORDINARY CASE -->
+  <text x="18" y="30" font-size="13" font-weight="600" fill="#57534e">常态情形</text>
+  <text x="18" y="70" font-size="14" fill="#1c1917">隐患</text>
+
+  <g stroke="#9a3f12" stroke-width="2" fill="none">
+    <line x1="68" y1="65" x2="152" y2="65" marker-end="url(#df-stop)"/>
+  </g>
+
+  <rect x="156" y="40" width="34" height="52" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.4"/>
+  <rect x="156" y="70" width="34" height="9" fill="#fdfcf9" stroke="none"/>
+
+  <rect x="306" y="40" width="34" height="52" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.4"/>
+  <rect x="306" y="50" width="34" height="9" fill="#fdfcf9" stroke="none"/>
+
+  <rect x="456" y="40" width="34" height="52" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.4"/>
+  <rect x="456" y="76" width="34" height="9" fill="#fdfcf9" stroke="none"/>
+
+  <text x="173" y="112" text-anchor="middle" font-size="13" fill="#57534e">防线</text>
+  <text x="323" y="112" text-anchor="middle" font-size="13" fill="#57534e">防线</text>
+  <text x="473" y="112" text-anchor="middle" font-size="13" fill="#57534e">防线</text>
+  <text x="530" y="70" font-size="13" font-style="italic" fill="#57534e">在第一道防线被拦截</text>
+
+  <line x1="18" y1="146" x2="702" y2="146" stroke="#e4e0d8" stroke-width="1.5"/>
+
+  <!-- ALIGNED WEAKNESSES -->
+  <text x="18" y="186" font-size="13" font-weight="600" fill="#57534e">薄弱点对齐</text>
+  <text x="18" y="238" font-size="14" fill="#1c1917">隐患</text>
+
+  <rect x="156" y="208" width="34" height="52" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.4"/>
+  <rect x="156" y="229" width="34" height="9" fill="#fdfcf9" stroke="none"/>
+
+  <rect x="306" y="208" width="34" height="52" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.4"/>
+  <rect x="306" y="229" width="34" height="9" fill="#fdfcf9" stroke="none"/>
+
+  <rect x="456" y="208" width="34" height="52" rx="4" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.4"/>
+  <rect x="456" y="229" width="34" height="9" fill="#fdfcf9" stroke="none"/>
+
+  <g stroke="#9a3f12" stroke-width="2" fill="none">
+    <line x1="68" y1="233" x2="576" y2="233" marker-end="url(#df-arrow)"/>
+  </g>
+
+  <text x="173" y="280" text-anchor="middle" font-size="13" fill="#57534e">薄弱点</text>
+  <text x="323" y="280" text-anchor="middle" font-size="13" fill="#57534e">薄弱点</text>
+  <text x="473" y="280" text-anchor="middle" font-size="13" fill="#57534e">薄弱点</text>
+  <text x="592" y="238" font-size="14" fill="#9a3f12">失败</text>
+
+</svg>

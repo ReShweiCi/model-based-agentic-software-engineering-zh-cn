@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="35 0 435 287" width="435" height="287" role="img" aria-labelledby="title desc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<title id="title">裕度与工程自由度</title>
+<desc id="desc">建模定义了不超过 200 毫秒的响应时间义务。实现 A 耗时 120 毫秒（裕度 80 毫秒），实现 B 耗时 195 毫秒（裕度 5 毫秒）。对齐负责测量行为并将证据反馈给建模。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" /></marker></defs>
+<rect x="103" y="2" width="226" height="65" rx="5" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<text x="216" y="16" text-anchor="middle" font-size="11.5" font-weight="700">建模（MODELING）</text>
+<text x="216" y="29" text-anchor="middle" font-size="9.2" font-style="italic">容差与自由度</text>
+<rect x="115" y="36" width="202" height="27" rx="5" fill="#f0f0f0" stroke="#111111" stroke-width=".8" />
+<text x="216" y="47" text-anchor="middle" font-size="9.2">定量约束义务（示例）</text>
+<text x="216" y="59" text-anchor="middle" font-size="10.5" font-weight="700">响应时间 ≤ 200 ms</text>
+<path d="M 216 67 L 216 79" fill="none" stroke="#111111" stroke-width="1" marker-end="url(#arrow)" />
+<rect x="38" y="83" width="342" height="77" rx="5" fill="#f0f0f0" stroke="none" stroke-width=".8" />
+<text x="132" y="98" text-anchor="middle" font-size="9.5" font-style="italic">可接受区域</text>
+<text x="132" y="110" text-anchor="middle" font-size="9.2" font-style="italic">（容差范围内）</text>
+<path d="M 54 127 L 355 127" fill="none" stroke="#111111" stroke-width="1.3" />
+<path d="M 54 122 L 54 132" fill="none" stroke="#111111" stroke-width="1" />
+<circle cx="216" cy="127" r="3.2" fill="#111111" stroke="#111111" stroke-width=".9" />
+<circle cx="320" cy="127" r="3.2" fill="#111111" stroke="#111111" stroke-width=".9" />
+<circle cx="355" cy="127" r="3.2" fill="#111111" stroke="#111111" stroke-width=".9" />
+<path d="M 216 95 L 216 119" fill="none" stroke="#111111" stroke-width="0.8" />
+<path d="M 355 95 L 355 119" fill="none" stroke="#111111" stroke-width="0.8" />
+<path d="M 216 99 L 355 99" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" marker-start="url(#arrow)" />
+<text x="285.5" y="93" text-anchor="middle" font-size="9.5">80 ms</text>
+<path d="M 320 107 L 320 119" fill="none" stroke="#111111" stroke-width="0.8" />
+<path d="M 320 112 L 355 112" fill="none" stroke="#111111" stroke-width="0.8" marker-end="url(#arrow)" marker-start="url(#arrow)" />
+<text x="337.5" y="107" text-anchor="middle" font-size="9">5 ms</text>
+<text x="54" y="144" text-anchor="middle" font-size="9.5">0 ms</text>
+<text x="216" y="143" text-anchor="middle" font-size="9.5">120 ms</text>
+<text x="216" y="155" text-anchor="middle" font-size="9.5">(A)</text>
+<text x="316" y="143" text-anchor="middle" font-size="9.5">195 ms</text>
+<text x="316" y="155" text-anchor="middle" font-size="9.5">(B)</text>
+<text x="361" y="143" text-anchor="middle" font-size="9.5">200 ms</text>
+<text x="361" y="155" text-anchor="middle" font-size="9.2" font-style="italic">（上限）</text>
+<path d="M 216 161 L 216 164 L 320 164 L 320 161" fill="none" stroke="#111111" stroke-width="0.9" />
+<path d="M 268 164 L 268 176" fill="none" stroke="#111111" stroke-width="0.9" />
+<rect x="103" y="176" width="226" height="64" rx="5" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<text x="216" y="191" text-anchor="middle" font-size="11.5" font-weight="700">对齐（ALIGNMENT）</text>
+<text x="216" y="204" text-anchor="middle" font-size="9.2" font-style="italic">测量实现行为</text>
+<rect x="116" y="212" width="96" height="25" rx="5" fill="#f0f0f0" stroke="#111111" stroke-width=".8" />
+<rect x="220" y="212" width="96" height="25" rx="5" fill="#f0f0f0" stroke="#111111" stroke-width=".8" />
+<text x="164" y="223" text-anchor="middle" font-size="9.5" font-weight="700">A：120 ms</text>
+<text x="164" y="234" text-anchor="middle" font-size="9">（裕度 80 ms）</text>
+<text x="268" y="223" text-anchor="middle" font-size="9.5" font-weight="700">B：195 ms</text>
+<text x="268" y="234" text-anchor="middle" font-size="9">（裕度 5 ms）</text>
+<path d="M 154 240 L 154 242 L 126 242 L 126 254" fill="none" stroke="#111111" stroke-width="0.9" marker-end="url(#arrow)" />
+<path d="M 274 240 L 274 242 L 310 242 L 310 254" fill="none" stroke="#111111" stroke-width="0.9" marker-end="url(#arrow)" />
+<rect x="40" y="254" width="170" height="29" rx="5" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<rect x="230" y="254" width="174" height="29" rx="5" fill="#ffffff" stroke="#111111" stroke-width=".8" />
+<text x="125" y="267" text-anchor="middle" font-size="9"><tspan font-weight="700">智能体：</tspan>在可用余量内</text>
+<text x="125" y="279" text-anchor="middle" font-size="9">探索不同实现方案</text>
+<text x="317" y="267" text-anchor="middle" font-size="9"><tspan font-weight="700">工程师：</tspan>裕度收窄时</text>
+<text x="317" y="279" text-anchor="middle" font-size="9">重审设计与控制机制</text>
+<path d="M 329 212 H 377 Q 386 212 386 203 V 39 Q 386 30 377 30 H 331" fill="none" stroke="#111111" stroke-width="1.2" marker-end="url(#arrow)" />
+<text x="394" y="87" text-anchor="start" font-size="9" font-style="italic">实测证据</text>
+<text x="394" y="99" text-anchor="start" font-size="9" font-style="italic">反哺修订</text>
+<text x="394" y="111" text-anchor="start" font-size="9" font-style="italic">模型与控制</text>
+</svg>

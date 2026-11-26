@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446 184" width="446" height="184" role="img" aria-labelledby="ibTitle ibDesc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<title id="ibTitle">干预边界：引导、动作、工作单元与工件/运行时</title>
+<desc id="ibDesc">四列对比干预边界：推理输入属于引导；动作边界、工作单元边界与工件/运行时边界属于三类强制执行边界。底部向右箭头表示纳入考量的工作范围扩大与上下文更丰富，而非执行强度递增。</desc>
+<defs><marker id="ib-arrow" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="6" markerHeight="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#1c1917"/></marker></defs>
+<rect x="148" y="4" width="296" height="147" rx="3" fill="#f6f4ef" stroke="#1c1917" stroke-width=".6"/>
+<text x="93" y="19" text-anchor="middle" font-size="10.5" fill="#1c1917" font-weight="700">引导</text>
+<text x="296" y="19" text-anchor="middle" font-size="10.5" fill="#1c1917" font-weight="700">强制执行边界</text>
+<path d="M142,10 L142,145" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<rect x="50" y="30" width="86" height="115" rx="3" fill="#ffffff" stroke="#1c1917" stroke-width=".6"/>
+<text x="93.0" y="44" text-anchor="middle" font-size="9.5" fill="#1c1917" font-weight="700">推理输入</text>
+<text x="93.0" y="64" text-anchor="middle" font-size="9" fill="#1c1917">提供给推理者的</text>
+<text x="93.0" y="76" text-anchor="middle" font-size="9" fill="#1c1917">上下文</text>
+<path d="M56,51 L130,51" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<path d="M56,84 L130,84" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<text x="93.0" y="105" text-anchor="middle" font-size="9" fill="#1c1917">指令</text>
+<text x="93.0" y="117" text-anchor="middle" font-size="9" fill="#1c1917">模型</text>
+<text x="93.0" y="129" text-anchor="middle" font-size="9" fill="#1c1917">示例</text>
+<rect x="154" y="30" width="82" height="115" rx="3" fill="#ffffff" stroke="#1c1917" stroke-width=".6"/>
+<text x="195.0" y="44" text-anchor="middle" font-size="9.5" fill="#1c1917" font-weight="700">动作</text>
+<text x="195.0" y="64" text-anchor="middle" font-size="9" fill="#1c1917">单次拟议</text>
+<text x="195.0" y="76" text-anchor="middle" font-size="9" fill="#1c1917">动作</text>
+<path d="M160,51 L230,51" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<path d="M160,84 L230,84" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<text x="195.0" y="105" text-anchor="middle" font-size="9" fill="#1c1917">权限</text>
+<text x="195.0" y="117" text-anchor="middle" font-size="9" fill="#1c1917">钩子（Hooks）</text>
+<text x="195.0" y="129" text-anchor="middle" font-size="9" fill="#1c1917">工具限制</text>
+<rect x="244" y="30" width="98" height="115" rx="3" fill="#ffffff" stroke="#1c1917" stroke-width=".6"/>
+<text x="293.0" y="44" text-anchor="middle" font-size="9.5" fill="#1c1917" font-weight="700">工作单元</text>
+<text x="293.0" y="64" text-anchor="middle" font-size="9" fill="#1c1917">由多项动作组合</text>
+<text x="293.0" y="76" text-anchor="middle" font-size="9" fill="#1c1917">而成的整体工作</text>
+<path d="M250,51 L336,51" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<path d="M250,84 L336,84" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<text x="293.0" y="103" text-anchor="middle" font-size="9" fill="#1c1917">任务完成检查</text>
+<text x="293.0" y="116" text-anchor="middle" font-size="9" fill="#1c1917">合并门禁</text>
+<text x="293.0" y="129" text-anchor="middle" font-size="9" fill="#1c1917">部署门禁</text>
+<rect x="350" y="30" width="88" height="115" rx="3" fill="#ffffff" stroke="#1c1917" stroke-width=".6"/>
+<text x="394.0" y="44" text-anchor="middle" font-size="9.5" fill="#1c1917" font-weight="700">工件 / 运行时</text>
+<text x="394.0" y="64" text-anchor="middle" font-size="9" fill="#1c1917">产出的工件</text>
+<text x="394.0" y="76" text-anchor="middle" font-size="9" fill="#1c1917">或运行状态</text>
+<path d="M356,51 L432,51" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<path d="M356,84 L432,84" fill="none" stroke="#1c1917" stroke-width=".4"/>
+<text x="394.0" y="103" text-anchor="middle" font-size="9" fill="#1c1917">API 边界</text>
+<text x="394.0" y="116" text-anchor="middle" font-size="9" fill="#1c1917">数据模式</text>
+<text x="394.0" y="129" text-anchor="middle" font-size="9" fill="#1c1917">运行时权限</text>
+<text x="43" y="44" text-anchor="end" font-size="9.2" fill="#1c1917" font-style="italic">边界</text>
+<text x="43" y="70" text-anchor="end" font-size="9.2" fill="#1c1917" font-style="italic">范围</text>
+<text x="43" y="117" text-anchor="end" font-size="9.2" fill="#1c1917" font-style="italic">示例</text>
+<text x="146" y="167" text-anchor="middle" font-size="9.2" fill="#1c1917" font-style="italic">纳入考量的工作范围扩大</text>
+<text x="342" y="167" text-anchor="middle" font-size="9.2" fill="#1c1917" font-style="italic">用于评估义务的上下文更丰富</text>
+<path d="M50,178 L440,178" fill="none" stroke="#1c1917" stroke-width=".8" marker-end="url(#ib-arrow)"/>
+</svg>

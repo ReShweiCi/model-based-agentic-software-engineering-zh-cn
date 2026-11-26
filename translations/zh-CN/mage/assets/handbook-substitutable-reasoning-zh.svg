@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1332" height="702" viewBox="0 0 444 234" role="img" aria-labelledby="title desc"><title id="title">领域义务保持稳定的可替换推理</title><desc id="desc">任务模型与工作流模型指导两种可替换引擎：步骤图执行器或规划智能体。能力与选择知识指导引擎内部的模型选择。两种引擎均产出受操作模型约束的类型化提案，并通过受控应用边界作用于当前工件。独立评估与验收模型指导最终验收。限制变更权威不仅需要类型化请求接口。</desc><defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="4.7" refY="2.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs><rect width="444" height="234" fill="white"/>
+<rect x="0" y="44" width="290" height="88" rx="3" fill="#eaeaea" stroke="black" stroke-width="0.8"/>
+<text x="145" y="57" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="bold" fill="black">两种可替换推理引擎</text>
+<text x="370" y="123" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="bold" fill="black">共享模型选择</text>
+<path d="M50,28 L50,44" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M175,28 L175,44" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M370,28 L370,78" fill="none" stroke="black" stroke-width="1.8" marker-end="url(#arrow)"/>
+<path d="M312,92 L299,92 L299,65 L78,65 L78,78" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<path d="M222,65 L222,78" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<path d="M78,106 L78,122 L50,122 L50,145" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M222,106 L222,122 L78,122" fill="none" stroke="black" stroke-width="0.8"/>
+<path d="M100,160 L115,160" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M220,160 L235,160" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M330,160 L345,160" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M50,200 L50,188 L145,188 L145,175" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M177.5,200 L177.5,175" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M392.5,175 L392.5,198" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="401" y="189" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">检查结果</text>
+<path d="M320,216 L347.5,216" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="333.5" y="209" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">策略</text>
+<path d="M275,200 L275,187 L360,187 L360,175" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<rect x="0" y="0" width="100" height="28" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="50.0" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">任务模型</text>
+<rect x="115" y="0" width="135" height="28" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="182.5" y="11.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">工作流模型</text>
+<text x="182.5" y="23.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="normal" fill="black">步骤图 / 可修订计划</text>
+<rect x="265" y="0" width="175" height="28" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="352.5" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">能力与选择模型</text>
+<rect x="12" y="78" width="132" height="28" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="78.0" y="95.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">步骤图执行器</text>
+<rect x="156" y="78" width="132" height="28" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="222.0" y="95.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">规划智能体</text>
+<rect x="312" y="78" width="116" height="28" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="370.0" y="95.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">选择胜任模型</text>
+<rect x="0" y="145" width="100" height="30" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="50.0" y="163.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">类型化提案</text>
+<rect x="115" y="145" width="105" height="30" rx="3" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="167.5" y="157" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">受控</text>
+<text x="167.5" y="169" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">应用</text>
+<rect x="235" y="145" width="95" height="30" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="282.5" y="163.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">产出工件</text>
+<rect x="345" y="145" width="95" height="30" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="392.5" y="157.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">独立</text>
+<text x="392.5" y="169.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">评估</text>
+<rect x="0" y="200" width="100" height="32" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="50.0" y="219.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">当前工件</text>
+<rect x="125" y="200" width="105" height="32" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="177.5" y="219.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">操作模型</text>
+<rect x="235" y="200" width="85" height="32" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="277.5" y="213.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">验收</text>
+<text x="277.5" y="225.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">模型</text>
+<polygon points="392.5,198.0 437.5,216 392.5,234.0 347.5,216" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="392.5" y="219.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">验收通过？</text></svg>

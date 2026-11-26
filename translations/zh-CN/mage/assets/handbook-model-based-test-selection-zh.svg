@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1332" height="756" viewBox="0 -18 444 252" role="img" aria-labelledby="title desc"><title id="title">基于模型的回归测试选择</title><desc id="desc">组件模型与声明的依赖模型推导出变更影响模型（受影响的子系统）。验证覆盖模型将受影响集合映射为选定检查。验证执行模型提供执行模式与解释策略；实际执行产生用于准入验收的执行记录与检查发现。已识别的缺口会将执行扩大至全量测试套件。独立的依赖与覆盖证据及全量对比用于检验选择结果，从而修订模型或扩大验证范围。</desc><defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="4.7" refY="2.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2.5 L0,5 Z" fill="black"/></marker></defs><rect y="-18" width="444" height="252" fill="white"/>
+<path d="M427,216 L440,216 L440,-12 L68,-12 L68,0" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<path d="M371,-12 L371,0" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<path d="M68,28 L68,43 L45,43 L45,56" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M226,28 L226,43 L68,43" fill="none" stroke="black" stroke-width="0.8"/>
+<path d="M380,28 L380,43 L285,43 L285,56" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M90,71 L105,71" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M225,71 L240,71" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M330,71 L345,71" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M394.5,86 L394.5,105 L167.5,105 L167.5,126" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M135,86 L135,114 L145,114 L145,126" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="128" y="100" text-anchor="end" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">已识别缺口：</text>
+<text x="128" y="112" text-anchor="end" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">运行全量</text>
+<path d="M100,144 L120,144" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M215,144 L235,144" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M330,144 L350,144" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<path d="M50,162 L50,180 L390,180 L390,165" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<text x="107" y="174" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">验收策略</text>
+<path d="M210,216 L235,216" fill="none" stroke="black" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<path d="M330,216 L345,216" fill="none" stroke="black" stroke-width="0.8" marker-end="url(#arrow)"/>
+<rect x="0" y="0" width="136" height="28" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="68.0" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">组件与依赖模型</text>
+<rect x="158" y="0" width="136" height="28" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="226.0" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">变更记录</text>
+<rect x="316" y="0" width="110" height="28" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="371.0" y="17.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">验证覆盖模型</text>
+<rect x="0" y="56" width="90" height="30" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="45.0" y="74.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">推导影响范围</text>
+<rect x="105" y="56" width="120" height="30" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="165.0" y="68.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">变更影响模型</text>
+<text x="165.0" y="80.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">（受影响子系统）</text>
+<rect x="240" y="56" width="90" height="30" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="285.0" y="74.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">选择检查项</text>
+<rect x="345" y="56" width="82" height="30" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="386.0" y="74.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">选定检查集合</text>
+<rect x="0" y="126" width="100" height="36" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="50.0" y="141.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">验证执行模型</text>
+<text x="50.0" y="153.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">模式 + 策略</text>
+<rect x="120" y="126" width="95" height="36" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="167.5" y="147.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">执行检查</text>
+<rect x="235" y="126" width="95" height="36" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="282.5" y="141.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">执行记录</text>
+<text x="282.5" y="153.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">+ 检查发现</text>
+<polygon points="390,123.0 430.0,144 390,165.0 350.0,144" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="390" y="147.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">准入？</text>
+<rect x="0" y="200" width="210" height="32" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="105.0" y="213.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">依赖 / 覆盖证据</text>
+<text x="105.0" y="225.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">+ 全量运行对比</text>
+<rect x="235" y="200" width="95" height="32" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="282.5" y="219.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="normal" fill="black">检验选择结果</text>
+<rect x="345" y="200" width="82" height="32" rx="8" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="386.0" y="213.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">修订模型或</text>
+<text x="386.0" y="225.4" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-weight="normal" fill="black">扩大验证范围</text></svg>

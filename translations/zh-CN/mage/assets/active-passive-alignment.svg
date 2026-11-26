@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446 240" width="446" height="240" role="img" aria-labelledby="title desc" font-family="'Source Sans 3', sans-serif">
+<title id="title">Active and passive alignment</title>
+<desc id="desc">Two stacked shaded panels. Active alignment uses models with intended obligations to compare and detect gaps, modify the system with agents, and evaluate and check alignment, repeating until conformance and producing an aligned system. Retain the models and mechanisms after success. Passive alignment evaluates proposed changes against the same models and known obligations, admitting or rejecting changes and continuing to preserve obligations. The retained models, mechanisms, and governance are engineering capital for subsequent changes.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<rect x="1" y="1" width="442" height="99" rx="6" fill="#f2f2f2" stroke="#888" stroke-width=".45"/>
+<rect x="1" y="128" width="442" height="109" rx="6" fill="#f2f2f2" stroke="#888" stroke-width=".45"/>
+<path d="M101 10 L101 91" fill="none" stroke="#888" stroke-width="0.45"/>
+<path d="M101 137 L101 222" fill="none" stroke="#888" stroke-width="0.45"/>
+<text x="11" y="24" text-anchor="start" font-size="10" font-weight="700">Active Alignment</text>
+<text x="11" y="37" text-anchor="start" font-size="10" font-weight="700">(convergence)</text>
+<text x="11" y="55" text-anchor="start" font-size="9" font-style="italic">Use the models to</text>
+<text x="11" y="67" text-anchor="start" font-size="9" font-style="italic">change the system until</text>
+<text x="11" y="79" text-anchor="start" font-size="9" font-style="italic">it satisfies them.</text>
+<text x="11" y="148" text-anchor="start" font-size="10" font-weight="700">Passive Alignment</text>
+<text x="11" y="161" text-anchor="start" font-size="10" font-weight="700">(preservation)</text>
+<text x="11" y="180" text-anchor="start" font-size="9" font-style="italic">The same models and</text>
+<text x="11" y="192" text-anchor="start" font-size="9" font-style="italic">mechanisms keep the</text>
+<text x="11" y="204" text-anchor="start" font-size="9" font-style="italic">system aligned.</text>
+<rect x="112" y="28" width="68" height="37" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="110" y="30" width="68" height="37" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="108" y="32" width="68" height="37" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="142" y="42" text-anchor="middle" font-size="9.5">Models M</text>
+<text x="142" y="53" text-anchor="middle" font-size="9" font-style="italic">Intended</text>
+<text x="142" y="64" text-anchor="middle" font-size="9" font-style="italic">obligations</text>
+<rect x="192" y="26" width="47" height="43" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="251" y="26" width="57" height="43" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="320" y="26" width="50" height="43" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="382" y="26" width="49" height="43" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="215.5" y="39" text-anchor="middle" font-size="9">Compare</text>
+<text x="215.5" y="50" text-anchor="middle" font-size="9">and detect</text>
+<text x="215.5" y="61" text-anchor="middle" font-size="9">gaps</text>
+<text x="279.5" y="39" text-anchor="middle" font-size="9">Modify</text>
+<text x="279.5" y="50" text-anchor="middle" font-size="9">the system</text>
+<text x="279.5" y="61" text-anchor="middle" font-size="9" font-style="italic">(with agents)</text>
+<text x="345" y="39" text-anchor="middle" font-size="9">Evaluate</text>
+<text x="345" y="50" text-anchor="middle" font-size="9">and check</text>
+<text x="345" y="61" text-anchor="middle" font-size="9">alignment</text>
+<text x="406.5" y="39" text-anchor="middle" font-size="9">Aligned</text>
+<text x="406.5" y="50" text-anchor="middle" font-size="9">system</text>
+<text x="406.5" y="62" text-anchor="middle" font-size="10">S′</text>
+<path d="M180 47 L192 47" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M239 47 L251 47" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M308 47 L320 47" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M370 47 L382 47" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M345 69 L345 82 L215.5 82 L215.5 69" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<text x="275.5" y="94" text-anchor="middle" font-size="9" font-style="italic">Repeat until conformance</text>
+<path d="M128.5 100 L128.5 124" fill="none" stroke="#111" stroke-width="1" marker-end="url(#arrow)"/>
+<text x="140" y="110" text-anchor="start" font-size="9" font-style="italic">Once active alignment succeeds,</text>
+<text x="140" y="122" text-anchor="start" font-size="9" font-style="italic">retain the models and mechanisms.</text>
+<rect x="219" y="134" width="78" height="27" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="217" y="136" width="78" height="27" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="215" y="138" width="78" height="27" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="254" y="150" text-anchor="middle" font-size="9.5">Models M</text>
+<text x="254" y="161" text-anchor="middle" font-size="9" font-style="italic">Known obligations</text>
+<rect x="111" y="179" width="75" height="32" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="215" y="178" width="81" height="37" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="336" y="179" width="65" height="32" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="148.5" y="192" text-anchor="middle" font-size="9">Proposed</text>
+<text x="148.5" y="204" text-anchor="middle" font-size="9">change ΔS</text>
+<text x="255.5" y="189" text-anchor="middle" font-size="9">Evaluate the</text>
+<text x="255.5" y="200" text-anchor="middle" font-size="9">change against</text>
+<text x="255.5" y="211" text-anchor="middle" font-size="9">the models</text>
+<text x="368.5" y="192" text-anchor="middle" font-size="9">Updated</text>
+<text x="368.5" y="204" text-anchor="middle" font-size="9">system S′</text>
+<path d="M254 165 L254 178" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M186 195 L215 195" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M296 195 L336 195" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<text x="330" y="172" text-anchor="middle" font-size="9" font-style="italic">Admit or reject</text>
+<path d="M368.5 211 L368.5 223 L148.5 223 L148.5 211" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<text x="258.5" y="235" text-anchor="middle" font-size="9" font-style="italic">Continue preserving obligations</text>
+</svg>

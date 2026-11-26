@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337.5 247" width="337.5" height="247" role="img" aria-labelledby="rsTitle rsDesc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="rsTitle">容差界定可接受的实现空间，同时保留自由度</title>
+  <desc id="rsDesc">对最多包含 1,000 个姓名的列表进行排序的可能软件实现。左侧区域包含按字母顺序返回姓名的实现；右侧区域包含响应时间不超过 200 毫秒的实现。重叠区域包含同时满足两项需求的实现。每个圆点代表一种不同的可能实现。时间上限设定了容差，而在可接受实现之间的选择则构成自由度。</desc>
+  <defs>
+    <marker id="a2f5169" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#2f5169"/></marker>
+    <marker id="a57534e" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#57534e"/></marker>
+    <marker id="a086438" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#086438"/></marker>
+    <marker id="a1c1917" viewBox="0 0 6 6" refX="5.6" refY="3" markerWidth="5" markerHeight="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L6 3L0 6Z" fill="#1c1917"/></marker>
+  </defs>
+  <text x="168.75" y="12.0" text-anchor="middle" font-size="10" fill="#57534e" font-weight="700">所有可能的软件实现</text>
+  <text x="168.75" y="26.0" text-anchor="middle" font-size="9" fill="#1c1917">最多包含 1,000 个姓名的列表</text>
+  <rect x="5" y="35" width="327.5" height="177" rx="4" fill="#f6f4ef" stroke="#57534e" stroke-width="0.8"/>
+  <ellipse cx="132" cy="124" rx="110" ry="80" fill="#f2e7df" stroke="#ad420d" stroke-width=".8"/>
+  <ellipse cx="205" cy="124" rx="110" ry="80" fill="#f2e7df" fill-opacity=".45" stroke="#ad420d" stroke-width=".8"/>
+  <text x="61" y="98.0" text-anchor="middle" font-size="9" fill="#ad420d" font-weight="700">按字母顺序</text>
+  <text x="61" y="110.0" text-anchor="middle" font-size="9" fill="#ad420d" font-weight="700">排列</text>
+  <text x="278" y="99.0" text-anchor="middle" font-size="9" fill="#ad420d" font-weight="700">响应时间</text>
+  <text x="278" y="112.0" text-anchor="middle" font-size="9" fill="#ad420d">≤ 200 ms</text>
+  <text x="278" y="125.0" text-anchor="middle" font-size="9" fill="#ad420d">（容差）</text>
+  <text x="169" y="80.0" text-anchor="middle" font-size="10" fill="#1c1917" font-weight="700">可接受的实现</text>
+  <text x="169" y="96.0" text-anchor="middle" font-size="9" fill="#1c1917">同时满足两项要求</text>
+  <circle cx="35" cy="51" r="1.65" fill="#1c1917"/>
+  <circle cx="67" cy="137" r="1.65" fill="#1c1917"/>
+  <circle cx="82" cy="157" r="1.65" fill="#1c1917"/>
+  <circle cx="70" cy="177" r="1.65" fill="#1c1917"/>
+  <circle cx="142" cy="128" r="1.65" fill="#1c1917"/>
+  <circle cx="165" cy="137" r="1.65" fill="#1c1917"/>
+  <circle cx="181" cy="130" r="1.65" fill="#1c1917"/>
+  <circle cx="194" cy="120" r="1.65" fill="#1c1917"/>
+  <circle cx="206" cy="141" r="1.65" fill="#1c1917"/>
+  <circle cx="156" cy="153" r="1.65" fill="#1c1917"/>
+  <circle cx="179" cy="156" r="1.65" fill="#1c1917"/>
+  <circle cx="167" cy="173" r="1.65" fill="#1c1917"/>
+  <circle cx="192" cy="176" r="1.65" fill="#1c1917"/>
+  <circle cx="155" cy="190" r="1.65" fill="#1c1917"/>
+  <circle cx="181" cy="186" r="1.65" fill="#1c1917"/>
+  <circle cx="273" cy="148" r="1.65" fill="#1c1917"/>
+  <circle cx="288" cy="161" r="1.65" fill="#1c1917"/>
+  <circle cx="275" cy="179" r="1.65" fill="#1c1917"/>
+  <circle cx="311" cy="200" r="1.65" fill="#1c1917"/>
+  <circle cx="9" cy="225" r="1.65" fill="#1c1917"/>
+  <text x="16" y="228.0" text-anchor="start" font-size="9" fill="#1c1917">一种不同的可能实现</text>
+  <text x="168.75" y="243.0" text-anchor="middle" font-size="9" fill="#1c1917">自由度：在可接受的实现之间做出选择</text>
+</svg>

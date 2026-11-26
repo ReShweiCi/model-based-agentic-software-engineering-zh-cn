@@ -1,3 +1,13 @@
+> **Unofficial Chinese Translation Fork / 非官方中文译本说明**
+>
+> This repository is an **unofficial Chinese translation fork** of [davisjam/model-based-agentic-software-engineering](https://github.com/davisjam/model-based-agentic-software-engineering) by James C. Davis (licensed under the [MIT License](LICENSE)).
+>
+> - **中文阅读与构建说明**：请查看 [README.zh-CN.md](README.zh-CN.md)
+> - **中文版 PDF 自动发布下载**：请前往 [Releases (`zh-pdf-latest`)](https://github.com/ReShweiCi/model-based-agentic-software-engineering-zh-cn/releases/tag/zh-pdf-latest) 下载《软件工程手册》与《MAGE》完整中文 PDF（由 GitHub Actions 自动构建）
+> - **中文 Typst 源码与术语表**：位于 [`translations/zh-CN/`](translations/zh-CN/)
+
+---
+
 # Agent Governance Mechanisms
 
 <!-- summary: A pattern catalogue of the mechanisms for governable agentic software engineering — 85 across three roles. -->

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="888" height="599" viewBox="0 0 444 299.5" role="img" aria-labelledby="title desc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<title id="title">成熟传统，全新组合</title>
+<desc id="desc">工程传统与 AI 传统共同汇聚于 MAGE。建模使知识显式化，对齐强制执行选定的约束义务。两者共同构建承载工程资本的受治理的工程环境，后续工作继承这些工程资本，以期实现可信自主性。</desc>
+<defs><marker id="arrow" markerWidth="5" markerHeight="5" refX="5" refY="2.5" orient="auto"><path d="M0 0 L5 2.5 L0 5 Z" fill="#1c1917"/></marker></defs>
+<g fill="#1c1917" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<text x="108" y="13.0" font-size="11.5" text-anchor="middle" font-weight="700">工程传统</text>
+<text x="336" y="13.0" font-size="11.5" text-anchor="middle" font-weight="700">AI 传统</text>
+<rect x="2" y="20" width="108" height="32" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="56.0" y="33.0" font-size="9.5" text-anchor="middle" font-weight="700">MBSE / MDE</text>
+<text x="56.0" y="45.5" font-size="8.5" text-anchor="middle">显式模型</text>
+<rect x="114" y="20" width="101" height="32" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="164.5" y="33.0" font-size="9.5" text-anchor="middle" font-weight="700">编程语言与编译器</text>
+<text x="164.5" y="45.5" font-size="8.5" text-anchor="middle">类型系统 · DSL</text>
+<rect x="230" y="20" width="108" height="32" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="284.0" y="33.0" font-size="9.5" text-anchor="middle" font-weight="700">知识表示</text>
+<text x="284.0" y="45.5" font-size="8.5" text-anchor="middle">显式知识</text>
+<rect x="342" y="20" width="100" height="32" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="392.0" y="33.0" font-size="9.5" text-anchor="middle" font-weight="700">记忆与规划状态</text>
+<text x="392.0" y="45.5" font-size="8.5" text-anchor="middle">外部状态</text>
+<rect x="2" y="56" width="108" height="32" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="56.0" y="69.0" font-size="9.5" text-anchor="middle" font-weight="700">形式化方法</text>
+<text x="56.0" y="81.5" font-size="8.5" text-anchor="middle">规约与验证</text>
+<rect x="114" y="56" width="101" height="32" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="164.5" y="69.0" font-size="9.5" text-anchor="middle" font-weight="700">系统与安全工程</text>
+<text x="164.5" y="81.5" font-size="8.5" text-anchor="middle">边界与控制</text>
+<rect x="230" y="56" width="108" height="32" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="284.0" y="69.0" font-size="9.5" text-anchor="middle" font-weight="700">结构化推理</text>
+<text x="284.0" y="81.5" font-size="8.5" text-anchor="middle">中间结构</text>
+<rect x="342" y="56" width="100" height="32" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="392.0" y="69.0" font-size="9.5" text-anchor="middle" font-weight="700">工具与接口</text>
+<text x="392.0" y="81.5" font-size="8.5" text-anchor="middle">推理器支撑</text>
+<path d="M77,88 L77,99" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M77,99 L143,99" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M143,99 L143,111" fill="none" stroke="#1c1917" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M377,88 L377,99" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M377,99 L302,99" fill="none" stroke="#1c1917" stroke-width="0.7"/>
+<path d="M302,99 L302,111" fill="none" stroke="#1c1917" stroke-width="0.7" marker-end="url(#arrow)"/>
+<rect x="52" y="112" width="341" height="141" rx="5" fill="#f6f4ef" stroke="#1c1917" stroke-width="1.15"/>
+<rect x="190" y="102" width="64" height="19" rx="4" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="222" y="115.5" font-size="12.5" text-anchor="middle" font-weight="700">MAGE</text>
+<text x="222" y="131.0" font-size="9.5" text-anchor="middle">新经济条件 → 新组合方式</text>
+<rect x="66" y="139" width="149" height="26" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="140.5" y="150.0" font-size="10.5" text-anchor="middle" font-weight="700">建模（Modeling）</text>
+<text x="140.5" y="161.5" font-size="8.5" text-anchor="middle">使知识显式化</text>
+<path d="M140.5,165 L140.5,178" fill="none" stroke="#1c1917" stroke-width="0.7" marker-end="url(#arrow)"/>
+<rect x="232" y="139" width="149" height="26" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="306.5" y="150.0" font-size="10.5" text-anchor="middle" font-weight="700">对齐（Alignment）</text>
+<text x="306.5" y="161.5" font-size="8.5" text-anchor="middle">强制执行选定的约束义务</text>
+<path d="M306.5,165 L306.5,178" fill="none" stroke="#1c1917" stroke-width="0.7" marker-end="url(#arrow)"/>
+<rect x="74" y="179" width="296" height="66" rx="4" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="222" y="191.0" font-size="10.5" text-anchor="middle" font-weight="700">受治理的工程环境</text>
+<text x="222" y="202.0" font-size="8.5" text-anchor="middle">表示 · 工具 · 规程 · 证据 · 约束 · 控制</text>
+<text x="222" y="212.0" font-size="8.5" text-anchor="middle">两大传统的交汇之处</text>
+<rect x="97" y="216" width="250" height="25" rx="3" fill="white" stroke="#1c1917" stroke-width="0.7"/>
+<text x="222" y="226.5" font-size="10.5" text-anchor="middle" font-weight="700">工程资本</text>
+<text x="222" y="237.5" font-size="8.5" text-anchor="middle">反复出现的判断，沉淀为持久结构</text>
+<path d="M222,253 L222,272" fill="none" stroke="#1c1917" stroke-width="0.7" marker-end="url(#arrow)"/>
+<text x="230" y="264.5" font-size="8.8" text-anchor="start">由后续工作继承</text>
+<rect x="141" y="273" width="162" height="26" rx="5" fill="white" stroke="#1c1917" stroke-dasharray="3 2" stroke-width="0.85"/>
+<text x="222" y="284.5" font-size="10.5" text-anchor="middle" font-weight="700">可信自主性</text>
+<text x="222" y="295.0" font-size="8.5" text-anchor="middle">预期目标</text>
+</g>
+</svg>

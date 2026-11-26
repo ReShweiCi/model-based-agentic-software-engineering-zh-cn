@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="670" height="402" viewBox="0 0 335 201" role="img" aria-labelledby="title desc">
+<title id="title">基于共享标识的异构模型</title>
+<desc id="desc">调查服务性能问题时，经由共享标识枢纽从服务注册表遍历至部署拓扑，再经由枢纽遍历至性能测量记录。</desc>
+<defs><marker id="arrow" markerWidth="7" markerHeight="6" refX="6.8" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7,3 L0,6 Z" fill="black"/></marker></defs>
+<rect width="335" height="201" fill="white"/>
+<path d="M75,68 L101,85" fill="none" stroke="black" stroke-width=".55"/>
+<path d="M75,140 L101,123" fill="none" stroke="black" stroke-width=".55"/>
+<path d="M155,168 L155,138" fill="none" stroke="black" stroke-width=".55"/>
+<path d="M243,48 L201,80" fill="none" stroke="black" stroke-width=".55"/>
+<path d="M151,32 C151,47 144,56 145,70" fill="none" stroke="black" stroke-width="1.9" marker-end="url(#arrow)"/>
+<path d="M217,94 C227,89 233,89 244,92" fill="none" stroke="black" stroke-width="1.9" marker-end="url(#arrow)"/>
+<path d="M244,119 C234,126 224,125 215,117" fill="none" stroke="black" stroke-width="1.9" marker-end="url(#arrow)"/>
+<path d="M199,129 C213,147 227,169 243,177" fill="none" stroke="black" stroke-width="1.9" marker-end="url(#arrow)"/>
+<ellipse cx="155" cy="104" rx="65" ry="34" fill="#eeeeee" stroke="black" stroke-width=".7"/>
+<text x="155" y="92" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700">通过共享标识遍历</text>
+<text x="155" y="108" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-style="italic">例如：排查某项</text>
+<text x="155" y="121" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9" font-style="italic">服务的性能问题</text>
+<rect x="105.5" y="4.0" width="91" height="28" rx="3" fill="white" stroke="black" stroke-width=".65"/>
+<text x="151" y="15.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700">服务注册表</text>
+<text x="151" y="27.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5">（标识服务）</text>
+<rect x="5.0" y="53.5" width="70" height="29" rx="3" fill="white" stroke="black" stroke-width=".65"/>
+<text x="40" y="71.5" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5">溯源记录</text>
+<rect x="5.0" y="125.5" width="70" height="29" rx="3" fill="white" stroke="black" stroke-width=".65"/>
+<text x="40" y="143.5" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5">计算图</text>
+<rect x="118.0" y="168.0" width="74" height="28" rx="3" fill="white" stroke="black" stroke-width=".65"/>
+<text x="155" y="185.5" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5">权益策略</text>
+<rect x="243.0" y="38.0" width="86" height="20" rx="3" fill="white" stroke="black" stroke-width=".65"/>
+<text x="286" y="51.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5">状态机</text>
+<rect x="244.0" y="84.0" width="86" height="42" rx="3" fill="white" stroke="black" stroke-width=".65"/>
+<text x="287" y="102" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700">部署拓扑</text>
+<text x="287" y="116" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5">（运行于何处）</text>
+<rect x="243.0" y="162.0" width="88" height="30" rx="3" fill="white" stroke="black" stroke-width=".65"/>
+<text x="287" y="174.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="9.5" font-weight="700">测量记录</text>
+<text x="287" y="186.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5">（性能表现如何）</text>
+<circle cx="132" cy="49" r="8" fill="white" stroke="black" stroke-width=".7"/>
+<text x="132" y="52.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="700">1</text>
+<circle cx="232" cy="76" r="8" fill="white" stroke="black" stroke-width=".7"/>
+<text x="232" y="79.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="700">2</text>
+<circle cx="234" cy="148" r="8" fill="white" stroke="black" stroke-width=".7"/>
+<text x="234" y="151.3" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="700">3</text>
+</svg>

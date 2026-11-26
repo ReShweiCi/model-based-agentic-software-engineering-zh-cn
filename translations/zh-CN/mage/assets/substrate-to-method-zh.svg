@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="686.4" height="233.2" viewBox="0 0 686.4 233.2" role="img" aria-labelledby="title desc">
+<title id="title">从智能体机械装置到 MAGE</title>
+<desc id="desc">两行路径将驱动属性连接到工程问题与 MAGE 的应对方法：有限的工作状态引出表示问题与建模；概率性的智能体工作引出执行问题与对齐。</desc>
+<defs><marker id="arrow" markerWidth="13.2" markerHeight="13.2" refX="11.44" refY="6.6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L11.44,6.6 L0,13.2 Z" fill="black"/></marker></defs>
+<rect width="686.4" height="233.2" fill="white"/>
+<style>text{font-family:'Noto Sans CJK SC','WenQuanYi Micro Hei',sans-serif;fill:black}</style>
+<g fill="black">
+<rect x="0.88" y="64.68" width="200.64" height="68.2" rx="5.5" fill="white" stroke="black" stroke-width="1.43"/>
+<text x="101.2" y="106.04" text-anchor="middle" font-size="21" font-weight="400">有限的工作状态</text>
+<rect x="250.8" y="64.68" width="227.92" height="68.2" rx="5.5" fill="white" stroke="black" stroke-width="1.43"/>
+<text x="364.76" y="106.04" text-anchor="middle" font-size="21" font-weight="400">表示问题</text>
+<rect x="527.12" y="64.68" width="158.4" height="68.2" rx="5.5" fill="white" stroke="black" stroke-width="1.43"/>
+<text x="606.32" y="106.04" text-anchor="middle" font-size="21" font-weight="400">建模</text>
+<rect x="0.88" y="163.68" width="200.64" height="68.2" rx="5.5" fill="white" stroke="black" stroke-width="1.43"/>
+<text x="101.2" y="191.84" text-anchor="middle" font-size="20" font-weight="400">概率性的</text>
+<text x="101.2" y="218.24" text-anchor="middle" font-size="20" font-weight="400">智能体工作</text>
+<rect x="250.8" y="163.68" width="227.92" height="68.2" rx="5.5" fill="white" stroke="black" stroke-width="1.43"/>
+<text x="364.76" y="205.04" text-anchor="middle" font-size="21" font-weight="400">执行问题</text>
+<rect x="527.12" y="163.68" width="158.4" height="68.2" rx="5.5" fill="white" stroke="black" stroke-width="1.43"/>
+<text x="606.32" y="205.04" text-anchor="middle" font-size="21" font-weight="400">对齐</text>
+<text x="101.2" y="36" text-anchor="middle" font-size="21" font-weight="700">驱动属性</text>
+<text x="364.76" y="36" text-anchor="middle" font-size="21" font-weight="700">工程问题</text>
+<text x="606.32" y="36" text-anchor="middle" font-size="21" font-weight="700">应对方法</text>
+<path d="M201.52,98.78 L250.8,98.78" fill="none" stroke="black" stroke-width="1.43" marker-end="url(#arrow)"/>
+<path d="M478.72,98.78 L527.12,98.78" fill="none" stroke="black" stroke-width="1.43" marker-end="url(#arrow)"/>
+<path d="M201.52,197.78 L250.8,197.78" fill="none" stroke="black" stroke-width="1.43" marker-end="url(#arrow)"/>
+<path d="M478.72,197.78 L527.12,197.78" fill="none" stroke="black" stroke-width="1.43" marker-end="url(#arrow)"/>
+</g>
+</svg>

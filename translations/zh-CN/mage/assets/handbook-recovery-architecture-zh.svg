@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="936" viewBox="0 0 440 312" role="img" aria-labelledby="title desc"><title id="title">作业恢复中的三项承诺</title><desc id="desc">文档作业在 Redis 中获取在途记账租约，记录作业 ID 与签发纪元，不记录工作节点标识。内联无分块路径绕过受保护合并申领；合并路径必须赢得数据库比较并交换更新。两条路径均先持久化制品再更新持久作业状态，最终到达完成或失败终态。</desc><defs><marker id="arrow" markerWidth="5" markerHeight="4" refX="5" refY="2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L5,2 L0,4 Z" fill="black"/></marker></defs><rect width="440" height="312" fill="white"/>
+<path d="M106.58,30 L106.58,53" fill="none" stroke="black" stroke-width="0.9"/>
+<path d="M58.67,53 L159.38,53" fill="none" stroke="black" stroke-width="0.9"/>
+<path d="M58.67,53 L58.67,67" fill="none" stroke="black" stroke-width="0.9" marker-end="url(#arrow)"/>
+<path d="M159.38,53 L159.38,67" fill="none" stroke="black" stroke-width="0.9" marker-end="url(#arrow)"/>
+<path d="M35.2,119 L35.2,211" fill="none" stroke="black" stroke-width="0.9" marker-end="url(#arrow)"/>
+<path d="M147.64,119 L147.64,140" fill="none" stroke="black" stroke-width="0.9" marker-end="url(#arrow)"/>
+<path d="M151.56,192 L151.56,211" fill="none" stroke="black" stroke-width="0.9" marker-end="url(#arrow)"/>
+<path d="M107.56,263 L107.56,281" fill="none" stroke="black" stroke-width="0.9" marker-end="url(#arrow)"/>
+<rect x="48.89" y="2" width="115.38" height="28" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="106.58" y="14" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">文档作业</text>
+<text x="106.58" y="25" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">（作业 ID）</text>
+<text x="27" y="44" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.6" font-weight="bold" fill="black">内联路径</text>
+<text x="27" y="54" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.4" font-weight="normal" fill="black">（无分块）</text>
+<text x="188" y="44" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.6" font-weight="bold" fill="black">合并路径</text>
+<text x="188" y="54" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.4" font-weight="normal" fill="black">（含申领）</text>
+<rect x="2.93" y="67" width="212.18" height="52" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="109.02" y="79" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">1. 在途租约</text>
+<text x="109.02" y="90" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.8" font-weight="normal" fill="black">（Redis 中的作业记账）</text>
+<text x="15" y="103" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="22" y="103" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">作业 ID + 签发纪元；无工作节点 ID</text>
+<text x="15" y="114" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="22" y="114" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">过期复检后执行条件重签</text>
+<rect x="71.38" y="140" width="147.64" height="52" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="145.2" y="152" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">2. 受保护效果申领</text>
+<text x="145.2" y="163" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.6" fill="black">（仅合并路径）</text>
+<text x="80" y="176" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="87" y="176" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">数据库比较并交换（CAS）</text>
+<text x="80" y="187" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="87" y="187" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">该合并申领仅允许单一胜出者</text>
+<rect x="1.96" y="211" width="213.16" height="52" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="108.53" y="223" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">3. 结果发布</text>
+<text x="108.53" y="234" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.6" fill="black">（持久化结果并更新作业）</text>
+<text x="15" y="247" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="22" y="247" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">持久化制品（如 PDF）</text>
+<text x="15" y="258" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="22" y="258" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">随后更新作业行（状态与结果）</text>
+<rect x="40.09" y="281" width="136.89" height="27" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="108.53" y="293" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">终态作业</text>
+<text x="108.53" y="304" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.6" fill="black">（已完成或已失败）</text>
+<rect x="250" y="36" width="188" height="102" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="260" y="49" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">失败与恢复</text>
+<text x="263" y="62" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="270" y="62" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">租约过期 → 条件重签</text>
+<text x="270" y="73" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.2" fill="black">（原子复检过期状态）</text>
+<text x="263" y="85" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="270" y="85" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">受护陈旧释放 → 忽略</text>
+<text x="270" y="96" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.2" fill="black">（纪元不匹配）</text>
+<text x="263" y="108" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="270" y="108" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">效果中断 → 检查申领状态</text>
+<text x="263" y="120" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">•</text>
+<text x="270" y="120" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" fill="black">发布中断 → 同时检查制品</text>
+<text x="270" y="131" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.2" fill="black">与持久化作业状态</text>
+<rect x="250" y="151" width="188" height="134" rx="0" fill="white" stroke="black" stroke-width="0.8"/>
+<text x="260" y="164" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="10" font-weight="bold" fill="black">不同的保证机制</text>
+<rect x="259" y="174" width="172" height="31" rx="1" fill="white" stroke="black" stroke-width="0.8"/>
+<rect x="259" y="174" width="58" height="31" rx="1" fill="#eaeaea" stroke="black" stroke-width="0.8"/>
+<text x="288" y="187" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="bold" fill="black">运行时</text>
+<text x="288" y="198" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="bold" fill="black">约束</text>
+<text x="322" y="186" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.3" fill="black">原子比较并交换保护</text>
+<text x="322" y="197" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.3" fill="black">选定的合并申领。</text>
+<rect x="259" y="211" width="172" height="31" rx="1" fill="white" stroke="black" stroke-width="0.8"/>
+<rect x="259" y="211" width="58" height="31" rx="1" fill="#eaeaea" stroke="black" stroke-width="0.8"/>
+<text x="288" y="224" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="bold" fill="black">显式状态</text>
+<text x="288" y="235" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="bold" fill="black">探索</text>
+<text x="322" y="223" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.3" fill="black">有界探索陈旧释放与</text>
+<text x="322" y="234" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.3" fill="black">恢复交错顺序。</text>
+<rect x="259" y="248" width="172" height="31" rx="1" fill="white" stroke="black" stroke-width="0.8"/>
+<rect x="259" y="248" width="58" height="31" rx="1" fill="#eaeaea" stroke="black" stroke-width="0.8"/>
+<text x="288" y="261" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="bold" fill="black">时序</text>
+<text x="288" y="272" text-anchor="middle" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.5" font-weight="bold" fill="black">分析</text>
+<text x="322" y="260" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.3" fill="black">投递与清扫假设决定</text>
+<text x="322" y="271" text-anchor="start" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif" font-size="8.3" fill="black">最终终止性质。</text></svg>

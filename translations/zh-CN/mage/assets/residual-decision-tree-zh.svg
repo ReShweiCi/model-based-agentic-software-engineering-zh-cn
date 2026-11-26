@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 504" width="1000" height="504"
+     role="img" aria-labelledby="hgTitle hgDesc"
+     font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+  <title id="hgTitle">强制执行的止步之处：三个问题将任意义务归入四种处置状态</title>
+  <desc id="desc">三个递进问题将一项约束义务归入残余未显式化、需要人工判断、仅评估或受治理四种状态。</desc>
+
+  <defs>
+    <marker id="hg-ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f5169"/>
+    </marker>
+  </defs>
+
+  <!-- Q1 -->
+  <rect id="q1" x="360" y="30" width="320" height="58" rx="8" fill="#eef2f6" stroke="#2f5169" stroke-width="2"/>
+  <text x="520" y="55" text-anchor="middle" font-size="19" font-weight="700" fill="#1c1917">该义务是否已以环境可用的</text>
+  <text x="520" y="77" text-anchor="middle" font-size="19" font-weight="700" fill="#1c1917">形式显式表达？</text>
+
+  <!-- Q1 否 -> 残余 -->
+  <path d="M376,88 L376,119 L264,119 L264,150" fill="none" stroke="#2f5169" stroke-width="2" marker-end="url(#hg-ah)"/>
+  <text x="300" y="112" text-anchor="middle" font-size="19" font-style="italic" fill="#8a2f2f">否</text>
+  <rect id="residual" x="41.38" y="152" width="267.25" height="66" rx="8" fill="#f6ece9" stroke="#b23b3b" stroke-width="2"/>
+  <text x="175" y="181" text-anchor="middle" font-size="19.5" font-weight="800" fill="#8a2f2f">残余（RESIDUAL）</text>
+  <text x="175" y="203" text-anchor="middle" font-size="17.5" font-style="italic" fill="#57534e">须由推理者临场重构</text>
+
+  <!-- Q1 是 -> Q2 -->
+  <path d="M545,88 L545,150" fill="none" stroke="#2f5169" stroke-width="2" marker-end="url(#hg-ah)"/>
+  <text x="576" y="120" text-anchor="middle" font-size="19" font-style="italic" fill="#2f5137">是</text>
+
+  <!-- Q2 -->
+  <rect id="q2" x="396.99" y="152" width="346.02" height="58" rx="8" fill="#eef2f6" stroke="#2f5169" stroke-width="2"/>
+  <text x="570" y="187" text-anchor="middle" font-size="19" font-weight="700" fill="#1c1917">能否对其进行充分评估？</text>
+
+  <!-- Q2 否 -> 需要判断 -->
+  <path d="M426,210 L426,241 L354,241 L354,272" fill="none" stroke="#2f5169" stroke-width="2" marker-end="url(#hg-ah)"/>
+  <text x="352" y="234" text-anchor="middle" font-size="19" font-style="italic" fill="#7a5c12">否</text>
+  <rect id="judgment" x="80.94" y="274" width="328.12" height="66" rx="8" fill="#fbf6e9" stroke="#a6801f" stroke-width="2"/>
+  <text x="245" y="303" text-anchor="middle" font-size="19.5" font-weight="800" fill="#7a5c12">需要判断（JUDGMENT）</text>
+  <text x="245" y="325" text-anchor="middle" font-size="17.5" font-style="italic" fill="#57534e">尚无充分的机械评估器</text>
+
+  <!-- Q2 是 -> Q3 -->
+  <path d="M595,210 L595,272" fill="none" stroke="#2f5169" stroke-width="2" marker-end="url(#hg-ah)"/>
+  <text x="626" y="242" text-anchor="middle" font-size="19" font-style="italic" fill="#2f5137">是</text>
+
+  <!-- Q3 -->
+  <rect id="q3" x="460" y="274" width="320" height="58" rx="8" fill="#eef2f6" stroke="#2f5169" stroke-width="2"/>
+  <text x="620" y="299" text-anchor="middle" font-size="19" font-weight="700" fill="#1c1917">环境是否强制执行</text>
+  <text x="620" y="321" text-anchor="middle" font-size="19" font-weight="700" fill="#1c1917">该评估结果？</text>
+
+  <!-- Q3 否 -> 仅评估 -->
+  <path d="M470,332 L470,394" fill="none" stroke="#2f5169" stroke-width="2" marker-end="url(#hg-ah)"/>
+  <text x="410" y="356" text-anchor="middle" font-size="19" font-style="italic" fill="#7a5c12">否</text>
+  <rect id="evaluated" x="240" y="396" width="240" height="66" rx="8" fill="#fbf6e9" stroke="#a6801f" stroke-width="2"/>
+  <text x="360" y="425" text-anchor="middle" font-size="19.5" font-weight="800" fill="#7a5c12">仅评估（EVALUATED）</text>
+  <text x="360" y="447" text-anchor="middle" font-size="17.5" font-style="italic" fill="#57534e">仅产出评估，不阻断</text>
+
+  <!-- Q3 是 -> 受治理 -->
+  <path d="M670,332 L670,394" fill="none" stroke="#2f5169" stroke-width="2" marker-end="url(#hg-ah)"/>
+  <text x="698" y="364" text-anchor="middle" font-size="19" font-style="italic" fill="#2f5137">是</text>
+  <rect id="governed" x="539.95" y="396" width="270.09" height="88" rx="8" fill="#eef3ee" stroke="#3d6b4a" stroke-width="2.4"/>
+  <text x="675" y="425" text-anchor="middle" font-size="19.5" font-weight="800" fill="#2f5137">受治理（GOVERNED）</text>
+  <text x="675" y="448" text-anchor="middle" font-size="17.5" font-style="italic" fill="#57534e">是否放行取决于</text>
+  <text x="675" y="470" text-anchor="middle" font-size="17.5" font-style="italic" fill="#57534e">评估结果或约束</text>
+</svg>

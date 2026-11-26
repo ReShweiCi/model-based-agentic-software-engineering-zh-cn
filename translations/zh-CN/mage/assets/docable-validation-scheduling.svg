@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446 302" width="446" height="302" role="img" aria-labelledby="title desc" font-family="'Source Sans 3', sans-serif">
+<title id="title">Separating integration from broad validation</title>
+<desc id="desc">Before, an agent merges with full validation before the next work. After, each change passes cheap checks and merges before next work; a thirty-minute timer triggers one broad check of main at a time, and blocking failure pauses dispatch for diagnosis and repair. Deployment requests require full validation to pass before deployment. Shading identifies validation work.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z"/></marker></defs>
+<text x="4" y="13" text-anchor="start" font-size="11" font-weight="700">Before: integration and validation coupled</text>
+<rect x="18" y="25" width="76" height="27" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="130" y="25" width="174" height="27" rx="4" fill="#f2f2f2" stroke="#111" stroke-width=".7"/>
+<rect x="345" y="25" width="80" height="27" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="56" y="43" text-anchor="middle" font-size="10" font-weight="700">Agent</text>
+<text x="217" y="43" text-anchor="middle" font-size="10" font-weight="700">Merge and full validation</text>
+<text x="385" y="43" text-anchor="middle" font-size="10" font-weight="700">Next work</text>
+<path d="M94 39 L130 39" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M304 39 L345 39" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<text x="217" y="65" text-anchor="middle" font-size="10" font-style="italic">Next work waits for full validation.</text>
+<path d="M4 78 L442 78" fill="none" stroke="#111" stroke-width="0.45"/>
+<text x="4" y="94" text-anchor="start" font-size="11" font-weight="700">After: separate triggers for different checks</text>
+<text x="4" y="111" text-anchor="start" font-size="10" font-weight="700">For each change</text>
+<rect x="18" y="120" width="70" height="27" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="53.0" y="138" text-anchor="middle" font-size="10" font-weight="700">Agent</text>
+<rect x="108" y="120" width="100" height="27" rx="4" fill="#f2f2f2" stroke="#111" stroke-width=".7"/>
+<text x="158.0" y="138" text-anchor="middle" font-size="10" font-weight="700">Cheap checks</text>
+<rect x="231" y="120" width="78" height="27" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="270.0" y="138" text-anchor="middle" font-size="10" font-weight="700">Merge</text>
+<rect x="345" y="120" width="80" height="27" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="385.0" y="138" text-anchor="middle" font-size="10" font-weight="700">Next work</text>
+<path d="M88 134 L108 134" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M208 134 L231 134" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M309 134 L345 134" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<text x="4" y="168" text-anchor="start" font-size="10" font-weight="700">Every 30 minutes</text>
+<rect x="18" y="179" width="70" height="32" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="108" y="179" width="170" height="32" rx="4" fill="#f2f2f2" stroke="#111" stroke-width=".7"/>
+<rect x="341" y="179" width="97" height="32" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="53" y="199" text-anchor="middle" font-size="10" font-weight="700">Timer</text>
+<text x="193" y="192" text-anchor="middle" font-size="10" font-weight="700">Broad checks of main</text>
+<text x="193" y="204" text-anchor="middle" font-size="10">One sweep at a time</text>
+<text x="389.5" y="192" text-anchor="middle" font-size="10" font-weight="700">Pause dispatch</text>
+<text x="389.5" y="204" text-anchor="middle" font-size="10">Diagnose; repair</text>
+<path d="M88 195 L108 195" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M278 195 L341 195" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<text x="309" y="177" text-anchor="middle" font-size="9" font-style="italic">blocking</text>
+<text x="309" y="188" text-anchor="middle" font-size="9" font-style="italic">failure</text>
+<text x="4" y="232" text-anchor="start" font-size="10" font-weight="700">For deployment</text>
+<rect x="18" y="242" width="76" height="30" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<rect x="120" y="242" width="158" height="30" rx="4" fill="#f2f2f2" stroke="#111" stroke-width=".7"/>
+<rect x="341" y="242" width="97" height="30" rx="4" fill="white" stroke="#111" stroke-width=".7"/>
+<text x="56" y="255" text-anchor="middle" font-size="10" font-weight="700">Deployment</text>
+<text x="56" y="267" text-anchor="middle" font-size="10" font-weight="700">request</text>
+<text x="199" y="261" text-anchor="middle" font-size="10" font-weight="700">Full validation</text>
+<text x="389.5" y="261" text-anchor="middle" font-size="10" font-weight="700">Deploy</text>
+<path d="M94 257 L120 257" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<path d="M278 257 L341 257" fill="none" stroke="#111" stroke-width="0.7" marker-end="url(#arrow)"/>
+<text x="309" y="248" text-anchor="middle" font-size="9" font-style="italic">passes</text>
+<rect x="8" y="287" width="27" height="12" rx="2" fill="#f2f2f2" stroke="#111" stroke-width=".7"/>
+<text x="41" y="296" text-anchor="start" font-size="9" font-style="italic">= validation is running (tests, analyses, or measurements)</text>
+</svg>

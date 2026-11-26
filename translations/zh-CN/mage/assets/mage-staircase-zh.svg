@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" width="460" height="260" role="img" aria-labelledby="title desc" font-family="'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif">
+<title id="title">DocAble 的委派阶梯</title>
+<desc id="desc">三级上升阶梯展示从协同编程者、技术负责人到架构师的角色演进，左侧箭头标识不断积累的 GEE 能力，右侧对应各阶段职责。</desc>
+<polygon points="14,253 14,49 6,49 38,17 70,49 62,49 62,253" fill="#f2f2f2"/>
+<path d="M14 253 L14 49 L6 49 L38 17 L70 49 L62 49 L62 253" fill="none" stroke="#111" stroke-width="0.85"/>
+<text x="38" y="86" text-anchor="middle" font-size="11" font-weight="700">GEE</text>
+<text x="38" y="100" text-anchor="middle" font-size="10" font-weight="700">能力</text>
+<text x="38" y="122" text-anchor="middle" font-size="9">（模型、</text>
+<text x="38" y="135" text-anchor="middle" font-size="9">检查与</text>
+<text x="38" y="148" text-anchor="middle" font-size="9">控制）</text>
+<polygon points="68,253 68,188 105,188 105,119 142,119 142,54 316,54 316,253" fill="#fafafa"/>
+<path d="M316 54 H147 Q142 54 142 59 V114 Q142 119 147 119 H316" fill="none" stroke="#111" stroke-width="1"/>
+<path d="M316 119 H110 Q105 119 105 124 V183 Q105 188 110 188 H316" fill="none" stroke="#111" stroke-width="1"/>
+<path d="M316 188 H73 Q68 188 68 193 V248 Q68 253 73 253 H316" fill="none" stroke="#111" stroke-width="1"/>
+<path d="M324 54 L324 253" fill="none" stroke="#111" stroke-width="0.45"/>
+<text x="256" y="25" text-anchor="middle" font-size="13" font-weight="700">我的角色</text>
+<text x="155" y="75" text-anchor="start" font-size="11.5" font-weight="700">3. 架构师（Architect）</text>
+<text x="155" y="93" text-anchor="start" font-size="9.5">系统模型、可追溯性与控制机制</text>
+<text x="119" y="141" text-anchor="start" font-size="11.5" font-weight="700">2. 技术负责人（Tech Lead）</text>
+<text x="119" y="159" text-anchor="start" font-size="9.5">智能体评审、确定性检查、</text>
+<text x="119" y="173" text-anchor="start" font-size="9.5">归属权分区与边界规则</text>
+<text x="82" y="211" text-anchor="start" font-size="11.5" font-weight="700">1. 协同编程者（Co-coder）</text>
+<text x="82" y="230" text-anchor="start" font-size="9.5">普通代码仓库</text>
+<text x="334" y="74" text-anchor="start" font-size="9.5">决定系统结构、</text>
+<text x="334" y="88" text-anchor="start" font-size="9.5">关键约束义务与战略方向</text>
+<text x="334" y="148" text-anchor="start" font-size="9.5">指导工作并处理例外情况</text>
+<text x="334" y="211" text-anchor="start" font-size="9.5">阅读、评判并准入变更</text>
+</svg>
