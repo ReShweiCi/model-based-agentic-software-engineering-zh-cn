@@ -88,3 +88,33 @@
 - Governance Conversion -> 治理转化
 - Structural / Behavioral / Decision Model -> 结构模型 / 行为模型 / 决策模型
 - Blueprint -> 蓝图
+
+## 治理机制目录与工程实践扩展术语
+- Vibe coding -> 氛围编程（Vibe coding）
+- Governance-centric -> 以治理为中心
+- Oversight-centric -> 以监督为中心
+- Pet tax -> “宠物税”（按变更消耗人工照料的开销）
+- Cattle, not pets -> 牲口而非宠物（基础设施化、批量可替换治理）
+- Guardrail -> 护栏 / 防护栏
+- Move (constraint / sensor / package) -> 作用方式（约束 / 传感器 / 组合包）
+- Form / Enforcement (soft / hard) -> 强制形态（软约束·概率性 / 硬约束·确定性）
+- Models-bridge -> 模型桥梁（`models-bridge` 角色）
+- Agent fleet -> 智能体集群 / 智能体编队
+- Substrate -> 基底 / 运行底座
+- Dispatch / Brief / Brief-linting -> 派发 / 任务简报 / 简报静态检查
+- Worktree / Worktree isolation -> 工作树（worktree）/ 工作树隔离
+- Merge train -> 合并列车
+- Sentinel commit / Sentinel-first commit -> 哨兵提交 / 哨兵优先提交
+- Tombstone commit -> 墓碑提交
+- Drift / Drift-parity gate -> 漂移 / 漂移一致性门禁
+- Source of truth (SSOT) -> 单一事实来源（SSOT）
+- Census -> 普查 / 全量盘点清单
+- Orphan coverage -> 孤立覆盖率 / 无归属覆盖
+- Seam / Sanctioned seam -> 接缝 / 核准接入点
+- Canonical walker -> 规范遍历器
+- Remediation verb -> 修复动词
+- Codemod-first -> 代码自动迁移优先（Codemod 优先）
+- Test onion / Test tiers -> 测试洋葱 / 测试分层
+- Blameless / Fault-localization -> 无指责 / 故障定位
+- Formative assessment / Oral exam -> 形成性评估 / 口试
+- Pod (in course project) -> 工程小组（Pod）
