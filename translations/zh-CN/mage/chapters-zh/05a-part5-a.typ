@@ -149,7 +149,7 @@ DocAble 的开发从 PowerPoint 修复起步，随后随着同事们不断带来
 所谓 *Epic*，是指一项包含动机说明、设计方案、相关不变量、实施阶段与验收标准的实质性工程意图。非平凡的设计方案会交由另一个基础模型进行独立评审，完成后则需经过“完成定义（Definition-of-Done）”评审。单个 Epic 可能跨越多次智能体派发与大量提交。在这 31 周内，记录显示共产生了 36,578 次工作提交、14,392 次智能体派发，以及 428 次有记录的 Epic 完成。
 
 #hb-figure(
-  image("../assets/docable-seip-longitudinal-261109.svg", width: 96%),
+  image("../assets/docable-seip-longitudinal-261109-zh.svg", width: 96%),
   caption: [*31 周内的开发活动与工程结构演进：* （a）落地的工作提交数；（b）声明的模型数、消费至少两个模型的消费者数，以及注册的静态与动态验证器文件数；（c）智能体派发次数；（d）有记录的 Epic 完成数。阴影区间表示该时段记录缺失，而非活动为零。],
 ) <fig-realization-over-time>
 
@@ -166,7 +166,7 @@ DocAble 的开发从 PowerPoint 修复起步，随后随着同事们不断带来
 不过，支撑装置的体量本身并不足以说明其覆盖广度。某个检查器可能只保护单一约束义务，而另一个检查器却可能治理着数百条以统一模型表达的义务——后者的覆盖范围可以不断扩展，而无需成比例地增加检查器代码量。
 
 #hb-figure(
-  image("../assets/docable-seip-composition-261109.svg", width: 96%),
+  image("../assets/docable-seip-composition-261109-zh.svg", width: 96%),
   caption: [*产品与支撑装置的构成：* 10 个采样版本的代码组成。支撑比为支撑装置与生产代码之比：第 11 周约 2.6 倍，第 21 周约 3.6 倍，第 31 周约 3.8 倍。最终快照包含 2,333,471 行支撑装置代码，用于支撑 615,395 行生产代码。],
 ) <fig-support-ratio-curve>
 
@@ -327,7 +327,7 @@ PDF 变更集（changeset）接口为不同推理策略提供了请求受支持�
 *与人工参照的对比结果。* 在 63 次修复尝试中，DocAble 完成了 62 份，仅 1 份 PDF 失败。@fig-docable-human-remediation-results 汇总了无障碍对比结果：在 PDF 与 DOCX 格式上，DocAble 取得了更高的中位检查器缺陷降幅；而在 PPTX 上，人工流程的降幅更大。两种流程导致检查器缺陷数不降反增的频率完全相同。
 
 #hb-figure(
-  image("../assets/docable-human-evaluation-261109.svg", width: 96%),
+  image("../assets/docable-human-evaluation-261109-zh.svg", width: 96%),
   caption: [*与人工参照基准的修复效果对比：* （a）相对于原始文档的检查器缺陷中位降幅；（b）缺陷数增加的发生频率；（c）项目评分细则下 DocAble 与人工产出的语义对比；（d）相对于原始文档的逐项标准得分增益与退化。百分比降幅计算排除了原始文档无缺陷的样本；图（c）与（d）分别报告文档级得分与“文档—标准”级变化。],
 ) <fig-docable-human-remediation-results>
 

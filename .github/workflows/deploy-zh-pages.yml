@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'translations/zh-CN/**'
-      - '.github/workflows/pages.yml'
+      - '.github/workflows/deploy-zh-pages.yml'
   workflow_dispatch:
 
 permissions:
