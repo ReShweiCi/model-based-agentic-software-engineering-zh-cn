@@ -1,22 +1,30 @@
 // handbook-full-zh.typ — 《软件工程手册》完整中文版排版模板（段首缩进两字符）
 
 #import "typography-zh.typ": palette, font-body, font-display, font-mono
-#import "components-zh.typ": hb-callout, hb-figure, hb-read-further
+#import "components-zh.typ": hb-callout, hb-figure, hb-read-further, is-epub
 
 #let hb-backmatter-mode = state("hb-backmatter-mode", false)
 #let hb-begin-backmatter() = hb-backmatter-mode.update(true)
 #let hb-chapter = counter("hb-chapter")
 
 #let hb-frontmatter(title: "", body) = {
-  pagebreak(weak: true)
-  [= #title <hb-fore>]
-  block(above: 0pt, below: 1.15em)[
-    #set par(first-line-indent: 0em)
-    #text(font: font-display, size: 24pt, weight: 700, fill: palette.ink)[#title]
-    #v(0.25em, weak: true)
-    #line(length: 100%, stroke: 0.8pt + palette.rule)
-  ]
-  body
+  if is-epub {
+    html.elem("div", attrs: (class: "epub-split", "data-kind": "frontmatter", "data-title": title))[]
+    html.elem("header", attrs: (class: "chap"))[
+      #html.elem("h1")[#title]
+    ]
+    body
+  } else {
+    pagebreak(weak: true)
+    [= #title <hb-fore>]
+    block(above: 0pt, below: 1.15em)[
+      #set par(first-line-indent: 0em)
+      #text(font: font-display, size: 24pt, weight: 700, fill: palette.ink)[#title]
+      #v(0.25em, weak: true)
+      #line(length: 100%, stroke: 0.8pt + palette.rule)
+    ]
+    body
+  }
 }
 
 #let hb-page-setup = (
@@ -131,102 +139,186 @@
   body,
 ) = {
   set document(title: title, author: author)
-  set page(..hb-page-setup)
-  show: hb-styles
 
-  // 封面页（沿用原版封面插画构图）
-  page(margin: 0pt, numbering: none, header: none, footer: none, fill: palette.paper)[
-    #place(top + left)[
-      #block(width: 100%, height: 88.5%, clip: true)[
-        #align(bottom)[
-          #image("../figures/cover-artwork.png", width: 100%)
+  if is-epub {
+    set text(lang: "zh", region: "cn")
+    show align: it => it.body
+    show line: it => html.elem("hr")
+    show quote: it => html.elem("blockquote")[
+      #it.body
+      #if it.attribution != none {
+        html.elem("footer", attrs: (class: "quote-attribution"))[—— #it.attribution]
+      }
+    ]
+    show math.equation.where(block: true): it => html.elem("div", attrs: (class: "epub-math-block"))[
+      #html.frame(block(inset: (x: 10pt, y: 6pt), fill: palette.paper)[
+        #set text(font: ("Noto Serif CJK SC", "Noto Sans CJK SC"), size: 11pt, fill: palette.ink, lang: "zh", region: "cn")
+        #it
+      ])
+    ]
+    show figure.where(kind: image): set figure(supplement: [图])
+    show figure.where(kind: table): set figure(supplement: [表])
+    show figure.where(kind: table): it => if it.caption == none {
+      counter(figure.where(kind: table)).update(n => n - 1)
+      it.body
+    } else { it }
+    show heading.where(level: 1): it => {
+      if it.has("label") and it.label == <hb-fore> {
+        none
+      } else {
+        context {
+          let is-back = hb-backmatter-mode.get()
+          let kind = if is-back { "backmatter" } else { "chapter" }
+          if not is-back {
+            hb-chapter.step()
+          }
+          context {
+            let kicker = if is-back { "" } else { "第 " + hb-chapter.display() + " 章" }
+            let attrs = (class: "epub-split", "data-kind": kind, "data-kicker": kicker)
+            if it.has("label") {
+              attrs.insert("id", str(it.label))
+            }
+            html.elem("div", attrs: attrs)[]
+            html.elem("header", attrs: (class: "chap"))[
+              #if kicker != "" {
+                html.elem("div", attrs: (class: "kicker"))[#kicker]
+              }
+              #html.elem("h1")[#it.body]
+            ]
+          }
+        }
+      }
+    }
+    show heading.where(level: 2): it => {
+      let attrs = (:)
+      if it.has("label") { attrs.insert("id", str(it.label)) }
+      html.elem("h2", attrs: attrs)[#it.body]
+    }
+    show heading.where(level: 3): it => {
+      let attrs = (:)
+      if it.has("label") { attrs.insert("id", str(it.label)) }
+      html.elem("h3", attrs: attrs)[#it.body]
+    }
+    show heading.where(level: 4): it => {
+      let attrs = (:)
+      if it.has("label") { attrs.insert("id", str(it.label)) }
+      html.elem("h4", attrs: attrs)[#it.body]
+    }
+
+    // 版权页（EPUB 扉页）
+    html.elem("div", attrs: (class: "epub-split", "data-kind": "copyright", "data-title": "版权信息"))[]
+    html.elem("section", attrs: (class: "copyright-page"))[
+      #html.elem("h1", attrs: (class: "copyright-title"))[#title]
+      #html.elem("p", attrs: (class: "copyright-en"))[#en-title]
+      #html.elem("p", attrs: (class: "copyright-sub"))[#subtitle]
+      #html.elem("p")[© #author, #copyright-years]
+      #html.elem("p")[#edition — 英文初版于 #first-published · 最近修订于 #last-modified]
+      #html.elem("p")[原著研究受美国国家科学基金会（U.S. National Science Foundation）项目 \#2541917、\#2452533 与 \#2343596 资助。]
+      #html.elem("p")[本中文版为非官方社区译本，基于作者在 MIT License 下开源的仓库（davisjam/model-based-agentic-software-engineering）全文翻译。原仓库版权归 James C. Davis 所有。]
+    ]
+
+    if frontmatter != none {
+      frontmatter
+    }
+    body
+  } else {
+    set page(..hb-page-setup)
+    show: hb-styles
+
+    // 封面页（沿用原版封面插画构图）
+    page(margin: 0pt, numbering: none, header: none, footer: none, fill: palette.paper)[
+      #place(top + left)[
+        #block(width: 100%, height: 88.5%, clip: true)[
+          #align(bottom)[
+            #image("../figures/cover-artwork.png", width: 100%)
+          ]
         ]
       ]
-    ]
-    #place(top + center, dy: 0.42in)[
-      #block(width: 86%)[
-        #set align(center)
-        #set par(justify: false, first-line-indent: 0em, leading: 0.55em)
-        #text(font: font-display, size: 10pt, tracking: 0.16em, fill: palette.muted, weight: 600)[THE SOFTWARE ENGINEERING HANDBOOK]
-        #v(0.45em)
-        #text(font: font-display, size: 34pt, weight: 700, fill: palette.ink)[#title]
-        #v(0.35em)
-        #text(size: 12pt, fill: palette.accent)[#subtitle]
-        #v(0.55em)
-        #line(length: 0.45in, stroke: 1.2pt + palette.accent)
-        #v(0.45em)
-        #text(font: font-display, size: 10.5pt, tracking: 0.14em, weight: 700, fill: palette.ink)[#upper(author)]
+      #place(top + center, dy: 0.42in)[
+        #block(width: 86%)[
+          #set align(center)
+          #set par(justify: false, first-line-indent: 0em, leading: 0.55em)
+          #text(font: font-display, size: 10pt, tracking: 0.16em, fill: palette.muted, weight: 600)[THE SOFTWARE ENGINEERING HANDBOOK]
+          #v(0.45em)
+          #text(font: font-display, size: 34pt, weight: 700, fill: palette.ink)[#title]
+          #v(0.35em)
+          #text(size: 12pt, fill: palette.accent)[#subtitle]
+          #v(0.55em)
+          #line(length: 0.45in, stroke: 1.2pt + palette.accent)
+          #v(0.45em)
+          #text(font: font-display, size: 10.5pt, tracking: 0.14em, weight: 700, fill: palette.ink)[#upper(author)]
+        ]
+      ]
+      #place(bottom + left, dx: 0.6in, dy: -0.45in)[
+        #set par(first-line-indent: 0em)
+        #text(font: font-display, size: 8.5pt, tracking: 0.08em, fill: palette.muted)[#edition · 非官方中文译本 #h(1.2em) © #author, #copyright-years]
       ]
     ]
-    #place(bottom + left, dx: 0.6in, dy: -0.45in)[
-      #set par(first-line-indent: 0em)
-      #text(font: font-display, size: 8.5pt, tracking: 0.08em, fill: palette.muted)[#edition · 非官方中文译本 #h(1.2em) © #author, #copyright-years]
+
+    // 版权页
+    page(numbering: none, header: none, footer: none)[
+      #v(0.4in)
+      #set par(justify: false, leading: 0.75em, first-line-indent: 0em)
+      #text(size: 11pt, fill: palette.ink)[© #author, #copyright-years]
+      #v(0.4em)
+      #text(size: 9.5pt, fill: palette.muted)[#edition — 英文初版于 #first-published · 最近修订于 #last-modified]
+      #v(0.6em)
+      #text(size: 9pt, fill: palette.muted)[原著研究受美国国家科学基金会（U.S. National Science Foundation）项目 \#2541917、\#2452533 与 \#2343596 资助。]
+      #v(0.8em)
+      #text(size: 9pt, fill: palette.muted)[本中文版为非官方社区译本，基于作者在 MIT License 下开源的仓库（davisjam/model-based-agentic-software-engineering）全文翻译并采用原书 Typst 视觉规范重排。原仓库版权归 James C. Davis 所有。]
     ]
-  ]
 
-  // 版权页
-  page(numbering: none, header: none, footer: none)[
-    #v(0.4in)
-    #set par(justify: false, leading: 0.75em, first-line-indent: 0em)
-    #text(size: 11pt, fill: palette.ink)[© #author, #copyright-years]
-    #v(0.4em)
-    #text(size: 9.5pt, fill: palette.muted)[#edition — 英文初版于 #first-published · 最近修订于 #last-modified]
-    #v(0.6em)
-    #text(size: 9pt, fill: palette.muted)[原著研究受美国国家科学基金会（U.S. National Science Foundation）项目 \#2541917、\#2452533 与 \#2343596 资助。]
-    #v(0.8em)
-    #text(size: 9pt, fill: palette.muted)[本中文版为非官方社区译本，基于作者在 MIT License 下开源的仓库（davisjam/model-based-agentic-software-engineering）全文翻译并采用原书 Typst 视觉规范重排。原仓库版权归 James C. Davis 所有。]
-  ]
-
-  // 前言与导言（罗马数字页码）
-  set page(numbering: "i", header: none)
-  counter(page).update(1)
-  if frontmatter != none {
-    frontmatter
-    pagebreak()
-  }
-
-  // 目录
-  block[
-    #set par(first-line-indent: 0em)
-    #text(font: font-display, size: 20pt, weight: 700)[目录]
-    #v(0.3em)
-    #line(length: 100%, stroke: 0.8pt + palette.rule)
-    #v(0.5em)
-  ]
-  show outline.entry: it => {
-    set par(first-line-indent: 0em)
-    let el = it.element
-    let lbl = if el.func() == heading and el.has("label") { el.label } else { none }
-    if lbl == <hb-fore> {
-      v(0.45em, weak: true); strong(it)
-    } else if it.level == 1 {
-      v(0.35em, weak: true)
-      box(inset: (left: 0.6em), strong(context {
-        let pre = if not hb-backmatter-mode.at(el.location()) {
-          [第 #(hb-chapter.at(el.location()).first() + 1) 章#h(0.65em)]
-        } else { [] }
-        link(el.location(), pre + it.inner())
-      }))
-    } else {
-      box(inset: (left: 2.0em), it)
+    // 前言与导言（罗马数字页码）
+    set page(numbering: "i", header: none)
+    counter(page).update(1)
+    if frontmatter != none {
+      frontmatter
+      pagebreak()
     }
-  }
-  outline(title: none, depth: 2)
-  pagebreak()
 
-  // 正文页眉与页码
-  set page(
-    numbering: "1",
-    header: context {
-      let n = counter(page).get().first()
-      if n > 1 {
-        set text(font: font-display, size: 8.5pt, fill: palette.muted)
-        grid(columns: (1fr, auto), align: (left, right), [#title], [#subtitle])
-        v(-0.45em)
-        line(length: 100%, stroke: 0.4pt + palette.rule)
+    // 目录
+    block[
+      #set par(first-line-indent: 0em)
+      #text(font: font-display, size: 20pt, weight: 700)[目录]
+      #v(0.3em)
+      #line(length: 100%, stroke: 0.8pt + palette.rule)
+      #v(0.5em)
+    ]
+    show outline.entry: it => {
+      set par(first-line-indent: 0em)
+      let el = it.element
+      let lbl = if el.func() == heading and el.has("label") { el.label } else { none }
+      if lbl == <hb-fore> {
+        v(0.45em, weak: true); strong(it)
+      } else if it.level == 1 {
+        v(0.35em, weak: true)
+        box(inset: (left: 0.6em), strong(context {
+          let pre = if not hb-backmatter-mode.at(el.location()) {
+            [第 #(hb-chapter.at(el.location()).first() + 1) 章#h(0.65em)]
+          } else { [] }
+          link(el.location(), pre + it.inner())
+        }))
+      } else {
+        box(inset: (left: 2.0em), it)
       }
-    },
-  )
-  counter(page).update(1)
-  body
+    }
+    outline(title: none, depth: 2)
+    pagebreak()
+
+    // 正文页眉与页码
+    set page(
+      numbering: "1",
+      header: context {
+        let n = counter(page).get().first()
+        if n > 1 {
+          set text(font: font-display, size: 8.5pt, fill: palette.muted)
+          grid(columns: (1fr, auto), align: (left, right), [#title], [#subtitle])
+          v(-0.45em)
+          line(length: 100%, stroke: 0.4pt + palette.rule)
+        }
+      },
+    )
+    counter(page).update(1)
+    body
+  }
 }

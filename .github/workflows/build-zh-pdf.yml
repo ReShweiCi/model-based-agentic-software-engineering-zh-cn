@@ -1,4 +1,4 @@
-name: Build and Release Chinese PDFs
+name: Build and Release Chinese PDFs & EPUBs
 
 on:
   push:
@@ -18,11 +18,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Noto CJK Chinese fonts
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Pillow for EPUB cover generation
+        run: python3 -m pip install --quiet pillow
+
+      - name: Install Noto CJK Chinese fonts and librsvg
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq fonts-noto-cjk
+          sudo apt-get install -y -qq fonts-noto-cjk librsvg2-bin
           fc-cache -fv >/dev/null
+          rsvg-convert --version
 
       - name: Install Typst 0.15.1
         run: |
@@ -32,7 +41,7 @@ jobs:
           sudo chmod +x /usr/local/bin/typst
           typst --version
 
-      - name: Compile Chinese PDFs
+      - name: Compile Chinese PDFs & EPUB3s
         run: |
           mkdir -p dist
           typst compile --root translations/zh-CN \
@@ -41,38 +50,44 @@ jobs:
           typst compile --root translations/zh-CN \
             translations/zh-CN/mage/book-zh.typ \
             dist/mage-book-zh.pdf
+          python3 translations/zh-CN/scripts/build_zh_epub.py --out-dir dist
+          python3 translations/zh-CN/scripts/build_zh_epub.py --check \
+            dist/software-engineering-handbook-zh.epub \
+            dist/mage-book-zh.epub
           ls -lh dist/
 
-      - name: Publish PDFs to GitHub Release
+      - name: Publish PDFs & EPUBs to GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG="zh-pdf-latest"
-          SHORT_SHA="${GITHUB_SHA::7}"
-          BUILD_DATE="$(date -u +'%Y-%m-%d %H:%M UTC')"
           printf '%s\n' \
-            "由 GitHub Actions 自动编译发布的非官方中文译本 PDF（基于原著 MIT License 仓库，提交 \`${SHORT_SHA}\`，构建于 ${BUILD_DATE}）：" \
+            "非官方中文译本（PDF & EPUB）：" \
             "" \
-            "- \`software-engineering-handbook-zh.pdf\`：《软件工程手册：一种判断与决策的方法》（*The Software Engineering Handbook*）" \
-            "- \`mage-book-zh.pdf\`：《基于模型的智能体工程（MAGE）：软件工程案例研究》（*Model-Based Agentic Engineering*）" \
+            "- 《软件工程手册》：\`software-engineering-handbook-zh.pdf\` · \`software-engineering-handbook-zh.epub\`" \
+            "- 《基于模型的智能体工程（MAGE）》：\`mage-book-zh.pdf\` · \`mage-book-zh.epub\`" \
             "" \
-            "原著作者：James C. Davis（[上游仓库](https://github.com/davisjam/model-based-agentic-software-engineering)）" \
+            "原著作者：James C. Davis（[上游仓库](https://github.com/davisjam/model-based-agentic-software-engineering)，MIT License）" \
             > /tmp/release-notes.md
 
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" \
               dist/software-engineering-handbook-zh.pdf \
+              dist/software-engineering-handbook-zh.epub \
               dist/mage-book-zh.pdf \
+              dist/mage-book-zh.epub \
               --clobber
             gh release edit "$TAG" \
-              --title "中文版 PDF（最新自动构建）" \
+              --title "中文版 PDF & EPUB" \
               --notes-file /tmp/release-notes.md \
               --latest
           else
             gh release create "$TAG" \
               dist/software-engineering-handbook-zh.pdf \
+              dist/software-engineering-handbook-zh.epub \
               dist/mage-book-zh.pdf \
-              --title "中文版 PDF（最新自动构建）" \
+              dist/mage-book-zh.epub \
+              --title "中文版 PDF & EPUB" \
               --notes-file /tmp/release-notes.md \
               --latest
           fi

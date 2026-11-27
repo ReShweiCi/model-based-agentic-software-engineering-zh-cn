@@ -1,0 +1,507 @@
+/* epub-zh.css — 中文版 EPUB3 流式排版样式表（Reflowable-first）
+ * 遵循原书极简原则：不强行锁死正文字体或页面背景色，兼容 Apple Books / Kindle / Calibre /
+ * 微信读书 / 多看 / KOReader 的日间、护眼与夜间主题；全面优化中文排版、表格、插图与公式显示。
+ */
+
+body {
+  line-height: 1.75;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0.55em 0;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+/* ── 章节题头 ─────────────────────────────────────────────────────────────────── */
+
+header.chap {
+  margin: 0 0 1.5em 0;
+  padding-bottom: 0.55em;
+  border-bottom: 1px solid currentColor;
+}
+
+header.chap .kicker {
+  font-size: 0.82em;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  color: #9a3f12;
+  margin-bottom: 0.35em;
+}
+
+header.chap h1 {
+  margin: 0.15em 0 0 0;
+  font-size: 1.65em;
+  line-height: 1.3;
+  text-indent: 0;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.35;
+  text-indent: 0;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h2 {
+  margin: 1.8em 0 0.65em 0;
+  font-size: 1.28em;
+}
+
+h3 {
+  margin: 1.45em 0 0.5em 0;
+  font-size: 1.1em;
+}
+
+h4 {
+  margin: 1.2em 0 0.4em 0;
+  font-size: 1em;
+}
+
+/* ── 版权页 ───────────────────────────────────────────────────────────────────── */
+
+section.copyright-page {
+  margin-top: 1.5em;
+}
+
+section.copyright-page h1.copyright-title {
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+section.copyright-page p {
+  text-indent: 0;
+  text-align: left;
+  font-size: 0.92em;
+  margin: 0.55em 0;
+}
+
+section.copyright-page p.copyright-en {
+  font-size: 0.95em;
+  opacity: 0.78;
+}
+
+section.copyright-page p.copyright-sub {
+  color: #9a3f12;
+  margin-bottom: 1.2em;
+}
+
+/* ── MAGE 章节导览框（7 章进度 + 核心问题）───────────────────────────────────── */
+
+aside.mage-opener {
+  margin: 0 0 1.4em 0;
+  padding: 0.8em 1em;
+  border-left: 3px solid #9a3f12;
+  border-top: 1px solid rgba(128, 128, 128, 0.28);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.28);
+}
+
+aside.mage-opener .mage-opener-progress {
+  font-size: 0.82em;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  opacity: 0.8;
+  margin-bottom: 0.4em;
+}
+
+aside.mage-opener .mage-opener-label {
+  font-size: 0.78em;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  color: #9a3f12;
+  margin-bottom: 0.3em;
+}
+
+aside.mage-opener .mage-opener-q {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* ── 语义提示框（定义 / 决策 / 权衡 / 核心理念 / 案例研究 / 警示 / 练习）──────── */
+
+aside.hb-callout {
+  margin: 1.2em 0;
+  padding: 0.7em 0.95em;
+  border-left: 3px solid currentColor;
+  background-color: rgba(128, 128, 128, 0.08);
+}
+
+aside.hb-callout-definition   { border-left-color: #1f6fae; background-color: rgba(31, 111, 174, 0.07); }
+aside.hb-callout-decision     { border-left-color: #9a3f12; background-color: rgba(154, 63, 18, 0.07); }
+aside.hb-callout-tradeoff     { border-left-color: #7c6bb0; background-color: rgba(124, 107, 176, 0.07); }
+aside.hb-callout-key-idea     { border-left-color: #15803d; background-color: rgba(21, 128, 61, 0.07); }
+aside.hb-callout-example      { border-left-color: #15803d; background-color: rgba(21, 128, 61, 0.07); }
+aside.hb-callout-case-study   { border-left-color: #2f5169; background-color: rgba(47, 81, 105, 0.08); }
+aside.hb-callout-warning      { border-left-color: #b23b3b; background-color: rgba(178, 59, 59, 0.08); }
+aside.hb-callout-exercise     { border-left-color: #9a3f12; background-color: rgba(154, 63, 18, 0.07); }
+
+.hb-callout-title {
+  margin: 0 0 0.45em 0;
+  font-size: 0.88em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.hb-callout-kind {
+  margin-right: 0.6em;
+}
+
+aside.hb-callout-definition .hb-callout-kind   { color: #1f6fae; }
+aside.hb-callout-decision .hb-callout-kind     { color: #9a3f12; }
+aside.hb-callout-tradeoff .hb-callout-kind     { color: #7c6bb0; }
+aside.hb-callout-key-idea .hb-callout-kind     { color: #15803d; }
+aside.hb-callout-example .hb-callout-kind      { color: #15803d; }
+aside.hb-callout-case-study .hb-callout-kind   { color: #2f5169; }
+aside.hb-callout-warning .hb-callout-kind      { color: #b23b3b; }
+aside.hb-callout-exercise .hb-callout-kind     { color: #9a3f12; }
+
+aside.hb-callout p {
+  text-indent: 0;
+  font-size: 0.95em;
+}
+
+/* ── 延伸阅读 ─────────────────────────────────────────────────────────────────── */
+
+aside.hb-read-further {
+  margin: 1.8em 0 1em 0;
+  padding: 0.75em 0.95em;
+  border-left: 3px solid currentColor;
+  background-color: rgba(128, 128, 128, 0.06);
+}
+
+.hb-read-further-title {
+  font-size: 0.82em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+  opacity: 0.8;
+}
+
+aside.hb-read-further p {
+  font-size: 0.9em;
+  margin: 0.45em 0;
+  padding-left: 1.4em;
+  text-indent: -1.4em;
+  text-align: left;
+}
+
+/* ── 引用、列表、代码 ─────────────────────────────────────────────────────────── */
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.45em 0.95em;
+  border-left: 3px solid rgba(154, 63, 18, 0.55);
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+blockquote p {
+  text-indent: 0;
+  opacity: 0.92;
+}
+
+blockquote footer.quote-attribution {
+  margin-top: 0.45em;
+  text-align: right;
+  font-size: 0.88em;
+  opacity: 0.8;
+}
+
+ul, ol {
+  margin: 0.65em 0;
+  padding-left: 1.6em;
+}
+
+li {
+  margin: 0.3em 0;
+}
+
+li p {
+  text-indent: 0;
+}
+
+pre {
+  font-size: 0.84em;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 1em 0;
+  padding: 0.65em 0.85em;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 3px;
+}
+
+code {
+  font-size: 0.88em;
+  padding: 0.08em 0.25em;
+  background-color: rgba(128, 128, 128, 0.12);
+  border-radius: 2px;
+}
+
+pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.4);
+  margin: 1.4em auto;
+  width: 38%;
+}
+
+/* ── 插图（高清 PNG，自适应缩放且在夜间模式也清晰可读）─────────────────────────── */
+
+figure.epub-image-figure {
+  margin: 1.4em 0;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figure.epub-image-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  background-color: #fdfcf9;
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  border-radius: 3px;
+}
+
+figure.epub-image-figure figcaption {
+  margin-top: 0.55em;
+  font-size: 0.88em;
+  line-height: 1.55;
+  text-align: left;
+  opacity: 0.88;
+}
+
+figure figcaption p {
+  text-indent: 0;
+  margin: 0.2em 0;
+}
+
+/* ── 现代出版级三线表（表标题置顶、柔和表头底色、行间轻分割线、长表优雅跨页）──── */
+
+figure.epub-table-figure {
+  margin: 1.45em 0;
+  text-align: left;
+}
+
+figure.epub-table-figure figcaption.table-caption {
+  margin: 0 0 0.5em 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+  text-align: left;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+.caption-label {
+  font-weight: bold;
+  color: #9a3f12;
+  margin-right: 0.45em;
+}
+
+div.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.4em 0 0.8em 0;
+  font-size: 0.87em;
+  line-height: 1.55;
+  border-top: 2px solid #9a3f12;
+  border-bottom: 2px solid #9a3f12;
+}
+
+table thead {
+  display: table-header-group;
+}
+
+table thead tr {
+  background-color: rgba(154, 63, 18, 0.08);
+  border-bottom: 1.2px solid rgba(154, 63, 18, 0.55);
+}
+
+table tbody tr {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.22);
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+table tbody tr:last-child {
+  border-bottom: none;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.04);
+}
+
+table th, table td {
+  border: none;
+  padding: 0.52em 0.65em;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table td:first-child,
+table th:first-child {
+  min-width: 5.5em;
+  font-weight: 600;
+}
+
+table p {
+  text-indent: 0;
+  text-align: left;
+  margin: 0.18em 0;
+}
+
+/* ── 数学公式（行内纯 HTML 通用语义排版 + 块级高清 PNG 卡片）──────────────────── */
+
+span.math-inline {
+  font-family: Georgia, "Times New Roman", "Noto Serif CJK SC", serif;
+  white-space: nowrap;
+}
+
+span.math-inline em {
+  font-style: italic;
+}
+
+span.math-inline sub,
+span.math-inline sup {
+  font-size: 0.74em;
+  line-height: 0;
+}
+
+div.epub-math-block {
+  margin: 1.15em 0;
+  padding: 0.5em 0.6em;
+  text-align: center;
+  background-color: #fdfcf9;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 3px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+div.epub-math-block img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ── 脚注、索引与参考文献 ─────────────────────────────────────────────────────── */
+
+sup[role="doc-noteref"] {
+  font-size: 0.75em;
+  line-height: 0;
+}
+
+sup[role="doc-noteref"] a {
+  text-decoration: none;
+  padding: 0 0.14em;
+}
+
+section.epub-footnotes {
+  margin-top: 2em;
+  padding-top: 0.8em;
+  border-top: 1px solid rgba(128, 128, 128, 0.45);
+  font-size: 0.88em;
+}
+
+section.epub-footnotes h2 {
+  font-size: 0.95em;
+  margin: 0 0 0.6em 0;
+  opacity: 0.8;
+}
+
+section.epub-footnotes ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+section.epub-footnotes li {
+  margin: 0.5em 0;
+  line-height: 1.65;
+}
+
+section.epub-footnotes sup[role="doc-backlink"] {
+  margin-right: 0.45em;
+  font-weight: bold;
+}
+
+section.epub-footnotes p {
+  text-indent: 0;
+  display: inline;
+}
+
+section[role="doc-bibliography"] ul,
+.bib-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+section[role="doc-bibliography"] li {
+  font-size: 0.88em;
+  margin: 0.48em 0;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  text-align: left;
+}
+
+.idx-page p {
+  text-indent: 0;
+  text-align: left;
+  margin: 0.25em 0;
+  font-size: 0.9em;
+}
+
+.idx-sub {
+  margin-left: 1.4em;
+  opacity: 0.8;
+}
+
+/* ── 目录页 ───────────────────────────────────────────────────────────────────── */
+
+nav#toc h1 {
+  margin-bottom: 0.8em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid currentColor;
+}
+
+nav#toc ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav#toc > ol > li {
+  margin: 0.55em 0;
+  font-weight: bold;
+}
+
+nav#toc ol ol {
+  padding-left: 1.4em;
+  margin: 0.25em 0 0.55em 0;
+  font-weight: normal;
+  font-size: 0.93em;
+}
+
+nav#toc ol ol li {
+  margin: 0.25em 0;
+}
+
+nav#toc a {
+  text-decoration: none;
+}

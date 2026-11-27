@@ -1,4 +1,16 @@
 #import "../../se-handbook/typst/typography-zh.typ": palette, font-display, font-body
+#import "../../se-handbook/typst/components-zh.typ": is-epub
+
+#let idx-container(body) = if is-epub {
+  html.elem("div", attrs: (class: "idx-page"))[#body]
+} else {
+  columns(2, gutter: 1.8em)[#body]
+}
+#let pad(left: 0pt, body) = if is-epub {
+  html.elem("div", attrs: (class: "idx-sub"))[#body]
+} else {
+  std.pad(left: left)[#body]
+}
 
 = Index
 
@@ -7,7 +19,7 @@
   #text(size: 9pt, fill: palette.muted)[Original English index retained without translation. Page numbers refer to the original English edition for cross-referencing.]
 ]
 
-#columns(2, gutter: 1.8em)[
+#idx-container[
   #set par(first-line-indent: 0em, justify: false, leading: 0.62em, spacing: 0.42em)
   #set text(size: 8.8pt, lang: "en")
   #v(0.55em, weak: true)
