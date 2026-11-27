@@ -1,6 +1,9 @@
 #import "../../se-handbook/typst/components-zh.typ": hb-callout, hb-figure, hb-read-further, hb-frontmatter
+#import "../typst/mage-full-zh.typ": mage-chapter-opener
 
 = 运转中的 MAGE：通过模型开展工程
+
+#mage-chapter-opener(4, "当系统持续演进变化时，MAGE 如何发挥作用？")
 
 #hb-callout(kind: "key-idea", title: "核心思想")[
   工程实践很少沿着“先有完备模型、再产出最终实现”的直线推进。工程师在工作过程中不断学习：具体实现会暴露缺失的需求，分析会挑战既有假设，失败则会揭示本应显式做出的决策。因此，模型与控制机制必须随系统一同演进。我们在工程化推进一次变更时学到的东西，能够帮助我们更好地工程化下一次变更。

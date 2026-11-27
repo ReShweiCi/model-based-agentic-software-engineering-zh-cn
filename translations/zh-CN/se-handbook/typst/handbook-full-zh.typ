@@ -134,23 +134,34 @@
   set page(..hb-page-setup)
   show: hb-styles
 
-  // 封面页
-  page(numbering: none, header: none, footer: none)[
-    #v(2.0in)
-    #set par(justify: false, first-line-indent: 0em)
-    #text(font: font-display, size: 10.5pt, tracking: 0.2em, fill: palette.accent, weight: 700)[完整中文译本 · #edition]
-    #v(0.7em)
-    #text(font: font-display, size: 32pt, weight: 700, fill: palette.ink)[#title]
-    #v(0.35em)
-    #text(font: font-display, size: 13pt, fill: palette.muted)[#en-title]
-    #v(0.7em)
-    #line(length: 40%, stroke: 1.5pt + palette.accent)
-    #v(0.9em)
-    #text(size: 12.5pt, fill: palette.ink)[#subtitle]
-    #v(1.8in)
-    #text(font: font-display, size: 12pt, weight: 700, fill: palette.ink)[原著：#author]
-    #v(0.35em)
-    #text(size: 9.5pt, fill: palette.muted)[© #author, #copyright-years · 英文初版 #first-published · 最近修订 #last-modified]
+  // 封面页（沿用原版封面插画构图）
+  page(margin: 0pt, numbering: none, header: none, footer: none, fill: palette.paper)[
+    #place(top + left)[
+      #block(width: 100%, height: 88.5%, clip: true)[
+        #align(bottom)[
+          #image("../figures/cover-artwork.png", width: 100%)
+        ]
+      ]
+    ]
+    #place(top + center, dy: 0.42in)[
+      #block(width: 86%)[
+        #set align(center)
+        #set par(justify: false, first-line-indent: 0em, leading: 0.55em)
+        #text(font: font-display, size: 10pt, tracking: 0.16em, fill: palette.muted, weight: 600)[THE SOFTWARE ENGINEERING HANDBOOK]
+        #v(0.45em)
+        #text(font: font-display, size: 34pt, weight: 700, fill: palette.ink)[#title]
+        #v(0.35em)
+        #text(size: 12pt, fill: palette.accent)[#subtitle]
+        #v(0.55em)
+        #line(length: 0.45in, stroke: 1.2pt + palette.accent)
+        #v(0.45em)
+        #text(font: font-display, size: 10.5pt, tracking: 0.14em, weight: 700, fill: palette.ink)[#upper(author)]
+      ]
+    ]
+    #place(bottom + left, dx: 0.6in, dy: -0.45in)[
+      #set par(first-line-indent: 0em)
+      #text(font: font-display, size: 8.5pt, tracking: 0.08em, fill: palette.muted)[#edition · 非官方中文译本 #h(1.2em) © #author, #copyright-years]
+    ]
   ]
 
   // 版权页

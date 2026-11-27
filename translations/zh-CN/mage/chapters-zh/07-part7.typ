@@ -1,6 +1,9 @@
 #import "../../se-handbook/typst/components-zh.typ": hb-callout, hb-figure, hb-read-further, hb-frontmatter
+#import "../typst/mage-full-zh.typ": mage-chapter-opener
 
 = 软件工程职业
+
+#mage-chapter-opener(7, "当智能体承担更多工作之后，工程本身将走向何方？")
 
 将代码实现委派给智能体，并不会让软件工程师不再是工程师。但工作内容确实发生了变化。原本用于编写和调试代码的时间，现在可以转而用于决定系统必须做什么、审视备选设计、建立证据以及治理被委派的工作。其中一些活动原本就为人所熟悉；另一些活动则在实现速度远超人类逐行检视能力时变得愈发重要。
 

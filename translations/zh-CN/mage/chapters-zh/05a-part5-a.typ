@@ -1,6 +1,9 @@
 #import "../../se-handbook/typst/components-zh.typ": hb-callout, hb-figure, hb-read-further, hb-frontmatter
+#import "../typst/mage-full-zh.typ": mage-chapter-opener
 
 = 众多软件工厂中的 DocAble
+
+#mage-chapter-opener(5, "当智能体承担大部分实现工作时，我们应当如何组织软件生产？")
 
 #hb-callout(kind: "key-idea", title: "核心思想")[
   软件工厂负责组织变更的生产方式，并决定哪些产出变更可以被接受。流程设计与容差使实现工作无需持续的人工监督即可推进。

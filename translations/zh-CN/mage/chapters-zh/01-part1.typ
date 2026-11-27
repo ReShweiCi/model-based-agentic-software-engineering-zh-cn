@@ -1,6 +1,9 @@
 #import "../../se-handbook/typst/components-zh.typ": hb-callout, hb-figure, hb-read-further, hb-frontmatter
+#import "../typst/mage-full-zh.typ": mage-chapter-opener
 
 = 新的工程问题
+
+#mage-chapter-opener(1, "当软件实现变得廉价时，会出现哪些工程问题？")
 
 当制约生产的瓶颈发生转移时，工程实践便会随之重组（Amdahl 1967; Goldratt & Cox 1984）。蒸汽机使机械动力变得触手可及，促使工程精力转向设计能够驾驭和传递这种动力的机械装置；机械化工厂使生产变得更快速、更廉价，促使工程精力转向面向制造的产品设计，以及对生产机械与工艺流程的组织。如今，编程智能体正在大幅降低软件实现的成本。我认为，它们的能力同样要求我们对工程工作进行一次类似的重组。工程师可以将更多实现层面的决策委派出去，同时保留对最终系统的责任。真正的挑战在于：如何在不必逐一审查或指挥每一项实现决策的前提下，依然行使有据可依的控制。
 

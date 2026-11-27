@@ -38,3 +38,4 @@
 
 #mage-set-mode("backmatter")
 #include "chapters-zh/11-backmatter.typ"
+#include "chapters-zh/12-index-bib.typ"

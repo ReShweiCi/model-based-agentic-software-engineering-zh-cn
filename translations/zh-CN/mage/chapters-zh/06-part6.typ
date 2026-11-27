@@ -1,6 +1,9 @@
 #import "../../se-handbook/typst/components-zh.typ": hb-callout, hb-figure, hb-read-further, hb-frontmatter
+#import "../typst/mage-full-zh.typ": mage-chapter-opener
 
 = 理论
+
+#mage-chapter-opener(6, "MAGE 如何将智能体产能转化为持久的工程进步？")
 
 第 5 章考察了 DocAble 的软件工厂以及其他组织报告的相关实践安排。这些组织在所保存的工程知识、所强制执行的控制措施以及委派给智能体的工作内容上各不相同。在某一环境中能够大幅节省精力的表示形式，在另一环境中可能只是重复了已有的知识；在某处能够支持安全委派的控制措施，在别处带来的成本则可能超过其收益。究竟是什么决定了一项投入能否提升工程的可靠性、成本效益与累积价值？
 

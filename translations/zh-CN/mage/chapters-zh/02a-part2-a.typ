@@ -1,6 +1,9 @@
 #import "../../se-handbook/typst/components-zh.typ": hb-callout, hb-figure, hb-read-further, hb-frontmatter
+#import "../typst/mage-full-zh.typ": mage-chapter-opener
 
 = 建模
+
+#mage-chapter-opener(2, "我们应当从系统中抽象出什么，又该如何表示它？")
 
 #hb-callout(kind: "key-idea", title: "建模原则（Modeling Principle）")[
   工程模型保留了回答特定系统问题所需的信息。一个有用的模型能够让关键关系更容易推理，同时略去无关细节。不同的问题可能需要不同的表示形式，而要理解同一个系统，往往需要将多个模型连接起来。

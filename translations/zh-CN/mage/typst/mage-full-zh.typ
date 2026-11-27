@@ -3,9 +3,84 @@
 #import "../../se-handbook/typst/typography-zh.typ": palette, font-body, font-display, font-mono
 #import "../../se-handbook/typst/components-zh.typ": hb-callout, hb-figure, hb-read-further, hb-frontmatter
 
-#let mage-mode = state("mage-mode", "chapter") // "chapter" | "backmatter" | "appendix-a" | "appendix-b"
+#let mage-mode = state("mage-mode", "frontmatter") // "frontmatter" | "chapter" | "backmatter" | "appendix-a" | "appendix-b"
 #let mage-set-mode(m) = mage-mode.update(m)
 #let mage-chapter = counter("mage-chapter")
+#let mage-section = counter("mage-section")
+#let mage-subsection = counter("mage-subsection")
+
+// 与原版一致的 7 点章节进度条 + 本章回答的核心问题组件
+#let mage-chapter-short-titles = (
+  "核心问题",
+  "工程建模",
+  "模型对齐",
+  "演进与实践",
+  "软件工厂",
+  "理论体系",
+  "工程职业",
+)
+
+#let mage-chapter-full-titles = (
+  "新的工程问题",
+  "建模",
+  "对齐与治理",
+  "运转中的 MAGE：通过模型开展工程",
+  "众多软件工厂中的 DocAble",
+  "理论",
+  "软件工程职业",
+)
+
+#let mage-chapter-opener(chapter-num, question) = {
+  let full-title = mage-chapter-full-titles.at(chapter-num - 1, default: "")
+  block(width: 100%, above: 0.2em, below: 1.4em)[
+    #set par(first-line-indent: 0em)
+    #align(center)[
+      #text(font: font-display, size: 9.5pt, weight: 700, fill: palette.ink)[第 #chapter-num 章 · #full-title]
+    ]
+    #v(0.75em)
+    #layout(size => {
+      let n = 7
+      let w = size.width * 0.88
+      let step = w / (n - 1)
+      align(center)[
+        #box(width: w, height: 34pt)[
+          #place(top + left, dy: 4.5pt)[
+            #line(length: w, stroke: 0.7pt + palette.muted)
+          ]
+          #for i in range(n) {
+            let active = (i + 1) == chapter-num
+            let x = i * step
+            place(top + left, dx: x - 4.5pt, dy: 0pt)[
+              #if active {
+                circle(radius: 4.5pt, fill: palette.ink, stroke: 1pt + palette.ink)
+              } else {
+                circle(radius: 3.5pt, fill: palette.paper, stroke: 0.9pt + palette.muted)
+              }
+            ]
+            place(top + left, dx: x - 28pt, dy: 14pt)[
+              #box(width: 56pt)[
+                #align(center)[
+                  #text(
+                    font: font-display,
+                    size: 7.8pt,
+                    weight: if active { 700 } else { 400 },
+                    fill: if active { palette.ink } else { palette.muted },
+                  )[#mage-chapter-short-titles.at(i)]
+                ]
+              ]
+            ]
+          }
+        ]
+      ]
+    })
+    #v(0.7em)
+    #text(font: font-display, size: 8.8pt, weight: 700, tracking: 0.1em, fill: palette.ink)[本章回答的核心问题]
+    #h(0.6em)
+    #text(font: font-display, size: 7.8pt, tracking: 0.08em, fill: palette.muted)[QUESTION THIS CHAPTER ANSWERS]
+    #v(0.3em)
+    #text(size: 10.2pt, fill: palette.ink)[#question]
+  ]
+}
 
 #let mage-page-setup = (
   paper: "us-letter",
@@ -21,6 +96,24 @@
   set par(justify: true, leading: 0.82em, first-line-indent: (amount: 2em, all: true), spacing: 0.72em)
   show link: set text(fill: palette.accent)
 
+  // 图表按章编号：前言连续（1, 2），正文第 1-7 章（1.1, 2.1...），附录 A/B（A.1, B.1...）
+  let mage-fig-numbering(n) = context {
+    let m = mage-mode.get()
+    if m == "chapter" {
+      [#mage-chapter.display().#n]
+    } else if m == "appendix-a" {
+      [A.#n]
+    } else if m == "appendix-b" {
+      [B.#n]
+    } else {
+      [#n]
+    }
+  }
+  set figure(numbering: mage-fig-numbering)
+  set figure(supplement: [表])
+  show figure.where(kind: image): set figure(supplement: [图])
+  show figure.where(kind: table): set figure(supplement: [表])
+
   show heading: set text(font: font-display)
   show heading.where(level: 1): it => {
     if it.has("label") and it.label == <hb-fore> {
@@ -33,12 +126,24 @@
           let m = mage-mode.get()
           if m == "chapter" {
             mage-chapter.step()
+            mage-section.update(0)
+            mage-subsection.update(0)
+            counter(figure.where(kind: image)).update(0)
+            counter(figure.where(kind: table)).update(0)
             context text(size: 9pt, tracking: 0.18em, fill: palette.accent, weight: 700)[第 #mage-chapter.display() 章]
             v(0.35em, weak: true)
           } else if m == "appendix-a" {
+            mage-section.update(0)
+            mage-subsection.update(0)
+            counter(figure.where(kind: image)).update(0)
+            counter(figure.where(kind: table)).update(0)
             text(size: 9pt, tracking: 0.18em, fill: palette.accent, weight: 700)[附录 A]
             v(0.35em, weak: true)
           } else if m == "appendix-b" {
+            mage-section.update(0)
+            mage-subsection.update(0)
+            counter(figure.where(kind: image)).update(0)
+            counter(figure.where(kind: table)).update(0)
             text(size: 9pt, tracking: 0.18em, fill: palette.accent, weight: 700)[附录 B]
             v(0.35em, weak: true)
           }
@@ -51,11 +156,36 @@
   }
   show heading.where(level: 2): it => {
     set text(size: 14pt, weight: 700, fill: palette.ink)
+    context {
+      let m = mage-mode.get()
+      if m == "chapter" or m == "appendix-a" or m == "appendix-b" {
+        mage-section.step()
+        mage-subsection.update(0)
+      }
+    }
     block(above: 2.2em, below: 0.95em, sticky: true)[#set par(first-line-indent: 0em); #it.body]
   }
   show heading.where(level: 3): it => {
     set text(size: 11.5pt, weight: 700, fill: palette.muted)
-    block(above: 1.75em, below: 0.8em, sticky: true)[#set par(first-line-indent: 0em); #it.body]
+    block(above: 1.75em, below: 0.8em, sticky: true)[
+      #set par(first-line-indent: 0em)
+      #context {
+        let m = mage-mode.get()
+        let sec = mage-section.get().first()
+        if sec > 0 {
+          if m == "chapter" {
+            mage-subsection.step()
+            context [#mage-chapter.display().#mage-section.display().#mage-subsection.display()#h(0.55em)]
+          } else if m == "appendix-a" {
+            mage-subsection.step()
+            context [A.#mage-section.display().#mage-subsection.display()#h(0.55em)]
+          } else if m == "appendix-b" {
+            mage-subsection.step()
+            context [B.#mage-section.display().#mage-subsection.display()#h(0.55em)]
+          }
+        }
+      }#it.body
+    ]
   }
   show heading.where(level: 4): it => {
     set text(size: 10.5pt, weight: 700, fill: palette.ink)
@@ -146,23 +276,36 @@
   set page(..mage-page-setup)
   show: mage-styles
 
-  // 封面页
-  page(numbering: none, header: none, footer: none)[
-    #v(1.9in)
-    #set par(justify: false, first-line-indent: 0em)
-    #text(font: font-display, size: 10.5pt, tracking: 0.2em, fill: palette.accent, weight: 700)[THE MAGE METHOD · 完整中文译本 · #edition]
-    #v(0.7em)
-    #text(font: font-display, size: 30pt, weight: 700, fill: palette.ink)[#title]
-    #v(0.35em)
-    #text(font: font-display, size: 13pt, fill: palette.muted)[#en-title]
-    #v(0.7em)
-    #line(length: 40%, stroke: 1.5pt + palette.accent)
-    #v(0.9em)
-    #text(size: 12.5pt, fill: palette.ink)[#subtitle]
-    #v(1.8in)
-    #text(font: font-display, size: 12pt, weight: 700, fill: palette.ink)[原著：#author]
-    #v(0.35em)
-    #text(size: 9.5pt, fill: palette.muted)[© #author, #copyright-years · 英文初版 #first-published · 最近修订 #last-modified]
+  // 封面页（沿用原版封面插画构图）
+  page(margin: 0pt, numbering: none, header: none, footer: none, fill: palette.paper)[
+    #place(top + left)[
+      #block(width: 100%, height: 88.5%, clip: true)[
+        #align(bottom)[
+          #image("../assets/cover-artwork.png", width: 100%)
+        ]
+      ]
+    ]
+    #place(top + center, dy: 0.4in)[
+      #block(width: 86%)[
+        #set align(center)
+        #set par(justify: false, first-line-indent: 0em, leading: 0.52em)
+        #text(font: font-display, size: 38pt, weight: 800, tracking: 0.08em, fill: palette.ink)[MAGE]
+        #v(0.25em)
+        #text(font: font-display, size: 17pt, weight: 700, fill: palette.ink)[基于模型的智能体工程]
+        #v(0.2em)
+        #text(font: font-display, size: 9.5pt, tracking: 0.14em, fill: palette.muted)[MODEL-BASED AGENTIC ENGINEERING]
+        #v(0.3em)
+        #text(size: 11.5pt, fill: palette.accent)[软件工程案例研究 · A Case Study in Software Engineering]
+        #v(0.5em)
+        #line(length: 0.45in, stroke: 1.2pt + palette.accent)
+        #v(0.42em)
+        #text(font: font-display, size: 10.5pt, tracking: 0.14em, weight: 700, fill: palette.ink)[#upper(author)]
+      ]
+    ]
+    #place(bottom + left, dx: 0.6in, dy: -0.45in)[
+      #set par(first-line-indent: 0em)
+      #text(font: font-display, size: 8.5pt, tracking: 0.08em, fill: palette.muted)[#edition · 非官方中文译本 #h(1.2em) © #author, #copyright-years]
+    ]
   ]
 
   // 版权页

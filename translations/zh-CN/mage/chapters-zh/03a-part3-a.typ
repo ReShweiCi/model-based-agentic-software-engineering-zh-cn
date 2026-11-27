@@ -1,6 +1,9 @@
 #import "../../se-handbook/typst/components-zh.typ": hb-callout, hb-figure, hb-read-further, hb-frontmatter
+#import "../typst/mage-full-zh.typ": mage-chapter-opener
 
 = 对齐与治理
+
+#mage-chapter-opener(3, "如何强制执行工程模型中所表达的约束义务？")
 
 #hb-callout(kind: "key-idea", title: "核心思想：对齐原则（Alignment Principle）")[
   工程模型可以表达约束义务，但本身并不能确保代码实现满足这些义务。指令与反馈或许能够引导智能体趋向可接受的行为，然而重要的约束义务绝不能仅仅寄望于智能体能够正确理解它们。工程师可以建立相应的机制来限制动作、获取证据，并裁定工作能否继续放行。工程模型的语义精确度决定了其中有多少治理机制能够以机械方式推导出来。这些机制还必须部署在能够评估并强制执行相关约束义务的恰当边界上。

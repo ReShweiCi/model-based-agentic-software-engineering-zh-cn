@@ -59,11 +59,20 @@
 }
 
 #let hb-figure(img, caption: none, numbered: true) = {
-  figure(
-    img,
-    caption: caption,
-    kind: image,
-    supplement: [图],
-    numbering: if numbered { "1" } else { none },
-  )
+  if numbered {
+    figure(
+      img,
+      caption: caption,
+      kind: image,
+      supplement: [图],
+    )
+  } else {
+    figure(
+      img,
+      caption: caption,
+      kind: image,
+      supplement: [图],
+      numbering: none,
+    )
+  }
 }
